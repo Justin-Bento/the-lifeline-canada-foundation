@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Pressable } from 'react-native';
 
 export default function App() {
   return (
@@ -9,6 +9,15 @@ export default function App() {
       <Button title="Continue" />
       <StatusBar style="auto" />
     </View>
+  );
+}
+
+function Button(props) {
+  const { onPress, title = 'Save' } = props;
+  return (
+    <Pressable style={styles.button} onPress={onPress}>
+      <Text style={styles.text}>{title}</Text>
+    </Pressable>
   );
 }
 
@@ -31,4 +40,21 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     padding: 20
   },
+  button: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 12,
+    paddingHorizontal: 32,
+    borderRadius: 4,
+    elevation: 3,
+    backgroundColor: '#a21caf',
+  },
+  text: {
+    fontSize: 16,
+    lineHeight: 21,
+    fontWeight: 'bold',
+    letterSpacing: 0.25,
+    color: 'white',
+  },
+
 });
