@@ -16,11 +16,11 @@ const styles = StyleSheet.create({
   container: { 
     width: "90%",
     marginHorizontal: "auto",
-    flex: 1, 
-    flexDirection: "column",
-    gap: 12,
-    alignItems: "center", 
+    height: "auto",
+    flex: 1,
+    alignItems: "center",
     justifyContent: "center",
+    gap: 20,
   },
   box: {
     width: "100%",
