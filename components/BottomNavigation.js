@@ -1,28 +1,29 @@
 import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
+import Ionicons from '@expo/vector-icons/Ionicons';
 
 export default function BottomNavigation() {
   const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <TouchableOpacity onPress={() => navigation.navigate("Home")}>
-        <Text style={styles.icons}>H</Text>
+        <Ionicons name="home-outline" style={styles.icons} />
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate("Call")}>
-        <Text style={styles.icons}>C</Text>
+        <Ionicons name="call-outline" style={styles.icons} />
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate("GetHelp")}>
-        <Text style={styles.icons}>G</Text>
+        <Ionicons name="heart-outline" style={styles.icons} />
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate("Resource")}>
-        <Text style={styles.icons}>R</Text>
+        <Ionicons name="file-tray-stacked-outline" style={styles.icons} />
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate("Pattern")}>
-        <Text style={styles.icons}>P</Text>
+        <Ionicons name="bulb-outline" style={styles.icons} />
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate("Details")}>
-        <Text style={styles.icons}>M</Text>
+        <Ionicons name="library-outline" style={styles.icons} />
       </TouchableOpacity>
     </View>
   );
@@ -37,11 +38,11 @@ const styles = StyleSheet.create({
     paddingVertical: 30,
   },
   icons: {
-    padding: 10,
-    paddingHorizontal: 14,
+    padding: 14,
     fontSize: 16,
     borderWidth: 1, // Adds border width
-    borderColor: "black", // Adds border color
+    borderColor: "#7220D0", // Adds border color
     borderRadius: 4,
+    color: "#7220D0"
   },
 });
