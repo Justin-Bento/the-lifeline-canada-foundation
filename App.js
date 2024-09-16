@@ -7,7 +7,6 @@ import GetHelpScreen from "./pages/HelpScreen";
 import ResourceScreen from "./pages/ResourceScreen";
 import PatternInterruptScreen from "./pages/PatternInterruptScreen.js";
 import DetailsScreen from "./pages/DetailsScreen";
-import BottomNavigation from "./components/BottomNavigation.js";
 
 const Stack = createNativeStackNavigator();
 
