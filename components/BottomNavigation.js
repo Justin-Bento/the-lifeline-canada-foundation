@@ -1,29 +1,29 @@
 import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import Ionicons from '@expo/vector-icons/Ionicons';
+import Ionics from '@expo/vector-icons/Ionicons';
 
 export default function BottomNavigation() {
   const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <TouchableOpacity onPress={() => navigation.navigate("Home")}>
-        <Ionicons name="home-outline" style={styles.icons} />
+        <Ionics name="home-outline" style={styles.icons} />
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate("Call")}>
-        <Ionicons name="call-outline" style={styles.icons} />
+        <Ionics name="call-outline" style={styles.icons} />
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate("GetHelp")}>
-        <Ionicons name="heart-outline" style={styles.icons} />
+        <Ionics name="heart-outline" style={styles.icons} />
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate("Resource")}>
-        <Ionicons name="file-tray-stacked-outline" style={styles.icons} />
+        <Ionics name="file-tray-stacked-outline" style={styles.icons} />
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate("Pattern")}>
-        <Ionicons name="bulb-outline" style={styles.icons} />
+        <Ionics name="bulb-outline" style={styles.icons} />
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigation.navigate("Details")}>
-        <Ionicons name="library-outline" style={styles.icons} />
+        <Ionics name="library-outline" style={styles.icons} />
       </TouchableOpacity>
     </View>
   );
