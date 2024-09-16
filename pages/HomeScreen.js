@@ -47,9 +47,7 @@ const styles = StyleSheet.create({
     width: "100%",
     paddingVertical: 24,
     paddingHorizontal: 16,
-    color: "#fff",
-    borderRadius: 32,
-    backgroundColor: "red",
+    backgroundColor: "#E6D4FF",
   },
   headline: {
     fontSize: 20,
