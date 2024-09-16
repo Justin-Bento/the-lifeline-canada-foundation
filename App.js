@@ -19,7 +19,7 @@ export default function App() {
         <Stack.Screen name="Call" component={CallScreen} />
         <Stack.Screen name="GetHelp" component={GetHelpScreen} />
         <Stack.Screen name="Resource" component={ResourceScreen} />
-        <Stack.Screen name="PatternInterrupt" component={PatternInterruptScreen} />
+        <Stack.Screen name="Pattern" component={PatternInterruptScreen} />
         <Stack.Screen name="Details" component={DetailsScreen} />
       </Stack.Navigator>
       <BottomNavigation />
