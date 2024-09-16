@@ -3,17 +3,32 @@ import { View, Text, StyleSheet } from "react-native";
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.box}>Section #1</Text>
-      <Text style={styles.box}>Section #1</Text>
-      <Text style={styles.box}>Section #1</Text>
-      <Text style={styles.box}>Section #1</Text>
-      <Text style={styles.box}>Section #1</Text>
+      <View style={styles.container}>
+        <View style={styles.box}>
+          <Text>Section #1</Text>
+        </View>
+        <View style={styles.box}>
+          <Text>Section #1</Text>
+        </View>
+        <View style={styles.box}>
+          <Text>Section #1</Text>
+        </View>
+        <View style={styles.box}>
+          <Text>Section #1</Text>
+        </View>
+        <View style={styles.box}>
+          <Text>Section #1</Text>
+        </View>
+        <View style={styles.box}>
+          <Text>Section #1</Text>
+        </View>
+      </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { 
+  container: {
     width: "90%",
     marginHorizontal: "auto",
     height: "auto",
@@ -29,5 +44,5 @@ const styles = StyleSheet.create({
     color: "#fff",
     borderRadius: 32,
     backgroundColor: "red",
-  }
+  },
 });
