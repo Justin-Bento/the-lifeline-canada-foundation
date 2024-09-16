@@ -5,27 +5,27 @@ export default function HomeScreen() {
     <View style={styles.container}>
       <View style={styles.container}>
         <View style={styles.box}>
-          <Text style={styles.headline}>Section #1</Text>
+          <Text style={styles.headline}>About TCL</Text>
           <Text style={styles.paragraph}>Section #1</Text>
         </View>
         <View style={styles.box}>
-          <Text style={styles.headline}>Section #1</Text>
+          <Text style={styles.headline}>National Hotlines</Text>
           <Text style={styles.paragraph}>Section #1</Text>
         </View>
         <View style={styles.box}>
-          <Text style={styles.headline}>Section #1</Text>
+          <Text style={styles.headline}>Get Help</Text>
           <Text style={styles.paragraph}>Section #1</Text>
         </View>
         <View style={styles.box}>
-          <Text style={styles.headline}>Section #1</Text>
+          <Text style={styles.headline}>Resources</Text>
           <Text style={styles.paragraph}>Section #1</Text>
         </View>
         <View style={styles.box}>
-          <Text style={styles.headline}>Section #1</Text>
+          <Text style={styles.headline}>Pattern Interrupts</Text>
           <Text style={styles.paragraph}>Section #1</Text>
         </View>
         <View style={styles.box}>
-          <Text style={styles.headline}>Section #1</Text>
+          <Text style={styles.headline}>More Resources</Text>
           <Text style={styles.paragraph}>Section #1</Text>
         </View>
       </View>
