@@ -6,27 +6,27 @@ export default function HomeScreen() {
       <View style={styles.container}>
         <View style={styles.box}>
           <Text>Section #1</Text>
-          <Text>Section #1</Text>
+          <Text style={styles.paragraph}>Section #1</Text>
         </View>
         <View style={styles.box}>
           <Text>Section #1</Text>
-          <Text>Section #1</Text>
+          <Text style={styles.paragraph}>Section #1</Text>
         </View>
         <View style={styles.box}>
           <Text>Section #1</Text>
-          <Text>Section #1</Text>
+          <Text style={styles.paragraph}>Section #1</Text>
         </View>
         <View style={styles.box}>
           <Text>Section #1</Text>
-          <Text>Section #1</Text>
+          <Text style={styles.paragraph}>Section #1</Text>
         </View>
         <View style={styles.box}>
           <Text>Section #1</Text>
-          <Text>Section #1</Text>
+          <Text style={styles.paragraph}>Section #1</Text>
         </View>
         <View style={styles.box}>
           <Text>Section #1</Text>
-          <Text>Section #1</Text>
+          <Text style={styles.paragraph}>Section #1</Text>
         </View>
       </View>
     </View>
@@ -50,5 +50,8 @@ const styles = StyleSheet.create({
     color: "#fff",
     borderRadius: 32,
     backgroundColor: "red",
+  },
+  paragraph: {
+    fontSize: 14,
   },
 });
