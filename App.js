@@ -22,7 +22,7 @@ export default function App() {
         <Stack.Screen name="Pattern" component={PatternInterruptScreen} />
         <Stack.Screen name="Details" component={DetailsScreen} />
       </Stack.Navigator>
-      <BottomNavigation />
+      {/* <BottomNavigation /> */}
     </NavigationContainer>
   );
 }
