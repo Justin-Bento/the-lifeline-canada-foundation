@@ -23,9 +23,9 @@ const styles = StyleSheet.create({
     paddingVertical: 30
   },
   icons: {
-    padding: 8,
-    paddingHorizontal: 12,
-    fontSize: 14,
+    padding: 10,
+    paddingHorizontal: 14,
+    fontSize: 16,
     borderWidth: 1,        // Adds border width
     borderColor: 'black',  // Adds border color
     borderRadius: 4
