@@ -3,7 +3,9 @@ import { View, Text, StyleSheet } from "react-native";
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <View style={styles.container}>
+       <View>
+         <Text style={styles.dailyQuote}>Not until we are lost do we begin to understand ourselves - Henry T.</Text>
+        </View>
         <View style={styles.box}>
           <Text style={styles.headline}>About TCL</Text>
           <Text style={styles.paragraph}>Learn About The Lifeline Canada Foundation.</Text>
@@ -28,7 +30,6 @@ export default function HomeScreen() {
           <Text style={styles.headline}>More Resources</Text>
           <Text style={styles.paragraph}>Your toolkit for mental wellness.</Text>
         </View>
-      </View>
     </View>
   );
 }
@@ -57,4 +58,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: "#3C3C43"
   },
+  dailyQuote: {
+    fontSize: 24
+  }
 });
