@@ -35,19 +35,20 @@ export default function HomeScreen() {
 
 const styles = StyleSheet.create({
   container: {
-    width: "90%",
+    width: "95%",
     marginHorizontal: "auto",
     height: "auto",
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    gap: 20,
+    gap: 10,
   },
   box: {
     width: "100%",
-    paddingVertical: 24,
+    paddingVertical: 20,
     paddingHorizontal: 16,
     backgroundColor: "#E6D4FF",
+    borderRadius: 4,
   },
   headline: {
     fontSize: 20,
