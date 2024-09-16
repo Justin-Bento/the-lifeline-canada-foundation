@@ -6,20 +6,26 @@ export default function HomeScreen() {
       <View style={styles.container}>
         <View style={styles.box}>
           <Text>Section #1</Text>
-        </View>
-        <View style={styles.box}>
           <Text>Section #1</Text>
         </View>
         <View style={styles.box}>
           <Text>Section #1</Text>
-        </View>
-        <View style={styles.box}>
           <Text>Section #1</Text>
         </View>
         <View style={styles.box}>
           <Text>Section #1</Text>
+          <Text>Section #1</Text>
         </View>
         <View style={styles.box}>
+          <Text>Section #1</Text>
+          <Text>Section #1</Text>
+        </View>
+        <View style={styles.box}>
+          <Text>Section #1</Text>
+          <Text>Section #1</Text>
+        </View>
+        <View style={styles.box}>
+          <Text>Section #1</Text>
           <Text>Section #1</Text>
         </View>
       </View>
