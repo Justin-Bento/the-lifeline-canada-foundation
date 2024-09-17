@@ -1,10 +1,14 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Dimensions } from "react-native";
+import { Image } from 'expo-image';
+
+  // Get device width
+  const { width: screenWidth } = Dimensions.get('window');
 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
       <View>
-        <Text>Company Logo</Text>
+        <Image style={styles.fullWidthImage} source={require("../assets/lifeline-logo-retina.png")} placeholder={false} />
       </View>
       <View>
         <Text style={styles.dailyQuote}>
@@ -73,5 +77,10 @@ const styles = StyleSheet.create({
   },
   dailyQuote: {
     fontSize: 24,
+  },
+  fullWidthImage: {
+    width: screenWidth, // Full width of the device screen
+    height: 100,        // You can set height as per your requirement
+    resizeMode: 'contain', // Optional: Ensure the image covers the whole width without distortion  
   },
 });
