@@ -65,17 +65,18 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgb(242, 232, 255)', 
   },
   headline: {
-    fontSize: 20,
-    fontWeight: 'semibold', // Make headlines bold
+    fontSize: 16,
+    fontWeight: "500", // Make headlines bold
     marginBottom: 4, // Space between headline and paragraph
-    color: '#1F2937',
+    color: 'rgba(31, 41, 55, 1)',
   },
   paragraph: {
     fontSize: 14,
-    color: '#1F2937',
+    color: 'rgba(31, 41, 55, 0.7)',
+    fontWeight: "400"
   },
   dailyQuote: {
-    fontSize: 24,
+    fontSize: 22,
     fontStyle: 'italic',    // Italicize the quote
     marginVertical: 20, // Space above and below the quote
   },
