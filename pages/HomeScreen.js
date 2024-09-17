@@ -57,22 +57,22 @@ const styles = StyleSheet.create({
     backgroundColor: '#F7F7F7',  // Light background color
   },
   box: {
-    width: '100%',
+    width: "100%",
     paddingVertical: 20,
     paddingHorizontal: 16,
-    backgroundColor: "#E6D4FF",
-    borderWidth: 0.5,
-    marginBottom: 4
-  
+    borderWidth: 1,             
+    borderColor: 'rgba(54, 7, 100, 0.3)',     
+    backgroundColor: 'rgb(242, 232, 255)', 
   },
   headline: {
     fontSize: 20,
     fontWeight: 'semibold', // Make headlines bold
     marginBottom: 4, // Space between headline and paragraph
+    color: '#1F2937',
   },
   paragraph: {
     fontSize: 14,
-    color: "#3C3C43",
+    color: '#1F2937',
   },
   dailyQuote: {
     fontSize: 24,
