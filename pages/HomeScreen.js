@@ -53,13 +53,12 @@ export default function HomeScreen() {
 
 const styles = StyleSheet.create({
   container: {
-    width: "95%",
-    marginHorizontal: "auto",
-    height: "auto",
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-    gap: 10,
+    flex: 1,                  // Fills the available space
+    alignItems: 'center',     // Centers items horizontally
+    justifyContent: 'center', // Centers items vertically
+    width: '95%',             // Sets width to 95% of the parent
+    alignSelf: 'center',      // Centers the container itself horizontally
+    gap: 8,   
   },
   box: {
     width: "100%",
