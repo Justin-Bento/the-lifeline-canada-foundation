@@ -54,6 +54,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center', // Align items to the top
     width: '100%',  // Use full width
     paddingTop: 50,
+    paddingHorizontal: 16,
+    gap: 10,
     backgroundColor: '#F7F7F7',  // Light background color
   },
   box: {
@@ -78,10 +80,10 @@ const styles = StyleSheet.create({
   dailyQuote: {
     fontSize: 22,
     fontStyle: 'italic',    // Italicize the quote
-    marginVertical: 20, // Space above and below the quote
+    marginVertical: 10, // Space above and below the quote
   },
   fullWidthImage: {
-    width: screenWidth, // Full width of the device screen
+    width: screenWidth - 20, // Full width of the device screen
     height: 70,     // Adjust height as needed
     resizeMode: 'stretch',  // Ensure the image maintains aspect ratio
   },
