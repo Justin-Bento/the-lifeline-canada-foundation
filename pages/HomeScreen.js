@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, Dimensions, Pressable } from "react-native";
 import { Image } from 'expo-image';
 import { useNavigation } from '@react-navigation/native';
+// Import the JSON file
+import quotes from "../utils/quotes.json";
 
 // Get device width
 const { width: screenWidth } = Dimensions.get('window');
