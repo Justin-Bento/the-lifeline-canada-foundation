@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, Dimensions, Pressable } from "react-native";
 import { Image } from 'expo-image';
 import { useNavigation } from '@react-navigation/native';
