@@ -9,7 +9,20 @@ import quotes from "../utils/quotes.json";
 const { width: screenWidth } = Dimensions.get('window');
 
 export default function HomeScreen() {
-  const navigation = useNavigation()
+  const navigation = useNavigation();
+  const [quote, setQuote] = useState(null);
+  useEffect(() => {
+    // Function to get a daily quote
+    const getDailyQuote = () => {
+      const dayOfYear = Math.floor((new Date() - new Date(new Date().getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);
+      const dailyQuote = quotes[dayOfYear % quotes.length];
+      setQuote(dailyQuote);
+    };
+    getDailyQuote(); // Fetch the daily quote on component mount
+  }, []);
+  if (!quote) {
+    return <Text>Loading...</Text>; // Show a loading state if no quote is available yet
+  }
   return (
     <View style={styles.container}>
       <Image style={styles.fullWidthImage} source={require("../assets/lifeline-logo-retina.png")} placeholder={false} />
