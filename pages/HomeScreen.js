@@ -1,10 +1,12 @@
 import { View, Text, StyleSheet, Dimensions } from "react-native";
 import { Image } from 'expo-image';
+import { useNavigation } from '@react-navigation/native';
 
 // Get device width
 const { width: screenWidth } = Dimensions.get('window');
 
 export default function HomeScreen() {
+  const navigation = useNavigation()
   return (
     <View style={styles.container}>
       <Image style={styles.fullWidthImage} source={require("../assets/lifeline-logo-retina.png")} placeholder={false} />
