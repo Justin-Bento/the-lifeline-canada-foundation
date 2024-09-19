@@ -13,38 +13,38 @@ export default function HomeScreen() {
       <Text style={styles.dailyQuote}>
         Not until we are lost do we begin to understand ourselves - Henry T.
       </Text>
-      <View style={styles.box}>
+      <Pressable style={styles.box}>
         <Text style={styles.headline}>About TCL</Text>
         <Text style={styles.paragraph}>
           Learn About The Lifeline Canada Foundation.
         </Text>
-      </View>
-      <View style={styles.box}>
+      </Pressable>
+      <Pressable style={styles.box}>
         <Text style={styles.headline}>National Hotlines</Text>
         <Text style={styles.paragraph}>
           Speak with a compassionate professional.
         </Text>
-      </View>
-      <View style={styles.box}>
+      </Pressable>
+      <Pressable style={styles.box}>
         <Text style={styles.headline}>Get Help</Text>
         <Text style={styles.paragraph}>Find the support you need today.</Text>
-      </View>
-      <View style={styles.box}>
+      </Pressable>
+      <Pressable style={styles.box}>
         <Text style={styles.headline}>Resources</Text>
         <Text style={styles.paragraph}>
           Unlock your power for every level of wellness.
         </Text>
-      </View>
-      <View style={styles.box}>
+      </Pressable>
+      <Pressable style={styles.box}>
         <Text style={styles.headline}>Pattern Interrupts</Text>
         <Text style={styles.paragraph}>
           Rewiring your mind with something new.
         </Text>
-      </View>
-      <View style={styles.box}>
+      </Pressable>
+      <Pressable style={styles.box}>
         <Text style={styles.headline}>More Resources</Text>
         <Text style={styles.paragraph}>Your toolkit for mental wellness.</Text>
-      </View>
+      </Pressable>
     </View>
   );
 }
