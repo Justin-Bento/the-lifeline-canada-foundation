@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     paddingTop: 50,
     paddingHorizontal: 16,
     gap: 10,
-    backgroundColor: '#F7F7F7',  // Light background color
+    backgroundColor: '#f9f5ff',  // Light background color
   },
   box: {
     width: "100%",
