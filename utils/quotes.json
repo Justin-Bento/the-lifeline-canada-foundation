@@ -60,5 +60,37 @@
       "author": "Confucius",
       "quote": "Our greatest glory is not in never falling, but in rising every time we fall."
     }
+  ],
+  "sections":[
+    {
+      "headline": "About TCL",
+      "paragraph": "Learn About The Lifeline Canada Foundation.",
+      "navigateTo": "AboutTCL"
+    },
+    {
+      "headline": "National Hotlines",
+      "paragraph": "Speak with a compassionate professional.",
+      "navigateTo": "Call"
+    },
+    {
+      "headline": "Get Help",
+      "paragraph": "Find the support you need today.",
+      "navigateTo": "GetHelp"
+    },
+    {
+      "headline": "Resources",
+      "paragraph": "Unlock your power for every level of wellness.",
+      "navigateTo": "Resource"
+    },
+    {
+      "headline": "Pattern Interrupts",
+      "paragraph": "Rewiring your mind with something new.",
+      "navigateTo": "Pattern"
+    },
+    {
+      "headline": "More Resources",
+      "paragraph": "Your toolkit for mental wellness.",
+      "navigateTo": "Details"
+    }
   ]
 }
