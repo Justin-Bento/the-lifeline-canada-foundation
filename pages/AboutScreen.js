@@ -1,10 +1,13 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, Pressable } from "react-native";
 import externalStyleSheet from "../styles/styles";
 
 export default function AboutScreen() {
   return (
     <View style={externalStyleSheet.container}>
+      <Pressable style={externalStyleSheet.button}>
+        <Text style={externalStyleSheet.body2 && externalStyleSheet.button_text}>View Our Support Services</Text>
+      </Pressable>
       <Text style={externalStyleSheet.headline}>About Screen</Text>
       <Text style={externalStyleSheet.body1}>
         The LifeLine Canada Foundation (TLC) is a registered non-profit committed to the prevention of suicide and
