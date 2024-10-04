@@ -77,14 +77,19 @@ const externalStyleSheet = StyleSheet.create({
     fontWeight: "500",
     color: black,
   },
-  h6: {
+  title_lg: {
     fontSize: 18,
-    fontWeight: "500",
+    fontWeight: "600",
     color: black,
   },
   title: {
     fontSize: 17,
-    fontWeight: "500",
+    fontWeight: "600",
+    color: black,
+  },
+  title_sm: {
+    fontSize: 16,
+    fontWeight: "600",
     color: black,
   },
   body1: {

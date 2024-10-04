@@ -20,7 +20,7 @@ export default function HomeScreen() {
         style={externalStyleSheet.box}
         onPress={() => navigation.navigate("AboutTCL")}
       >
-        <Text style={externalStyleSheet.title}>About TCL</Text>
+        <Text style={externalStyleSheet.title}>About TLC</Text>
         <Text style={externalStyleSheet.body2}>Learn About The Lifeline Canada Foundation.</Text>
       </Pressable>
       <Pressable
