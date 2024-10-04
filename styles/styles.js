@@ -6,11 +6,11 @@ const { width: screenWidth } = Dimensions.get("window");
 
 // Colors For The User Interface
 // ----------------------------------------------------
-// Background - #fcfbfe,
-// Text - #0c0612
-// Primary - #9b52e0
-// Secondary - #9b52e0
-// Accent - #d06cc8
+let white = white;
+let black = "#0c0612";
+let Primary = "#9b52e0";
+let Secondary = "#9b52e0";
+let Accent = "#d06cc8";
 
 const externalStyleSheet = StyleSheet.create({
   container: {
@@ -21,7 +21,7 @@ const externalStyleSheet = StyleSheet.create({
     paddingTop: 25,
     paddingHorizontal: 16,
     gap: 10,
-    backgroundColor: "#fcfbfe",
+    backgroundColor: white,
   },
   box: {
     width: "100%",
@@ -38,26 +38,8 @@ const externalStyleSheet = StyleSheet.create({
     backgroundColor: "#9b52e0",
   },
   button_text: {
-    color: "#fcfbfe",
+    color: white,
     fontWeight: "500",
-  },
-  headline: {
-    fontSize: 16,
-    fontWeight: "500", // Make headlines bold
-    marginBottom: 4, // Space between headline and paragraph
-    color: "#0c0612",
-  },
-  body1: {
-    fontSize: 16,
-    lineHeight: "24px",
-    color: "#0c0612",
-    fontWeight: "400",
-  },
-  body2: {
-    fontSize: 14,
-    lineHeight: "18px",
-    color: "#0c0612",
-    fontWeight: "400",
   },
   dailyQuote: {
     fontSize: 22,
@@ -68,6 +50,49 @@ const externalStyleSheet = StyleSheet.create({
     width: screenWidth - 20, // Full width of the device screen
     height: 70, // Adjust height as needed
     resizeMode: "stretch", // Ensure the image maintains aspect ratio
+  },
+  // Typography
+  h1: {
+    fontSize: 48,
+    fontWeight: "500",
+    color: black,
+  },
+  h2: {
+    fontSize: 36,
+    fontWeight: "500",
+    color: black,
+  },
+  h3: {
+    fontSize: 30,
+    fontWeight: "500",
+    color: black,
+  },
+  h4: {
+    fontSize: 24,
+    fontWeight: "500",
+    color: black,
+  },
+  h5: {
+    fontSize: 20,
+    fontWeight: "500",
+    color: black,
+  },
+  h6: {
+    fontSize: 18,
+    fontWeight: "500",
+    color: black,
+  },
+  body1: {
+    fontSize: 16,
+    lineHeight: "24px",
+    color: black,
+    fontWeight: "400",
+  },
+  body2: {
+    fontSize: 14,
+    lineHeight: "18px",
+    color: black,
+    fontWeight: "400",
   },
 });
 
