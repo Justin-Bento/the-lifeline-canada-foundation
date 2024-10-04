@@ -4,6 +4,14 @@ import { Dimensions } from "react-native";
 // Get device width
 const { width: screenWidth } = Dimensions.get("window");
 
+// Colors For The User Interface
+// ----------------------------------------------------
+// Background - #fcfbfe,
+// Text - #0c0612
+// Primary - #9b52e0
+// Secondary - #9b52e0
+// Accent - #d06cc8
+
 const externalStyleSheet = StyleSheet.create({
   container: {
     flex: 1,
