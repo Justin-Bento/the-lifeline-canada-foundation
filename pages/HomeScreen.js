@@ -1,105 +1,63 @@
 import React, { useEffect, useState } from "react";
-import { View, Text, StyleSheet, Dimensions, Pressable } from "react-native";
+import { View, Text, Dimensions, Pressable } from "react-native";
 import { Image } from "expo-image";
 import { useNavigation } from "@react-navigation/native";
-
-// Get device width
-const { width: screenWidth } = Dimensions.get("window");
+import externalStyleSheet from "../styles/styles";
 
 export default function HomeScreen() {
   const navigation = useNavigation();
   return (
-    <View style={styles.container}>
+    <View style={externalStyleSheet.container}>
       <Image
-        style={styles.fullWidthImage}
+        style={externalStyleSheet.fullWidthImage}
         source={require("../assets/lifeline-logo-retina.png")}
         placeholder={false}
       />
-      <Text style={styles.dailyQuote}>Not until we are lost do we begin to understand ourselves - Henry T.</Text>
+      <Text style={externalStyleSheet.dailyQuote}>
+        Not until we are lost do we begin to understand ourselves - Henry T.
+      </Text>
       <Pressable
-        style={styles.box}
+        style={externalStyleSheet.box}
         onPress={() => navigation.navigate("AboutTCL")}
       >
-        <Text style={styles.headline}>About TCL</Text>
-        <Text style={styles.paragraph}>Learn About The Lifeline Canada Foundation.</Text>
+        <Text style={externalStyleSheet.headline}>About TCL</Text>
+        <Text style={externalStyleSheet.paragraph}>Learn About The Lifeline Canada Foundation.</Text>
       </Pressable>
       <Pressable
-        style={styles.box}
+        style={externalStyleSheet.box}
         onPress={() => navigation.navigate("Call")}
       >
-        <Text style={styles.headline}>National Hotlines</Text>
-        <Text style={styles.paragraph}>Speak with a compassionate professional.</Text>
+        <Text style={externalStyleSheet.headline}>National Hotlines</Text>
+        <Text style={externalStyleSheet.paragraph}>Speak with a compassionate professional.</Text>
       </Pressable>
       <Pressable
-        style={styles.box}
+        style={externalStyleSheet.box}
         onPress={() => navigation.navigate("GetHelp")}
       >
-        <Text style={styles.headline}>Get Help</Text>
-        <Text style={styles.paragraph}>Find the support you need today.</Text>
+        <Text style={externalStyleSheet.headline}>Get Help</Text>
+        <Text style={externalStyleSheet.paragraph}>Find the support you need today.</Text>
       </Pressable>
       <Pressable
-        style={styles.box}
+        style={externalStyleSheet.box}
         onPress={() => navigation.navigate("Resource")}
       >
-        <Text style={styles.headline}>Resources</Text>
-        <Text style={styles.paragraph}>Unlock your power for every level of wellness.</Text>
+        <Text style={externalStyleSheet.headline}>Resources</Text>
+        <Text style={externalStyleSheet.paragraph}>Unlock your power for every level of wellness.</Text>
       </Pressable>
       <Pressable
-        style={styles.box}
+        style={externalStyleSheet.box}
         onPress={() => navigation.navigate("Pattern")}
       >
-        <Text style={styles.headline}>Pattern Interrupts</Text>
-        <Text style={styles.paragraph}>Rewiring your mind with something new.</Text>
+        <Text style={externalStyleSheet.headline}>Pattern Interrupts</Text>
+        <Text style={externalStyleSheet.paragraph}>Rewiring your mind with something new.</Text>
       </Pressable>
       <Pressable
-        style={styles.box}
+        style={externalStyleSheet.box}
         onPress={() => navigation.navigate("Details")}
       >
-        <Text style={styles.headline}>More Resources</Text>
-        <Text style={styles.paragraph}>Your toolkit for mental wellness.</Text>
+        <Text style={externalStyleSheet.headline}>More Resources</Text>
+        <Text style={externalStyleSheet.paragraph}>Your toolkit for mental wellness.</Text>
       </Pressable>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "top", // Align items to the top
-    width: "100%", // Use full width
-    paddingTop: 25,
-    paddingHorizontal: 16,
-    gap: 10,
-    backgroundColor: "#f9f5ff", // Light background color
-  },
-  box: {
-    width: "100%",
-    paddingVertical: 18,
-    paddingHorizontal: 16,
-    borderWidth: 1,
-    borderColor: "rgba(54, 7, 100, 0.3)",
-    backgroundColor: "rgb(242, 232, 255)",
-  },
-  headline: {
-    fontSize: 16,
-    fontWeight: "500", // Make headlines bold
-    marginBottom: 4, // Space between headline and paragraph
-    color: "rgba(31, 41, 55, 1)",
-  },
-  paragraph: {
-    fontSize: 14,
-    color: "rgba(31, 41, 55, 0.7)",
-    fontWeight: "400",
-  },
-  dailyQuote: {
-    fontSize: 22,
-    fontStyle: "italic", // Italicize the quote
-    marginVertical: 10, // Space above and below the quote
-  },
-  fullWidthImage: {
-    width: screenWidth - 20, // Full width of the device screen
-    height: 70, // Adjust height as needed
-    resizeMode: "stretch", // Ensure the image maintains aspect ratio
-  },
-});
