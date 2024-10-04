@@ -31,6 +31,16 @@ const externalStyleSheet = StyleSheet.create({
     borderColor: "rgba(54, 7, 100, 0.3)",
     backgroundColor: "rgb(242, 232, 255)",
   },
+  button: {
+    paddingVertical: 20,
+    paddingHorizontal: 24,
+    borderRadius: 10,
+    backgroundColor: "#9b52e0",
+  },
+  button_text: {
+    color: "#fcfbfe",
+    fontWeight: "500",
+  },
   headline: {
     fontSize: 16,
     fontWeight: "500", // Make headlines bold
