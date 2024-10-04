@@ -35,11 +35,11 @@ const externalStyleSheet = StyleSheet.create({
     fontSize: 16,
     fontWeight: "500", // Make headlines bold
     marginBottom: 4, // Space between headline and paragraph
-    color: "rgba(31, 41, 55, 1)",
+    color: "#0c0612",
   },
   paragraph: {
     fontSize: 14,
-    color: "rgba(31, 41, 55, 0.7)",
+    color: "#0c0612",
     fontWeight: "400",
   },
   dailyQuote: {
