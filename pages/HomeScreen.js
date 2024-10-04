@@ -15,23 +15,20 @@ export default function HomeScreen() {
         source={require("../assets/lifeline-logo-retina.png")}
         placeholder={false}
       />
-      <Text style={styles.dailyQuote}>
-        Not until we are lost do we begin to understand ourselves - Henry T.
-      </Text>
+      <Text style={styles.dailyQuote}>Not until we are lost do we begin to understand ourselves - Henry T.</Text>
       <Pressable
         style={styles.box}
         onPress={() => navigation.navigate("AboutTCL")}
       >
         <Text style={styles.headline}>About TCL</Text>
-        <Text style={styles.paragraph}>
-          Learn About The Lifeline Canada Foundation.
-        </Text>
+        <Text style={styles.paragraph}>Learn About The Lifeline Canada Foundation.</Text>
       </Pressable>
-      <Pressable style={styles.box} onPress={() => navigation.navigate("Call")}>
+      <Pressable
+        style={styles.box}
+        onPress={() => navigation.navigate("Call")}
+      >
         <Text style={styles.headline}>National Hotlines</Text>
-        <Text style={styles.paragraph}>
-          Speak with a compassionate professional.
-        </Text>
+        <Text style={styles.paragraph}>Speak with a compassionate professional.</Text>
       </Pressable>
       <Pressable
         style={styles.box}
@@ -45,18 +42,14 @@ export default function HomeScreen() {
         onPress={() => navigation.navigate("Resource")}
       >
         <Text style={styles.headline}>Resources</Text>
-        <Text style={styles.paragraph}>
-          Unlock your power for every level of wellness.
-        </Text>
+        <Text style={styles.paragraph}>Unlock your power for every level of wellness.</Text>
       </Pressable>
       <Pressable
         style={styles.box}
         onPress={() => navigation.navigate("Pattern")}
       >
         <Text style={styles.headline}>Pattern Interrupts</Text>
-        <Text style={styles.paragraph}>
-          Rewiring your mind with something new.
-        </Text>
+        <Text style={styles.paragraph}>Rewiring your mind with something new.</Text>
       </Pressable>
       <Pressable
         style={styles.box}
@@ -73,16 +66,16 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "center",
-    justifyContent: "center", // Align items to the top
+    justifyContent: "top", // Align items to the top
     width: "100%", // Use full width
-    paddingTop: 50,
+    paddingTop: 25,
     paddingHorizontal: 16,
     gap: 10,
     backgroundColor: "#f9f5ff", // Light background color
   },
   box: {
     width: "100%",
-    paddingVertical: 20,
+    paddingVertical: 18,
     paddingHorizontal: 16,
     borderWidth: 1,
     borderColor: "rgba(54, 7, 100, 0.3)",

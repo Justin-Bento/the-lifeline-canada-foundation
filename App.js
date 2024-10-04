@@ -14,14 +14,47 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{headerShown: false}}>
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="AboutTCL" component={AboutScreen} />
-        <Stack.Screen name="Call" component={CallScreen} />
-        <Stack.Screen name="GetHelp" component={GetHelpScreen} />
-        <Stack.Screen name="Resource" component={ResourceScreen} />
-        <Stack.Screen name="Pattern" component={PatternInterruptScreen} />
-        <Stack.Screen name="Details" component={DetailsScreen} />
+      <Stack.Navigator
+        screenOptions={{
+          tabBarActiveTintColor: "rgb(242, 232, 255)",
+          headerStyle: {
+            backgroundColor: "rgb(242, 232, 255)",
+          },
+          headerShadowV88778isible: false,
+          headerTintColor: "#000",
+          tabBarStyle: {
+            backgroundColor: "#25292e",
+          },
+        }}
+      >
+        <Stack.Screen
+          name="Home"
+          component={HomeScreen}
+        />
+        <Stack.Screen
+          name="AboutTCL"
+          component={AboutScreen}
+        />
+        <Stack.Screen
+          name="Call"
+          component={CallScreen}
+        />
+        <Stack.Screen
+          name="GetHelp"
+          component={GetHelpScreen}
+        />
+        <Stack.Screen
+          name="Resource"
+          component={ResourceScreen}
+        />
+        <Stack.Screen
+          name="Pattern"
+          component={PatternInterruptScreen}
+        />
+        <Stack.Screen
+          name="Details"
+          component={DetailsScreen}
+        />
       </Stack.Navigator>
       {/* <BottomNavigation /> */}
     </NavigationContainer>
