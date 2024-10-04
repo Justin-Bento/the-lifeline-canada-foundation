@@ -23,6 +23,18 @@ const externalStyleSheet = StyleSheet.create({
     gap: 10,
     backgroundColor: white,
   },
+  main_container: {
+    width: "auto",
+    paddingVertical: 24,
+    paddingHorizontal: 18,
+  },
+  flexLeftAlign: {
+    flex: 1,
+    gap: 20,
+    alignItems: "left",
+    justifyContent: "center",
+    width: "100w",
+  },
   box: {
     width: "100%",
     paddingVertical: 18,
