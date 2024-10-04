@@ -1,11 +1,13 @@
 import React from "react";
 import { View, Text, Pressable, ScrollView } from "react-native";
 import externalStyleSheet from "../styles/styles";
+import Card from "../components/Card";
 
 export default function AboutScreen() {
   return (
     <ScrollView>
       <View style={[externalStyleSheet.main_container, externalStyleSheet.flexLeftAlign]}>
+        <Card />
         <Pressable style={externalStyleSheet.button}>
           <Text style={externalStyleSheet.body2 && externalStyleSheet.button_text}>View Our Support Services</Text>
         </Pressable>
