@@ -37,8 +37,15 @@ const externalStyleSheet = StyleSheet.create({
     marginBottom: 4, // Space between headline and paragraph
     color: "#0c0612",
   },
-  paragraph: {
+  body1: {
+    fontSize: 16,
+    lineHeight: "24px",
+    color: "#0c0612",
+    fontWeight: "400",
+  },
+  body2: {
     fontSize: 14,
+    lineHeight: "18px",
     color: "#0c0612",
     fontWeight: "400",
   },
