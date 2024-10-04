@@ -16,14 +16,14 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator
         screenOptions={{
-          tabBarActiveTintColor: "rgb(242, 232, 255)",
+          tabBarActiveTintColor: "#fcfbfe",
           headerStyle: {
-            backgroundColor: "rgb(242, 232, 255)",
+            backgroundColor: "#fcfbfe",
           },
           headerShadowV88778isible: false,
           headerTintColor: "#000",
           tabBarStyle: {
-            backgroundColor: "#25292e",
+            backgroundColor: "#fcfbfe",
           },
         }}
       >

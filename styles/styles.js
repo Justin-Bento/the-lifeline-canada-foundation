@@ -21,7 +21,7 @@ const externalStyleSheet = StyleSheet.create({
     paddingTop: 25,
     paddingHorizontal: 16,
     gap: 10,
-    backgroundColor: "#f9f5ff", // Light background color
+    backgroundColor: "#fcfbfe",
   },
   box: {
     width: "100%",
