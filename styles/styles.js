@@ -6,7 +6,7 @@ const { width: screenWidth } = Dimensions.get("window");
 
 // Colors For The User Interface
 // ----------------------------------------------------
-let white = white;
+let white = "#fcfbfe";
 let black = "#0c0612";
 let Primary = "#9b52e0";
 let Secondary = "#9b52e0";
