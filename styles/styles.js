@@ -82,6 +82,11 @@ const externalStyleSheet = StyleSheet.create({
     fontWeight: "500",
     color: black,
   },
+  title: {
+    fontSize: 17,
+    fontWeight: "500",
+    color: black,
+  },
   body1: {
     fontSize: 16,
     lineHeight: "24px",
