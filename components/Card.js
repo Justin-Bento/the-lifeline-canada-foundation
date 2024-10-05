@@ -15,6 +15,7 @@ Card.displayName = "Card";
 // Styles for the Card component
 const styles = StyleSheet.create({
   card: {
+    width: "100%",
     borderRadius: 12,
     borderWidth: 1,
     borderColor: "#ccc", // Add your preferred border color
