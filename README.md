@@ -4,6 +4,31 @@ The LifeLine Canada Foundation (or TLC) is a registered non-profit, committed to
 
 The App is currently in development sage and.
 
+## Installation
+
+Ensure you have [Node.js](https://nodejs.org/en/download/package-manager) first to to install The Lifeline App. 
+> I reccmend using asdf to inslall nodejs frist to keep things running on a specific version of nodejs and expo.
+```bash
+cd the-lifelilne-canada-foundtaion
+```
+Make a development directory to store all your development based projects there. I am using Linux WSL users 
+```bash
+mkdir development
+```
+Open up your terminal system folder and head to the 
+```bash
+cd the-lifelilne-canada-foundtaion
+```
+Run this command inside the the-lifelilne-canada-foundtaion folder.
+```bash
+npm install 
+```
+
+Grab your phone and plug it into your computer and run the command.
+```bash
+npx expo start
+```
+
 ## Usage
 
 The LifeLine App provides awareness education and prevention strategies to guide people in crisis all across the Globe. It serves as a centralized hub that connect people with accredited resources in Canada and throughout the world some additional features of the application includes:
