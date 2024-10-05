@@ -8,14 +8,19 @@ export default function AboutScreen() {
     <ScrollView>
       <View style={[externalStyleSheet.main_container, externalStyleSheet.flexLeftAlign]}>
         <Card>
+          <View style={externalStyleSheet.card_media}>
+            <Text>&nbsp;</Text>
+          </View>
           <Text style={externalStyleSheet.title_lg}>
             If you, or Someone you know is in Crisis, Call 911 Immediately!
           </Text>
           <Text>The LifeLine Canada is Not a Crisis Hotline.</Text>
+          <Pressable style={[externalStyleSheet.button, { width: 230 }]}>
+            <Text style={[externalStyleSheet.body2, { color: "#fafafa", fontWeight: "500" }]}>
+              View Our Support Services
+            </Text>
+          </Pressable>
         </Card>
-        <Pressable style={externalStyleSheet.button}>
-          <Text style={externalStyleSheet.body2 && externalStyleSheet.button_text}>View Our Support Services</Text>
-        </Pressable>
         <Text style={externalStyleSheet.h4}>About Screen</Text>
         <Text style={externalStyleSheet.body1}>
           The LifeLine Canada Foundation (TLC) is a registered non-profit committed to the prevention of suicide and

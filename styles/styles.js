@@ -23,6 +23,13 @@ const externalStyleSheet = StyleSheet.create({
     gap: 10,
     backgroundColor: white,
   },
+  card_media: {
+    width: "100%",
+    height: 200,
+    borderRadius: 10,
+    backgroundColor: black,
+    marginBottom: 14,
+  },
   main_container: {
     width: "auto",
     paddingVertical: 24,
