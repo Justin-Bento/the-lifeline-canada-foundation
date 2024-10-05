@@ -4,27 +4,47 @@ The LifeLine Canada Foundation (or TLC) is a registered non-profit, committed to
 
 The App is currently in development sage and.
 
+
+
 ## Installation
 
-Ensure you have [Node.js](https://nodejs.org/en/download/package-manager) first to to install The Lifeline App. 
-> I reccmend using asdf to inslall nodejs frist to keep things running on a specific version of nodejs and expo.
-```bash
-cd the-lifelilne-canada-foundtaion
-```
-Make a development directory to store all your development based projects there. I am using Linux WSL users 
+Before you install The Lifeline App, ensure that you have [Node.js](https://nodejs.org/en/download/package-manager) installed on your machine.
+
+> **Note:** I recommend using `asdf` to install Node.js so that you can easily manage different versions of Node.js and Expo for this project. 
+
+### Step 1: Set Up a Development Directory (Optional)
+If you're using Linux or WSL, you might want to create a dedicated directory for all your development projects:
+
 ```bash
 mkdir development
 ```
-Open up your terminal system folder and head to the 
+head into the development direcotry
 ```bash
-cd the-lifelilne-canada-foundtaion
+cd development
 ```
-Run this command inside the the-lifelilne-canada-foundtaion folder.
-```bash
-npm install 
-```
+### Step 2: Fork the Repository
+Before cloning the repository, it's a good practice to fork it to your own GitHub account. This will allow you to make changes in your own copy of the repository without affecting the original one.
 
-Grab your phone and plug it into your computer and run the command.
+1. Go to the [Lifeline App GitHub repository](https://github.com/Justin-Bento/the-lifeline-canada-foundation).
+2. Click the "Fork" button at the top right of the repository page.
+3. Once the fork is created, you'll have your own copy of the repository under your GitHub account.
+
+### Step 2: Clone the Repository
+Navigate to the development or your preferred directory, then clone the repository:
+
+```bash
+git clone git@github.com:Justin-Bento/the-lifeline-canada-foundation.git
+cd the-lifeline-canada-foundation
+```
+### Step 3: Install Dependencies
+Navigate to the project folder and install the necessary dependencies:
+```bash
+cd the-lifeline-canada-foundation
+npm install
+```
+### Step 4: Start the App
+Ensure you have the [Expo Go app](https://expo.dev/client) installed on your phone. Then plug in your phone, and run the following command to start the app:
+
 ```bash
 npx expo start
 ```
