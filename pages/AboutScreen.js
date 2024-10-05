@@ -7,7 +7,12 @@ export default function AboutScreen() {
   return (
     <ScrollView>
       <View style={[externalStyleSheet.main_container, externalStyleSheet.flexLeftAlign]}>
-        <Card />
+        <Card>
+          <Text style={externalStyleSheet.title_lg}>
+            If you, or Someone you know is in Crisis, Call 911 Immediately!
+          </Text>
+          <Text>The LifeLine Canada is Not a Crisis Hotline.</Text>
+        </Card>
         <Pressable style={externalStyleSheet.button}>
           <Text style={externalStyleSheet.body2 && externalStyleSheet.button_text}>View Our Support Services</Text>
         </Pressable>
