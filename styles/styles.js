@@ -70,6 +70,8 @@ const externalStyleSheet = StyleSheet.create({
     height: 70, // Adjust height as needed
     resizeMode: "stretch", // Ensure the image maintains aspect ratio
   },
+});
+const Typography = StyleSheet.create({
   // Typography
   h1: {
     fontSize: 48,
@@ -125,4 +127,4 @@ const externalStyleSheet = StyleSheet.create({
   },
 });
 
-export default externalStyleSheet;
+export { externalStyleSheet, Typography };
