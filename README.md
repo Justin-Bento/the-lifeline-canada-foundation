@@ -2,9 +2,9 @@
 
 The LifeLine Canada Foundation (or TLC) is a registered non-profit, committed to positive mental health and suicide prevention & awareness and is constantly developing new initiatives in support of these goals. The LifeLine Canada Foundation is not a crisis hotline. If in Crisis, call or text 988 for Canada’s new suicide prevention hotline. If you or someone you know is in danger of hurting themselves or others, call 911 immediately. See our directory of [mental health crisis support](https://thelifelinecanada.ca/incrisisneedhelp/) in your area.
 
-The App is currently in development sage and.
+> **Note: This app is currently in the development stage. Stay tuned for updates!**
 
-
+![The Lifeline Canada Main Image](https://thelifelinecanada.ca/wp-content/uploads/2023/11/LG.jpg)
 
 ## Installation
 
