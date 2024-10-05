@@ -60,11 +60,8 @@ const externalStyleSheet = StyleSheet.create({
     color: white,
     fontWeight: "500",
   },
-  dailyQuote: {
-    fontSize: 22,
-    fontStyle: "italic", // Italicize the quote
-    marginVertical: 10, // Space above and below the quote
-  },
+});
+const Layout = StyleSheet.create({
   fullWidthImage: {
     width: screenWidth - 20, // Full width of the device screen
     height: 70, // Adjust height as needed
@@ -98,13 +95,17 @@ const Typography = StyleSheet.create({
     fontWeight: "500",
     color: black,
   },
-  title_lg: {
-    fontSize: 18,
+  title: {
+    fontSize: 17,
     fontWeight: "600",
     color: black,
   },
-  title: {
-    fontSize: 17,
+  titleXL: {
+    fontSize: 22,
+    fontWeight: "600",
+  },
+  title_lg: {
+    fontSize: 18,
     fontWeight: "600",
     color: black,
   },
