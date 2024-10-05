@@ -13,42 +13,12 @@ let Secondary = "#9b52e0";
 let Accent = "#d06cc8";
 
 const externalStyleSheet = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "top", // Align items to the top
-    width: "100%", // Use full width
-    paddingTop: 25,
-    paddingHorizontal: 16,
-    gap: 10,
-    backgroundColor: white,
-  },
   card_media: {
     width: "100%",
     height: 200,
     borderRadius: 10,
     backgroundColor: black,
     marginBottom: 14,
-  },
-  main_container: {
-    width: "auto",
-    paddingVertical: 24,
-    paddingHorizontal: 18,
-  },
-  flexLeftAlign: {
-    flex: 1,
-    gap: 20,
-    alignItems: "left",
-    justifyContent: "center",
-    width: "100w",
-  },
-  box: {
-    width: "100%",
-    paddingVertical: 18,
-    paddingHorizontal: 16,
-    borderWidth: 1,
-    borderColor: "rgba(54, 7, 100, 0.3)",
-    backgroundColor: "rgb(242, 232, 255)",
   },
   button: {
     paddingVertical: 20,
@@ -61,7 +31,37 @@ const externalStyleSheet = StyleSheet.create({
     fontWeight: "500",
   },
 });
-const Layout = StyleSheet.create({
+const Layouts = StyleSheet.create({
+  flexLeftAlign: {
+    flex: 1,
+    gap: 20,
+    alignItems: "left",
+    justifyContent: "center",
+    width: "100w",
+  },
+  container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "top", // Align items to the top
+    width: "100%", // Use full width
+    paddingTop: 25,
+    paddingHorizontal: 16,
+    gap: 10,
+    backgroundColor: white,
+  },
+  main_container: {
+    width: "auto",
+    paddingVertical: 24,
+    paddingHorizontal: 18,
+  },
+  box: {
+    width: "100%",
+    paddingVertical: 18,
+    paddingHorizontal: 16,
+    borderWidth: 1,
+    borderColor: "rgba(54, 7, 100, 0.3)",
+    backgroundColor: "rgb(242, 232, 255)",
+  },
   fullWidthImage: {
     width: screenWidth - 20, // Full width of the device screen
     height: 70, // Adjust height as needed
@@ -128,4 +128,4 @@ const Typography = StyleSheet.create({
   },
 });
 
-export { externalStyleSheet, Typography };
+export { externalStyleSheet, Typography, Layouts };
