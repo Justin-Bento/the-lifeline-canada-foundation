@@ -2,6 +2,7 @@ import React from "react";
 import { View, Text, Pressable, ScrollView } from "react-native";
 import { externalStyleSheet, Layouts, Typography } from "../styles/styles";
 import Card from "../components/Card";
+import { Button } from "../components/Button";
 
 export default function AboutScreen() {
   return (
@@ -11,12 +12,10 @@ export default function AboutScreen() {
           <View style={Layouts.card_media}>
             <Text>&nbsp;</Text>
           </View>
-          <Text style={externalStyleSheet.title_lg}>
-            If you, or Someone you know is in Crisis, Call 911 Immediately!
-          </Text>
+          <Text style={Typography.title_lg}>If you, or Someone you know is in Crisis, Call 911 Immediately!</Text>
           <Text>The LifeLine Canada is Not a Crisis Hotline.</Text>
-          <Pressable style={[externalStyleSheet.button, { width: 230 }]}>
-            <Text style={[Typography.body2, { color: "#fafafa", fontWeight: "500" }]}>View Our Support Services</Text>
+          <Pressable>
+            <Button>View Our Support Services</Button>
           </Pressable>
         </Card>
         <Text style={Typography.h4}>About Screen</Text>
