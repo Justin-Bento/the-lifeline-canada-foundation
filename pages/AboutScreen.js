@@ -9,7 +9,7 @@ export default function AboutScreen() {
     <ScrollView>
       <View style={[Layouts.main_container, Layouts.flexLeftAlign]}>
         <Card>
-          <View style={Layouts.card_media}>
+          <View style={Layouts.mediaImage}>
             <Text>&nbsp;</Text>
           </View>
           <Text style={Typography.title_lg}>If you, or Someone you know is in Crisis, Call 911 Immediately!</Text>

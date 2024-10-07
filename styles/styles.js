@@ -13,13 +13,6 @@ let Secondary = "#9b52e0";
 let Accent = "#d06cc8";
 
 const externalStyleSheet = StyleSheet.create({
-  card_media: {
-    width: "100%",
-    height: 200,
-    borderRadius: 10,
-    backgroundColor: black,
-    marginBottom: 14,
-  },
   button: {
     paddingVertical: 20,
     paddingHorizontal: 24,
@@ -66,6 +59,13 @@ const Layouts = StyleSheet.create({
     width: screenWidth - 20, // Full width of the device screen
     height: 70, // Adjust height as needed
     resizeMode: "stretch", // Ensure the image maintains aspect ratio
+  },
+  mediaImage: {
+    width: "100%",
+    height: 200,
+    borderRadius: 10,
+    backgroundColor: black,
+    marginBottom: 14,
   },
 });
 const Typography = StyleSheet.create({
