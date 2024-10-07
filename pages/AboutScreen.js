@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, Pressable, ScrollView } from "react-native";
-import { externalStyleSheet, Layouts, Typography } from "../styles/styles";
+import { Layouts, Typography } from "../styles/styles";
 import Card from "../components/Card";
 import { Button } from "../components/Button";
 
@@ -8,13 +8,15 @@ export default function AboutScreen() {
   return (
     <ScrollView>
       <View style={[Layouts.main_container, Layouts.flexLeftAlign]}>
-        <Card>
-          <View style={Layouts.mediaImage}>
+        <Card style={Layouts.cardLayout}>
+          <View style={[Layouts.mediaImage, { marginBottom: 20 }]}>
             <Text>&nbsp;</Text>
           </View>
-          <Text style={Typography.title_lg}>If you, or Someone you know is in Crisis, Call 911 Immediately!</Text>
-          <Text>The LifeLine Canada is Not a Crisis Hotline.</Text>
-          <Pressable>
+          <Text style={[Typography.title_lg, { textTransform: "capitalize" }]}>
+            If you, or Someone you know is in Crisis, Call 911 Immediately!
+          </Text>
+          <Text style={{ marginTop: 8, fontSize: 15 }}>The LifeLine Canada is Not a Crisis Hotline.</Text>
+          <Pressable style={{ marginTop: 20 }}>
             <Button>View Our Support Services</Button>
           </Pressable>
         </Card>
