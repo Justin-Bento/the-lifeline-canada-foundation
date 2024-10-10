@@ -10,15 +10,15 @@ export default function AboutScreen() {
       <View style={[Layouts.main_container, Layouts.flexLeftAlign]}>
         <Card style={Layouts.cardLayout}>
           <View style={{ marginBottom: 20 }}>
+            <Text style={[Typography.title_lg, { textTransform: "capitalize" }]}>
+              If you, or Someone you know is in Crisis, Call 911 Immediately!
+            </Text>
+            <Text style={{ marginTop: 8, fontSize: 15 }}>The LifeLine Canada is Not a Crisis Hotline.</Text>
             <Image
               source={require("../assets/card_image/cbef1c0010018ea502ee11746ce1486b.png")}
               style={Layouts.mediaImage} // Adjust these values as needed
             />
           </View>
-          <Text style={[Typography.title_lg, { textTransform: "capitalize" }]}>
-            If you, or Someone you know is in Crisis, Call 911 Immediately!
-          </Text>
-          <Text style={{ marginTop: 8, fontSize: 15 }}>The LifeLine Canada is Not a Crisis Hotline.</Text>
         </Card>
         <Text style={Typography.h4}>About Screen</Text>
         <Text style={Typography.body1}>
