@@ -64,7 +64,6 @@ const Layouts = StyleSheet.create({
     width: "100%",
     height: 200,
     borderRadius: 10,
-    backgroundColor: black,
     marginBottom: 14,
   },
 });
