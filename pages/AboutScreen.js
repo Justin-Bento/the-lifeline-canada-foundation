@@ -19,9 +19,6 @@ export default function AboutScreen() {
             If you, or Someone you know is in Crisis, Call 911 Immediately!
           </Text>
           <Text style={{ marginTop: 8, fontSize: 15 }}>The LifeLine Canada is Not a Crisis Hotline.</Text>
-          <Pressable style={{ marginTop: 20 }}>
-            <Button>View Our Support Services</Button>
-          </Pressable>
         </Card>
         <Text style={Typography.h4}>About Screen</Text>
         <Text style={Typography.body1}>
