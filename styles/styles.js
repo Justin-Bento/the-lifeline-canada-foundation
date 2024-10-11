@@ -6,12 +6,14 @@ const { width: screenWidth } = Dimensions.get("window");
 
 // Colors For The User Interface
 // ----------------------------------------------------
-let white = "#fcfbfe";
-let black = "#0c0612";
-let Primary = "#9b52e0";
-let Secondary = "#9b52e0";
-let Accent = "#d06cc8";
 
+const colors = StyleSheet.create({
+  white: "#fcfbfe",
+  black: "#0c0612",
+  Primary: "#9b52e0",
+  Secondary: "#9b52e0",
+  Accent: "#d06cc8",
+});
 const Layouts = StyleSheet.create({
   flexLeftAlign: {
     flex: 1,
@@ -28,7 +30,7 @@ const Layouts = StyleSheet.create({
     paddingTop: 25,
     paddingHorizontal: 16,
     gap: 10,
-    backgroundColor: white,
+    backgroundColor: colors.white,
   },
   main_container: {
     width: "auto",
@@ -82,32 +84,32 @@ const Typography = StyleSheet.create({
   h1: {
     fontSize: 48,
     fontWeight: "500",
-    color: black,
+    color: colors.black,
   },
   h2: {
     fontSize: 36,
     fontWeight: "500",
-    color: black,
+    color: colors.black,
   },
   h3: {
     fontSize: 30,
     fontWeight: "500",
-    color: black,
+    color: colors.black,
   },
   h4: {
     fontSize: 24,
     fontWeight: "500",
-    color: black,
+    color: colors.black,
   },
   h5: {
     fontSize: 20,
     fontWeight: "500",
-    color: black,
+    color: colors.black,
   },
   title: {
     fontSize: 17,
     fontWeight: "600",
-    color: black,
+    color: colors.black,
   },
   titleXL: {
     fontSize: 22,
@@ -116,12 +118,12 @@ const Typography = StyleSheet.create({
   title_lg: {
     fontSize: 18,
     fontWeight: "600",
-    color: black,
+    color: colors.black,
   },
   title_sm: {
     fontSize: 16,
     fontWeight: "600",
-    color: black,
+    color: colors.black,
   },
   body1: {
     fontSize: 16,
@@ -137,4 +139,4 @@ const Typography = StyleSheet.create({
   },
 });
 
-export { Typography, Layouts };
+export { Typography, Layouts, colors };
