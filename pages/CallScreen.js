@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, ScrollView, FlatList, Image } from "react-native";
-import { Layouts, Typography } from "../styles/styles";
+import { Layouts, Spacing, Typography } from "../styles/styles";
 import Card from "../components/Card";
 
 export default function CallScreen() {
@@ -25,14 +25,14 @@ export default function CallScreen() {
         renderItem={({ item }) => (
           <View style={Layouts.cardContainer}>
             {/* Left side (50%) */}
-            <View style={Layouts.leftContainer}>
+            <View style={Spacing.leftContainer}>
               <Image
                 source={{ uri: "https://picsum.photos/300/150" }} // Replace with your image URL or local image path
                 style={Layouts.image}
               />
             </View>
             {/* Right side (50%) */}
-            <View style={Layouts.rightContainer}>
+            <View style={Spacing.rightContainer}>
               <Text style={Typography.h5}>{item.title}</Text>
               <Text style={Typography.body2}>{item.number}</Text>
             </View>

@@ -1,36 +1,32 @@
-import { StyleSheet } from "react-native";
-import { Dimensions } from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
 
-// Get device width
-const { width: screenWidth } = Dimensions.get("window");
+const screenWidth = Dimensions.get("window").width;
 
-// Colors For The User Interface
-// ----------------------------------------------------
-
-const colors = StyleSheet.create({
+const Colors = StyleSheet.create({
   white: "#fcfbfe",
   black: "#0c0612",
   Primary: "#9b52e0",
   Secondary: "#9b52e0",
   Accent: "#d06cc8",
 });
+
 const Layouts = StyleSheet.create({
   flexLeftAlign: {
     flex: 1,
     gap: 20,
-    alignItems: "left",
+    alignItems: "flex-start",
     justifyContent: "center",
-    width: "100w",
+    width: "100%",
   },
   container: {
     flex: 1,
     alignItems: "center",
-    justifyContent: "top", // Align items to the top
-    width: "100%", // Use full width
+    justifyContent: "flex-start",
+    width: "100%",
     paddingTop: 25,
     paddingHorizontal: 16,
     gap: 10,
-    backgroundColor: colors.white,
+    backgroundColor: Colors.white,
   },
   main_container: {
     width: "auto",
@@ -46,9 +42,9 @@ const Layouts = StyleSheet.create({
     backgroundColor: "rgb(242, 232, 255)",
   },
   fullWidthImage: {
-    width: screenWidth - 20, // Full width of the device screen
-    height: 70, // Adjust height as needed
-    resizeMode: "stretch", // Ensure the image maintains aspect ratio
+    width: screenWidth - 20,
+    height: 70,
+    resizeMode: "stretch",
   },
   mediaImage: {
     width: "100%",
@@ -62,54 +58,44 @@ const Layouts = StyleSheet.create({
     borderWidth: 1,
     borderColor: "rgba(0,0,0,0.3)",
     marginVertical: 8,
-    height: 125, // Set the height for the card
-  },
-  leftContainer: {
-    flex: 0.6, // 50% width
-    justifyContent: "center", // Center content vertically
-    paddingRight: 8, // Add some spacing between the containers
-  },
-  rightContainer: {
-    flex: 1, // 50% width
-    justifyContent: "center", // Center content vertically
-    paddingLeft: 8, // Add some spacing between the containers
+    height: 125,
   },
   image: {
-    width: "100%", // Full width of the right container
-    height: "100%", // Full height of the right container
+    width: "100%",
+    height: "100%",
   },
 });
+
 const Typography = StyleSheet.create({
-  // Typography
   h1: {
     fontSize: 48,
     fontWeight: "500",
-    color: colors.black,
+    color: Colors.black,
   },
   h2: {
     fontSize: 36,
     fontWeight: "500",
-    color: colors.black,
+    color: Colors.black,
   },
   h3: {
     fontSize: 30,
     fontWeight: "500",
-    color: colors.black,
+    color: Colors.black,
   },
   h4: {
     fontSize: 24,
     fontWeight: "500",
-    color: colors.black,
+    color: Colors.black,
   },
   h5: {
     fontSize: 20,
     fontWeight: "500",
-    color: colors.black,
+    color: Colors.black,
   },
   title: {
     fontSize: 17,
     fontWeight: "600",
-    color: colors.black,
+    color: Colors.black,
   },
   titleXL: {
     fontSize: 22,
@@ -118,25 +104,38 @@ const Typography = StyleSheet.create({
   title_lg: {
     fontSize: 18,
     fontWeight: "600",
-    color: colors.black,
+    color: Colors.black,
   },
   title_sm: {
     fontSize: 16,
     fontWeight: "600",
-    color: colors.black,
+    color: Colors.black,
   },
   body1: {
     fontSize: 16,
-    lineHeight: "24px",
-    color: black,
+    lineHeight: 24,
+    color: Colors.black,
     fontWeight: "400",
   },
   body2: {
     fontSize: 14,
-    lineHeight: "18px",
-    color: black,
+    lineHeight: 18,
+    color: Colors.black,
     fontWeight: "400",
   },
 });
 
-export { Typography, Layouts, colors };
+const Spacing = StyleSheet.create({
+  leftContainer: {
+    flex: 0.6,
+    justifyContent: "center",
+    paddingRight: 8,
+  },
+  rightContainer: {
+    flex: 1,
+    justifyContent: "center",
+    paddingLeft: 8,
+  },
+});
+
+export { Typography, Layouts, Colors, Spacing };
