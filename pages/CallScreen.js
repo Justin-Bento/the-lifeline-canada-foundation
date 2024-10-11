@@ -5,7 +5,7 @@ import Card from "../components/Card";
 
 export default function CallScreen() {
   return (
-    <ScrollView>
+    <ScrollView style={Layouts.mainContainer}>
       <Card style={Layouts.cardLayout}>
         <View style={{ marginBottom: 20 }}>
           <Text style={[Typography.titleLG, { textTransform: "capitalize", textAlign: "center" }]}>

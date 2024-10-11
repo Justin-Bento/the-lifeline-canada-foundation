@@ -54,6 +54,7 @@ const Layouts = StyleSheet.create({
   },
   cardContainer: {
     flexDirection: "row",
+    borderRadius: 8,
     backgroundColor: "#fff",
     borderWidth: 1,
     borderColor: "rgba(0,0,0,0.3)",
@@ -63,6 +64,8 @@ const Layouts = StyleSheet.create({
   image: {
     width: "100%",
     height: "100%",
+    borderTopLeftRadius: 8,
+    borderBottomLeftRadius: 8,
   },
 });
 
