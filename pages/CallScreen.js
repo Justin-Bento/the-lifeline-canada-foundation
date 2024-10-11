@@ -23,7 +23,7 @@ export default function CallScreen() {
             />
           </View>
         </Card>
-        {Array.from({ length: 6 }, (_, index) => {
+        {call.map((centers, index) => {
           return (
             <View
               key={index}
@@ -34,8 +34,8 @@ export default function CallScreen() {
                   <Text>&nbsp;</Text>
                 </View>
                 <View style={styles.textContainer}>
-                  <Text style={styles.headline}>First Headline for Card</Text>
-                  <Text style={styles.secondary}>This is secondary</Text>
+                  <Text style={styles.headline}>{centers.headline}</Text>
+                  <Text style={styles.secondary}>{centers.body}</Text>
                 </View>
               </View>
             </View>
@@ -45,7 +45,32 @@ export default function CallScreen() {
     </>
   );
 }
-
+const call = [
+  {
+    headline: "Talk Suicide Canada",
+    body: "Productivity",
+  },
+  {
+    headline: "Kids Help Phone",
+    body: "Productivity",
+  },
+  {
+    headline: "Chris Text Line",
+    body: "Productivity",
+  },
+  {
+    headline: "First Nations",
+    body: "Productivity",
+  },
+  {
+    headline: "Trans Life",
+    body: "Productivity",
+  },
+  {
+    headline: "First Nations",
+    body: "Productivity",
+  },
+];
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "#fff",
