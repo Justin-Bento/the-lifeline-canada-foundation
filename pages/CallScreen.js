@@ -6,7 +6,7 @@ import Card from "../components/Card";
 export default function CallScreen() {
   return (
     <>
-      <ScrollView style={Layouts.container}>
+      <ScrollView style={Layouts.main_container}>
         <Card style={Layouts.cardLayout}>
           <View style={{ marginBottom: 20 }}>
             <View style={[{ paddingHorizontal: 24 }]}>
