@@ -12,18 +12,6 @@ let Primary = "#9b52e0";
 let Secondary = "#9b52e0";
 let Accent = "#d06cc8";
 
-const externalStyleSheet = StyleSheet.create({
-  button: {
-    paddingVertical: 20,
-    paddingHorizontal: 24,
-    borderRadius: 10,
-    backgroundColor: "#9b52e0",
-  },
-  button_text: {
-    color: white,
-    fontWeight: "500",
-  },
-});
 const Layouts = StyleSheet.create({
   flexLeftAlign: {
     flex: 1,
@@ -149,4 +137,4 @@ const Typography = StyleSheet.create({
   },
 });
 
-export { externalStyleSheet, Typography, Layouts };
+export { Typography, Layouts };
