@@ -7,7 +7,7 @@ export default function CallScreen() {
   return (
     <>
       <ScrollView style={Layouts.main_container}>
-        <Card style={Layouts.cardLayout}>
+        <Card style={[Layouts.cardLayout, { marginBottom: 20 }]}>
           <View style={{ marginBottom: 20 }}>
             <View style={[{ paddingHorizontal: 24 }]}>
               <Text style={[Typography.title_lg, { textTransform: "capitalize", textAlign: "center" }]}>
