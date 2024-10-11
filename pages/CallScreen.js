@@ -33,9 +33,9 @@ export default function CallScreen() {
                 <View style={styles.image}>
                   <Text>&nbsp;</Text>
                 </View>
-                <View style={styles.textContainer}>
-                  <Text style={styles.headline}>{centers.headline}</Text>
-                  <Text style={styles.secondary}>{centers.body}</Text>
+                <View style={[styles.textContainer, { flex: 1 }, { flexDirection: "column-reverse" }]}>
+                  <Text style={Typography.titleXL}>{centers.headline}</Text>
+                  <Text style={Typography.body2}>{centers.body}</Text>
                 </View>
               </View>
             </View>
@@ -93,14 +93,5 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     marginLeft: 10,
     justifyContent: "center",
-  },
-  headline: {
-    fontSize: 16,
-    fontWeight: "bold",
-    marginBottom: 5,
-  },
-  secondary: {
-    fontSize: 14,
-    color: "#666",
   },
 });
