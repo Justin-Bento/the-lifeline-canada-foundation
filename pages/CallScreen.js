@@ -1,12 +1,12 @@
 import React from "react";
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, ScrollView } from "react-native";
 import { Typography, Layouts } from "../styles/styles";
 import Card from "../components/Card";
 
 export default function CallScreen() {
   return (
     <>
-      <View style={Layouts.container}>
+      <ScrollView style={Layouts.container}>
         <Card style={Layouts.cardLayout}>
           <View style={{ marginBottom: 20 }}>
             <View style={[{ paddingHorizontal: 24 }]}>
@@ -23,7 +23,7 @@ export default function CallScreen() {
             />
           </View>
         </Card>
-      </View>
+      </ScrollView>
     </>
   );
 }
