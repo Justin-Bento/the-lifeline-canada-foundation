@@ -23,17 +23,24 @@ export default function CallScreen() {
             />
           </View>
         </Card>
-        <View style={styles.container}>
-          <View style={styles.content}>
-            <View style={styles.image}>
-              <Text>&nbsp;</Text>
+        {Array.from({ length: 6 }, (_, index) => {
+          return (
+            <View
+              key={index}
+              style={styles.container}
+            >
+              <View style={styles.content}>
+                <View style={styles.image}>
+                  <Text>&nbsp;</Text>
+                </View>
+                <View style={styles.textContainer}>
+                  <Text style={styles.headline}>First Headline for Card</Text>
+                  <Text style={styles.secondary}>This is secondary</Text>
+                </View>
+              </View>
             </View>
-            <View style={styles.textContainer}>
-              <Text style={styles.headline}>First Headline for Card</Text>
-              <Text style={styles.secondary}>This is secondary</Text>
-            </View>
-          </View>
-        </View>
+          );
+        })}
       </ScrollView>
     </>
   );
@@ -47,7 +54,7 @@ const styles = StyleSheet.create({
     shadowRadius: 2,
     shadowOffset: { width: 0, height: 1 },
     borderRadius: 6,
-    marginVertical: 20,
+    marginVertical: 8,
   },
   content: {
     flexDirection: "row",
