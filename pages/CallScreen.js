@@ -47,13 +47,13 @@ const styles = StyleSheet.create({
     shadowRadius: 2,
     shadowOffset: { width: 0, height: 1 },
     borderRadius: 6,
+    marginVertical: 20,
   },
   content: {
     flexDirection: "row",
-    padding: 10,
   },
   image: {
-    width: 150,
+    width: 125,
     height: 100,
     backgroundColor: "#000",
     borderRadius: 12,
