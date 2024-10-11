@@ -8,7 +8,7 @@ export default function CallScreen() {
     <ScrollView>
       <Card style={Layouts.cardLayout}>
         <View style={{ marginBottom: 20 }}>
-          <Text style={[Typography.title_lg, { textTransform: "capitalize", textAlign: "center" }]}>
+          <Text style={[Typography.titleLG, { textTransform: "capitalize", textAlign: "center" }]}>
             If you, or Someone you know is in Crisis, Call 911 Immediately!
           </Text>
           <Text style={(Typography.body1, { marginTop: 8, textAlign: "center" })}>

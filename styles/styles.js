@@ -28,7 +28,7 @@ const Layouts = StyleSheet.create({
     gap: 10,
     backgroundColor: Colors.white,
   },
-  main_container: {
+  mainContainer: {
     width: "auto",
     paddingVertical: 24,
     paddingHorizontal: 18,
@@ -101,12 +101,12 @@ const Typography = StyleSheet.create({
     fontSize: 22,
     fontWeight: "600",
   },
-  title_lg: {
+  titleLG: {
     fontSize: 18,
     fontWeight: "600",
     color: Colors.black,
   },
-  title_sm: {
+  titleSM: {
     fontSize: 16,
     fontWeight: "600",
     color: Colors.black,
