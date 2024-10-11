@@ -66,6 +66,28 @@ const Layouts = StyleSheet.create({
     borderRadius: 10,
     marginBottom: 14,
   },
+  cardContainer: {
+    flexDirection: "row",
+    backgroundColor: "#fff",
+    borderWidth: 1,
+    borderColor: "rgba(0,0,0,0.3)",
+    marginVertical: 8,
+    height: 125, // Set the height for the card
+  },
+  leftContainer: {
+    flex: 0.6, // 50% width
+    justifyContent: "center", // Center content vertically
+    paddingRight: 8, // Add some spacing between the containers
+  },
+  rightContainer: {
+    flex: 1, // 50% width
+    justifyContent: "center", // Center content vertically
+    paddingLeft: 8, // Add some spacing between the containers
+  },
+  image: {
+    width: "100%", // Full width of the right container
+    height: "100%", // Full height of the right container
+  },
 });
 const Typography = StyleSheet.create({
   // Typography
