@@ -49,11 +49,9 @@ export default function CallScreen() {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "#fff",
-    shadowColor: "#000",
-    shadowOpacity: 0.3,
-    shadowRadius: 2,
-    shadowOffset: { width: 0, height: 1 },
-    borderRadius: 6,
+    borderWidth: 1,
+    borderColor: "rgba(0, 0, 0, 0.2)",
+    borderRadius: 4,
     marginVertical: 8,
   },
   content: {
@@ -63,7 +61,7 @@ const styles = StyleSheet.create({
     width: 125,
     height: 100,
     backgroundColor: "#000",
-    borderRadius: 12,
+    borderRadius: 4,
   },
   textContainer: {
     flex: 1,
