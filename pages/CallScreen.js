@@ -5,6 +5,13 @@ import { getHelp } from "../utils/charities.json";
 export default function CallScreen() {
   return (
     <ScrollView className="w-11/12 mx-auto py-10">
+      <View className="mb-7">
+        <Text className="text-4xl font-medium text-start">Get Help</Text>
+        <Text className="text-base font-medium text-start mt-2">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, rem
+          corrupti impedit eos officia illo sit debitis blanditiis.
+        </Text>
+      </View>
       <View className="overflow-hidden bg-white shadow sm:rounded-lg">
         <View className="px-4 py-5 sm:p-6">
           <Text className="text-lg font-bold text-center">
