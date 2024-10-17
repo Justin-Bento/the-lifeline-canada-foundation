@@ -13,44 +13,55 @@ export default function HomeScreen() {
         source={require("../assets/lifeline-logo-retina.png")}
         placeholder={false}
       />
-      <Text style={Typography.titleXL}>Not until we are lost do we begin to understand ourselves - Henry T.</Text>
+      <Text style={Typography.titleXL}>
+        Not until we are lost do we begin to understand ourselves - Henry T.
+      </Text>
       <Pressable
-        style={Layouts.box}
+        className="w-full bg-purple-200 p-5 rounded border border-purple-400"
         onPress={() => navigation.navigate("AboutTCL")}
       >
         <Text style={Typography.title}>About TLC</Text>
-        <Text style={Typography.body2}>Learn About The Lifeline Canada Foundation.</Text>
+        <Text style={Typography.body2}>
+          Learn About The Lifeline Canada Foundation.
+        </Text>
       </Pressable>
+
       <Pressable
-        style={Layouts.box}
+        className="w-full bg-purple-200 p-5 rounded border border-purple-400"
         onPress={() => navigation.navigate("Call")}
       >
         <Text style={Typography.title}>National Hotlines</Text>
-        <Text style={Typography.body2}>Speak with a compassionate professional.</Text>
+        <Text style={Typography.body2}>
+          Speak with a compassionate professional.
+        </Text>
       </Pressable>
       <Pressable
-        style={Layouts.box}
+        className="w-full bg-purple-200 p-5 rounded border border-purple-400"
         onPress={() => navigation.navigate("GetHelp")}
       >
         <Text style={Typography.title}>Get Help</Text>
         <Text style={Typography.body2}>Find the support you need today.</Text>
       </Pressable>
       <Pressable
-        style={Layouts.box}
+        className="w-full bg-purple-200 p-5 rounded border border-purple-400"
         onPress={() => navigation.navigate("Resource")}
       >
         <Text style={Typography.title}>Resources</Text>
-        <Text style={Typography.body2}>Unlock your power for every level of wellness.</Text>
+        <Text style={Typography.body2}>
+          Unlock your power for every level of wellness.
+        </Text>
       </Pressable>
       <Pressable
-        style={Layouts.box}
+        className="w-full bg-purple-200 p-5 rounded border border-purple-400"
         onPress={() => navigation.navigate("Pattern")}
       >
         <Text style={Typography.title}>Pattern Interrupts</Text>
-        <Text style={Typography.body2}>Rewiring your mind with something new.</Text>
+        <Text style={Typography.body2}>
+          Rewiring your mind with something new.
+        </Text>
       </Pressable>
       <Pressable
-        style={Layouts.box}
+        className="w-full bg-purple-200 p-5 rounded border border-purple-400"
         onPress={() => navigation.navigate("Details")}
       >
         <Text style={Typography.title}>More Resources</Text>
