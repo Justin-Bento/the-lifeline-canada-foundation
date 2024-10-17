@@ -17,7 +17,21 @@ export default function CallScreen() {
             className="w-full h-52 rounded-lg mb-3.5" // Adjusted based on your style
           />
         </View>
-        {/* End of the 911 Card */}
+      </View>
+      {/* End of the 911 Card */}
+      <View className="overflow-hidden rounded-lg bg-white shadow-sm mt-10">
+        <View className="px-4 py-5 sm:p-6 w-full aspect-[16/8] bg-gray-300 flex items-center justify-center">
+          <Text>Visual Media Is Here</Text>
+        </View>
+        <View className="bg-white px-4 py-4 sm:px-6">
+          <Text className="text-xl font-semibold capitalize mb-1">
+            Content goes here
+          </Text>
+          <Text className="text-sm">
+            We use less vertical padding on card footers at all sizes than on
+            headers or body sections
+          </Text>
+        </View>
       </View>
     </ScrollView>
   );
