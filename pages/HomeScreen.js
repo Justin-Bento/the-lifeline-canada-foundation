@@ -17,7 +17,7 @@ export default function HomeScreen() {
         Not until we are lost do we begin to understand ourselves - Henry T.
       </Text>
       <Pressable
-        className="w-full bg-purple-200 p-4 rounded border border-purple-400"
+        className="w-full bg-purple-200 p-4 rounded border border-purple-400 active:bg-purple-300/30"
         onPress={() => navigation.navigate("AboutTCL")}
       >
         <Text className="text-lg font-semibold">About TLC</Text>
@@ -27,7 +27,7 @@ export default function HomeScreen() {
       </Pressable>
 
       <Pressable
-        className="w-full bg-purple-200 p-4 rounded border border-purple-400"
+        className="w-full bg-purple-200 p-4 rounded border border-purple-400 active:bg-purple-300/30"
         onPress={() => navigation.navigate("Call")}
       >
         <Text className="text-lg font-semibold">National Hotlines</Text>
@@ -36,14 +36,14 @@ export default function HomeScreen() {
         </Text>
       </Pressable>
       <Pressable
-        className="w-full bg-purple-200 p-4 rounded border border-purple-400"
+        className="w-full bg-purple-200 p-4 rounded border border-purple-400 active:bg-purple-300/30"
         onPress={() => navigation.navigate("GetHelp")}
       >
         <Text className="text-lg font-semibold">Get Help</Text>
         <Text className="text-sm">Find the support you need today.</Text>
       </Pressable>
       <Pressable
-        className="w-full bg-purple-200 p-4 rounded border border-purple-400"
+        className="w-full bg-purple-200 p-4 rounded border border-purple-400 active:bg-purple-300/30"
         onPress={() => navigation.navigate("Resource")}
       >
         <Text className="text-lg font-semibold">Resources</Text>
@@ -52,14 +52,14 @@ export default function HomeScreen() {
         </Text>
       </Pressable>
       <Pressable
-        className="w-full bg-purple-200 p-4 rounded border border-purple-400"
+        className="w-full bg-purple-200 p-4 rounded border border-purple-400 active:bg-purple-300/30"
         onPress={() => navigation.navigate("Pattern")}
       >
         <Text className="text-lg font-semibold">Pattern Interrupts</Text>
         <Text className="text-sm">Rewiring your mind with something new.</Text>
       </Pressable>
       <Pressable
-        className="w-full bg-purple-200 p-4 rounded border border-purple-400"
+        className="w-full bg-purple-200 p-4 rounded border border-purple-400 active:bg-purple-300/30"
         onPress={() => navigation.navigate("Details")}
       >
         <Text className="text-lg font-semibold">More Resources</Text>
