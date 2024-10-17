@@ -2,11 +2,11 @@ import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "./pages/HomeScreen";
-import AboutScreen from "./pages/AboutScreen.js";
-import CallScreen from "./pages/CallScreen.js";
+import AboutScreen from "./pages/AboutScreen";
+import CallScreen from "./pages/CallScreen";
 import GetHelpScreen from "./pages/HelpScreen";
 import ResourceScreen from "./pages/ResourceScreen";
-import PatternInterruptScreen from "./pages/PatternInterruptScreen.js";
+import PatternInterruptScreen from "./pages/PatternInterruptScreen";
 import DetailsScreen from "./pages/DetailsScreen";
 import "./global.css";
 
@@ -23,15 +23,12 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator
         screenOptions={{
-          tabBarActiveTintColor: "#fcfbfe",
           headerStyle: {
-            backgroundColor: "#fcfbfe",
+            // Use Tailwind classes with Nativewind
+            className: "bg-purple-100",
           },
-          headerShadowV88778isible: false,
-          headerTintColor: "#000",
-          tabBarStyle: {
-            backgroundColor: "#fcfbfe",
-          },
+          headerShadowVisible: false,
+          headerTintColor: "black",
         }}
       >
         <Stack.Screen name="Home" component={HomeScreen} />
@@ -42,7 +39,6 @@ export default function App() {
         <Stack.Screen name="Pattern" component={PatternInterruptScreen} />
         <Stack.Screen name="Details" component={DetailsScreen} />
       </Stack.Navigator>
-      {/* <BottomNavigation /> */}
     </NavigationContainer>
   );
 }
