@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, ScrollView, Image } from "react-native";
+import { View, Text, ScrollView, Image, Pressable } from "react-native";
 import { getHelp } from "../utils/charities.json";
 
 export default function CallScreen() {
@@ -20,22 +20,37 @@ export default function CallScreen() {
         </View>
       </View>
       {/* End of the 911 Card */}
-      {getHelp.map((charity, index) => (
-        <View
-          key={index} // Unique key for each element
-          className="overflow-hidden rounded-lg bg-white shadow-sm mt-10"
-        >
-          <View className="px-4 py-5 sm:p-6 w-full aspect-[16/8] bg-gray-300 flex items-center justify-center">
-            <Text>Visual Media Is Here</Text>
-          </View>
-          <View className="bg-white px-4 py-4 sm:px-6">
-            <Text className="text-xl font-semibold capitalize mb-1">
-              {charity.title}
-            </Text>
-            <Text className="text-sm">{charity.description}</Text>
-          </View>
-        </View>
-      ))}
+      {getHelp.map(
+        (charity, index) =>
+          charity.media ? (
+            <View
+              key={index} // Unique key for each element
+              className="overflow-hidden rounded-lg bg-white shadow-sm mt-10"
+            >
+              <View className="px-4 py-5 sm:p-6 w-full aspect-[16/8] bg-gray-300 flex items-center justify-center">
+                <Text>{charity.media}</Text>
+              </View>
+              <View className="bg-white px-4 py-4 sm:px-6">
+                <Text className="text-xl font-semibold capitalize mb-1">
+                  {charity.title}
+                </Text>
+                <Text className="text-sm">{charity.description}</Text>
+              </View>
+            </View>
+          ) : (
+            <View
+              key={index} // Unique key for each element
+              className="overflow-hidden rounded-lg bg-white shadow-sm mt-10"
+            >
+              <View className="bg-white px-4 py-4 sm:px-6">
+                <Text className="text-xl font-semibold capitalize mb-1">
+                  {charity.title}
+                </Text>
+                <Text className="text-sm">{charity.description}</Text>
+              </View>
+            </View>
+          ) // Return null if charity.media is false
+      )}
     </ScrollView>
   );
 }
