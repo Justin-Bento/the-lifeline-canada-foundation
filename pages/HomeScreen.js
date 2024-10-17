@@ -20,8 +20,8 @@ export default function HomeScreen() {
         className="w-full bg-purple-200 p-5 rounded border border-purple-400"
         onPress={() => navigation.navigate("AboutTCL")}
       >
-        <Text style={Typography.title}>About TLC</Text>
-        <Text style={Typography.body2}>
+        <Text className="text-lg font-semibold">About TLC</Text>
+        <Text className="text-sm">
           Learn About The Lifeline Canada Foundation.
         </Text>
       </Pressable>
@@ -30,8 +30,8 @@ export default function HomeScreen() {
         className="w-full bg-purple-200 p-5 rounded border border-purple-400"
         onPress={() => navigation.navigate("Call")}
       >
-        <Text style={Typography.title}>National Hotlines</Text>
-        <Text style={Typography.body2}>
+        <Text className="text-lg font-semibold">National Hotlines</Text>
+        <Text className="text-sm">
           Speak with a compassionate professional.
         </Text>
       </Pressable>
@@ -39,15 +39,15 @@ export default function HomeScreen() {
         className="w-full bg-purple-200 p-5 rounded border border-purple-400"
         onPress={() => navigation.navigate("GetHelp")}
       >
-        <Text style={Typography.title}>Get Help</Text>
-        <Text style={Typography.body2}>Find the support you need today.</Text>
+        <Text className="text-lg font-semibold">Get Help</Text>
+        <Text className="text-sm">Find the support you need today.</Text>
       </Pressable>
       <Pressable
         className="w-full bg-purple-200 p-5 rounded border border-purple-400"
         onPress={() => navigation.navigate("Resource")}
       >
-        <Text style={Typography.title}>Resources</Text>
-        <Text style={Typography.body2}>
+        <Text className="text-lg font-semibold">Resources</Text>
+        <Text className="text-sm">
           Unlock your power for every level of wellness.
         </Text>
       </Pressable>
@@ -55,17 +55,15 @@ export default function HomeScreen() {
         className="w-full bg-purple-200 p-5 rounded border border-purple-400"
         onPress={() => navigation.navigate("Pattern")}
       >
-        <Text style={Typography.title}>Pattern Interrupts</Text>
-        <Text style={Typography.body2}>
-          Rewiring your mind with something new.
-        </Text>
+        <Text className="text-lg font-semibold">Pattern Interrupts</Text>
+        <Text className="text-sm">Rewiring your mind with something new.</Text>
       </Pressable>
       <Pressable
         className="w-full bg-purple-200 p-5 rounded border border-purple-400"
         onPress={() => navigation.navigate("Details")}
       >
-        <Text style={Typography.title}>More Resources</Text>
-        <Text style={Typography.body2}>Your toolkit for mental wellness.</Text>
+        <Text className="text-lg font-semibold">More Resources</Text>
+        <Text className="text-sm">Your toolkit for mental wellness.</Text>
       </Pressable>
     </View>
   );
