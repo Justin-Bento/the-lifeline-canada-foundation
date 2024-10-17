@@ -6,7 +6,7 @@ import { useNavigation } from "@react-navigation/native";
 export default function HomeScreen() {
   const navigation = useNavigation();
   return (
-    <View className="bg-fuchsia-50/50">
+    <View className="bg-purple-100/20">
       <View className="w-11/12 mx-auto min-h-[87vh] flex items-center justify-center space-y-2">
         <Image
           className="w-full h-16 object-center"

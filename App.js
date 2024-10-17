@@ -13,6 +13,7 @@ import "./global.css";
 const Stack = createNativeStackNavigator();
 
 import { NativeWindStyleSheet } from "nativewind";
+import { StyleSheet } from "react-native";
 
 NativeWindStyleSheet.setOutput({
   default: "native",
@@ -23,10 +24,7 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator
         screenOptions={{
-          headerStyle: {
-            // Use Tailwind classes with Nativewind
-            className: "bg-purple-100",
-          },
+          headerStyle: styles.header,
           headerShadowVisible: false,
           headerTintColor: "black",
         }}
@@ -42,3 +40,10 @@ export default function App() {
     </NavigationContainer>
   );
 }
+
+// Define styles manually for header
+const styles = StyleSheet.create({
+  header: {
+    backgroundColor: "#f3e8ff", // Tailwind 'bg-purple-100' equivalent in hex
+  },
+});
