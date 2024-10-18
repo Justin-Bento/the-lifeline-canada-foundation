@@ -3,7 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "./pages/HomeScreen";
 import AboutScreen from "./pages/AboutScreen";
-import CallScreen from "./pages/CallScreen";
+import NationalHotlineScreen from "./pages/NationalHotlineScreen";
 import GetHelpScreen from "./pages/HelpScreen";
 import ResourceScreen from "./pages/ResourceScreen";
 import PatternInterruptScreen from "./pages/PatternInterruptScreen";
@@ -31,7 +31,10 @@ export default function App() {
       >
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="AboutTCL" component={AboutScreen} />
-        <Stack.Screen name="Call" component={CallScreen} />
+        <Stack.Screen
+          name="National Hotlines"
+          component={NationalHotlineScreen}
+        />
         <Stack.Screen name="GetHelp" component={GetHelpScreen} />
         <Stack.Screen name="Resource" component={ResourceScreen} />
         <Stack.Screen name="Pattern" component={PatternInterruptScreen} />

@@ -6,7 +6,7 @@ function getImagePath(path) {
   return images[path] || null; // Return null if the image path doesn't exist
 }
 
-export default function CallScreen() {
+export default function NationalHotlineScreen() {
   return (
     <ScrollView className="w-11/12 mx-auto py-10">
       <View className="mb-7">
