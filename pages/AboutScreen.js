@@ -1,22 +1,12 @@
 import React from "react";
 import { View, Text, ScrollView, Image } from "react-native";
+import CallImmediately from "../components/CallImmediately";
 
 export default function AboutScreen() {
   return (
     <ScrollView className="my-8">
       <View className="w-11/12 mx-auto space-y-4">
-        <View className="bg-white shadow-sm rounded-md p-4 border border-gray-300 overflow-hidden">
-          <Text className="text-lg font-bold text-center">
-            If you, or Someone you know is in Crisis, Call 911 Immediately!
-          </Text>
-          <Text className="text-base/7 text-center mt-2">
-            The LifeLine Canada is Not a Crisis Hotline.
-          </Text>
-          <Image
-            source={require("../assets/card_image/cbef1c0010018ea502ee11746ce1486b.png")}
-            className="w-full h-52 rounded-lg mb-3.5" // Adjusted based on your style
-          />
-        </View>
+        <CallImmediately />
         <Text className="text-2xl font-medium">About Screen</Text>
         <Text className="text-md leading-5">
           The LifeLine Canada Foundation (TLC) is a registered non-profit
