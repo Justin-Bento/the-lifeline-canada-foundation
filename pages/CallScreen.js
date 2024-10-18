@@ -2,6 +2,10 @@ import React from "react";
 import { View, Text, ScrollView, Image, Pressable } from "react-native";
 import { getHelp } from "../utils/charities.json";
 
+function getImagePath(path) {
+  return images[path] || null; // Return null if the image path doesn't exist
+}
+
 export default function CallScreen() {
   return (
     <ScrollView className="w-11/12 mx-auto py-10">
@@ -29,37 +33,27 @@ export default function CallScreen() {
         </View>
       </View>
       {/* End of the 911 Card */}
-      {getHelp.map(
-        (charity, index) =>
-          charity.media ? (
-            <View
-              key={index} // Unique key for each element
-              className="overflow-hidden rounded-lg bg-white shadow-sm mt-10"
-            >
-              <View className="px-4 py-5 sm:p-6 w-full aspect-[16/8] bg-gray-300 flex items-center justify-center">
-                <Text>{charity.media}</Text>
-              </View>
-              <View className="bg-white px-4 py-4 sm:px-6">
-                <Text className="text-xl font-semibold capitalize mb-1">
-                  {charity.title}
-                </Text>
-                <Text className="text-sm">{charity.description}</Text>
-              </View>
+      {getHelp.map((charity, index) => (
+        <View
+          key={index}
+          className="overflow-hidden rounded-lg bg-white shadow-sm mt-10"
+        >
+          {charity.media && (
+            <View className="px-4 py-5 sm:p-6 w-full aspect-[16/8] bg-gray-300 flex items-center justify-center">
+              <Image
+                className="w-full h-16 object-center"
+                source={charity.media} // Use the static mapping
+              />
             </View>
-          ) : (
-            <View
-              key={index} // Unique key for each element
-              className="overflow-hidden rounded-lg bg-white shadow-sm mt-10"
-            >
-              <View className="bg-white px-4 py-4 sm:px-6">
-                <Text className="text-xl font-semibold capitalize mb-1">
-                  {charity.title}
-                </Text>
-                <Text className="text-sm">{charity.description}</Text>
-              </View>
-            </View>
-          ) // Return null if charity.media is false
-      )}
+          )}
+          <View className="bg-white px-4 py-4 sm:px-6">
+            <Text className="text-xl font-semibold capitalize mb-1">
+              {charity.title}
+            </Text>
+            <Text className="text-sm">{charity.description}</Text>
+          </View>
+        </View>
+      ))}
     </ScrollView>
   );
 }
