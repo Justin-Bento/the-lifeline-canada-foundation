@@ -3,7 +3,7 @@ import { ScrollView, FlatList, View, Text } from "react-native";
 import ContentCard from "../components/ContentCard";
 import { GetHelp } from "../utils/content";
 
-export default function HelpScreen() {
+export default function GetHelpScreen() {
   return (
     <ScrollView className="w-11/12 pt-8 mx-auto">
       <View className="space-y-2">

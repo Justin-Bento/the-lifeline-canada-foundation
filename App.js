@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import HomeScreen from "./pages/HomeScreen";
 import AboutScreen from "./pages/AboutScreen";
 import NationalHotlineScreen from "./pages/NationalHotlineScreen";
-import GetHelpScreen from "./pages/HelpScreen";
+import GetHelpScreen from "./pages/GetHelpScreen";
 import ResourceScreen from "./pages/ResourceScreen";
 import PatternInterruptScreen from "./pages/PatternInterruptScreen";
 import DetailsScreen from "./pages/DetailsScreen";
