@@ -31,7 +31,7 @@ export default function HomeScreen() {
 
         <Pressable
           className="w-full bg-purple-200 p-4 rounded border border-purple-400 active:bg-purple-300/30 active:opacity-75"
-          onPress={() => navigation.navigate("Call")}
+          onPress={() => navigation.navigate("National Hotlines")}
           accessibilityLabel="Contact national hotlines for professional support"
           accessibilityRole="button"
         >
