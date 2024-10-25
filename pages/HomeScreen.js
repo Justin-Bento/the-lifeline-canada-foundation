@@ -7,13 +7,14 @@ export default function HomeScreen() {
   const navigation = useNavigation();
   return (
     <ScrollView className="w-11/12 mx-auto pt-4">
-      <View className="space-y-2 mb-2">
+      <View className="space-y-2 mb-2 flex-1 justify-center items-center ">
         <Image
-          className="w-full h-16 object-center"
+          className="w-full h-24"
           source={require("../assets/lifeline-logo-retina.png")}
           placeholder={false}
+          style={{ resizeMode: "contain" }}
         />
-        <Text className="text-2xl font-medium tracking-tight line-clamp-2">
+        <Text className="text-2xl font-medium tracking-tight line-clamp-2 text-center">
           Not until we are lost do we begin to understand ourselves - Henry T.
         </Text>
       </View>
