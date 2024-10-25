@@ -47,6 +47,6 @@ export default function App() {
 // Define styles manually for header
 const styles = StyleSheet.create({
   header: {
-    backgroundColor: "#f3e8ff", // Tailwind 'bg-purple-100' equivalent in hex
+    backgroundColor: "#fafafa", // Tailwind 'bg-purple-100' equivalent in hex
   },
 });
