@@ -1,6 +1,7 @@
 import React from "react";
 import { ScrollView, FlatList, View, Text } from "react-native";
 import ContentCard from "../components/ContentCard";
+import { GetHelp } from "../utils/content";
 
 export default function HelpScreen() {
   return (
@@ -27,7 +28,7 @@ export default function HelpScreen() {
       {/* End of Pressable Filters Headline */}
       <View className="flex flex-col gap-8">
         <FlatList
-          data={names}
+          data={GetHelp}
           keyExtractor={(item) => item.key}
           renderItem={({ item }) => (
             <ContentCard title={item.headline} supporting={item.overview} />
@@ -37,22 +38,3 @@ export default function HelpScreen() {
     </ScrollView>
   );
 }
-
-const names = [
-  { headline: "Canadian Crisis Centers", overview: "Numbers for Support" },
-  { headline: "United States Crisis Centers", overview: "Numbers for Support" },
-  { headline: "International Crisis Centers", overview: "Numbers for Support" },
-  {
-    headline: "Coping with Suicidal Thoughts",
-    overview: "Find ways to cope with sadness.",
-  },
-  {
-    headline: "How can I help someone",
-    overview: "Find ways to cope with sadness.",
-  },
-  { headline: "myths & facts", overview: "Numbers for Support" },
-  { headline: "E-Counselling", overview: "Numbers for Support" },
-  { headline: "Self Management", overview: "Numbers for Support" },
-  { headline: "Warning Signs", overview: "Numbers for Support" },
-  { headline: "Search for a Professional", overview: "Numbers for Support" },
-];
