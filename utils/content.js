@@ -1,3 +1,47 @@
+const HomeScreenContent = [
+  {
+    key: "About TLC",
+    overview: "the quick brown fox jumps over the lazy dog.",
+    href: "AboutTCL",
+    ay13Label: "Learn more about The Lifeline Canada Foundation.",
+    ay13Role: "button",
+  },
+  {
+    key: "National Hotlines",
+    overview: "the quick brown fox jumps over the lazy dog.",
+    href: "National Hotlines",
+    ay13Label: "Contact national hotlines for professional support",
+    ay13Role: "button",
+  },
+  {
+    key: "Get Help",
+    overview: "the quick brown fox jumps over the lazy dog.",
+    href: "GetHelp",
+    ay13Label: "Find the support you need today",
+    ay13Role: "button",
+  },
+  {
+    key: "Resources",
+    overview: "the quick brown fox jumps over the lazy dog.",
+    href: "Resource",
+    ay13Label: "Explore resources for wellness",
+    ay13Role: "button",
+  },
+  {
+    key: "Pattern Interrupts",
+    overview: "the quick brown fox jumps over the lazy dog.",
+    href: "Pattern",
+    ay13Label: "Learn how to rewire your mind",
+    ay13Role: "button",
+  },
+  {
+    key: "More Resources",
+    overview: "the quick brown fox jumps over the lazy dog.",
+    href: "Details",
+    ay13Label: "Explore additional tools for mental wellness",
+    ay13Role: "button",
+  },
+];
 const GetHelp = [
   { headline: "Canadian Crisis Centers", overview: "Numbers for Support" },
   { headline: "United States Crisis Centers", overview: "Numbers for Support" },
@@ -58,4 +102,4 @@ const resources = [
 ];
 
 // Export the resources array
-export { resources, GetHelp };
+export { HomeScreenContent, resources, GetHelp };
