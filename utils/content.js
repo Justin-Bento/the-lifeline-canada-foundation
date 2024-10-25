@@ -43,6 +43,54 @@ const HomeScreenContent = [
     ay13Role: "button",
   },
 ];
+const NationalHotlines = [
+  {
+    media: "canada-suicide-prevention-service.png",
+    title: "Canadian Crisis Center",
+    description: "Numbers for support",
+  },
+  {
+    media: "suicide-prevention.png",
+    title: "United States Crisis Center",
+    description: "Numbers for support",
+  },
+  {
+    title: "International Crisis Center",
+    description: "Numbers for support",
+  },
+  {
+    title: "International Crisis Center",
+    description: "Numbers for support",
+  },
+  {
+    title: "Coping With Suicidal Thoughts",
+    description: "Numbers for support",
+  },
+  {
+    title: "How can I help someone",
+    description: "Numbers for support",
+  },
+  {
+    title: "Myths & Facts",
+    description: "Numbers for support",
+  },
+  {
+    title: "E-Counseling",
+    description: "Numbers for support",
+  },
+  {
+    title: "Self Management",
+    description: "Numbers for support",
+  },
+  {
+    title: "Warning Signs",
+    description: "Numbers for support",
+  },
+  {
+    title: "Search for a professional",
+    description: "Numbers for support",
+  },
+];
 const GetHelp = [
   { headline: "Canadian Crisis Centers", overview: "Numbers for Support" },
   { headline: "United States Crisis Centers", overview: "Numbers for Support" },
@@ -103,4 +151,4 @@ const resources = [
 ];
 
 // Export the resources array
-export { HomeScreenContent, resources, GetHelp };
+export { HomeScreenContent, NationalHotlines, resources, GetHelp };

@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, ScrollView, Image, Pressable } from "react-native";
-import { getHelp } from "../utils/charities.json";
+import { NationalHotlines } from "../utils/content";
 
 function getImagePath(path) {
   return images[path] || null; // Return null if the image path doesn't exist
@@ -33,7 +33,7 @@ export default function NationalHotlineScreen() {
         </View>
       </View>
       {/* End of the 911 Card */}
-      {getHelp.map((charity, index) => (
+      {NationalHotlines.map((charity, index) => (
         <View
           key={index}
           className="overflow-hidden rounded-lg bg-white shadow-sm mt-10"
