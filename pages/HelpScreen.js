@@ -1,12 +1,5 @@
-import React, { useState } from "react";
-import {
-  ScrollView,
-  FlatList,
-  Pressable,
-  View,
-  Text,
-  Linking,
-} from "react-native";
+import React from "react";
+import { ScrollView, FlatList, View, Text } from "react-native";
 import ContentCard from "../components/ContentCard";
 
 export default function HelpScreen() {
