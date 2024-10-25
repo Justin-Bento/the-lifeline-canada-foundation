@@ -1,5 +1,13 @@
-import React from "react";
-import { View, ScrollView, Text } from "react-native";
+import React, { useState } from "react";
+import {
+  ScrollView,
+  FlatList,
+  Pressable,
+  View,
+  Text,
+  Linking,
+} from "react-native";
+import ContentCard from "../components/ContentCard";
 
 export default function HelpScreen() {
   return (
@@ -20,11 +28,38 @@ export default function HelpScreen() {
           <Text className="p-10">Phase Chat Line</Text>
         </View>
         <View className="flex flex-col items-center">
-          <View className="block bg-purple-300 w-20 h-20 rounded-full"></View>
           <Text className="p-10">Phase Chat Line</Text>
         </View>
       </View>
       {/* End of Pressable Filters Headline */}
+      <View className="flex flex-col gap-8">
+        <FlatList
+          data={names}
+          keyExtractor={(item) => item.key}
+          renderItem={({ item }) => (
+            <ContentCard title={item.headline} supporting={item.overview} />
+          )}
+        />
+      </View>
     </ScrollView>
   );
 }
+
+const names = [
+  { headline: "Canadian Crisis Centers", overview: "Numbers for Support" },
+  { headline: "United States Crisis Centers", overview: "Numbers for Support" },
+  { headline: "International Crisis Centers", overview: "Numbers for Support" },
+  {
+    headline: "Coping with Suicidal Thoughts",
+    overview: "Find ways to cope with sadness.",
+  },
+  {
+    headline: "How can I help someone",
+    overview: "Find ways to cope with sadness.",
+  },
+  { headline: "myths & facts", overview: "Numbers for Support" },
+  { headline: "E-Counselling", overview: "Numbers for Support" },
+  { headline: "Self Management", overview: "Numbers for Support" },
+  { headline: "Warning Signs", overview: "Numbers for Support" },
+  { headline: "Search for a Professional", overview: "Numbers for Support" },
+];
