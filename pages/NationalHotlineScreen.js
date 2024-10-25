@@ -1,6 +1,7 @@
 import React from "react";
-import { View, Text, ScrollView, Image, Pressable } from "react-native";
+import { View, Text, ScrollView, Image, FlatList } from "react-native";
 import { NationalHotlines } from "../utils/content";
+import ContentCard from "../components/ContentCard";
 
 function getImagePath(path) {
   return images[path] || null; // Return null if the image path doesn't exist
@@ -33,27 +34,18 @@ export default function NationalHotlineScreen() {
         </View>
       </View>
       {/* End of the 911 Card */}
-      {NationalHotlines.map((charity, index) => (
-        <View
-          key={index}
-          className="overflow-hidden rounded-lg bg-white shadow-sm mt-10"
-        >
-          {charity.media && (
-            <View className="px-4 py-5 sm:p-6 w-full aspect-[16/8] bg-gray-300 flex items-center justify-center">
-              <Image
-                className="w-full h-16 object-center"
-                source={charity.media} // Use the static mapping
-              />
-            </View>
-          )}
-          <View className="bg-white px-4 py-4 sm:px-6">
-            <Text className="text-xl font-semibold capitalize mb-1">
-              {charity.title}
-            </Text>
-            <Text className="text-sm">{charity.description}</Text>
-          </View>
-        </View>
-      ))}
+      <FlatList
+        data={NationalHotlines}
+        keyExtractor={(item) => item.key}
+        renderItem={({ item }) => (
+          <ContentCard
+            key={item.headline}
+            title={item.headline}
+            supporting={item.overview}
+            image={`/assets/${item.media}`}
+          />
+        )}
+      />
     </ScrollView>
   );
 }

@@ -46,49 +46,49 @@ const HomeScreenContent = [
 const NationalHotlines = [
   {
     media: "canada-suicide-prevention-service.png",
-    title: "Canadian Crisis Center",
-    description: "Numbers for support",
+    headline: "Canadian Crisis Center",
+    overview: "Numbers for support",
   },
   {
     media: "suicide-prevention.png",
-    title: "United States Crisis Center",
-    description: "Numbers for support",
+    headline: "United States Crisis Center",
+    overview: "Numbers for support",
   },
   {
-    title: "International Crisis Center",
-    description: "Numbers for support",
+    headline: "International Crisis Center",
+    overview: "Numbers for support",
   },
   {
-    title: "International Crisis Center",
-    description: "Numbers for support",
+    headline: "International Crisis Center",
+    overview: "Numbers for support",
   },
   {
-    title: "Coping With Suicidal Thoughts",
-    description: "Numbers for support",
+    headline: "Coping With Suicidal Thoughts",
+    overview: "Numbers for support",
   },
   {
-    title: "How can I help someone",
-    description: "Numbers for support",
+    headline: "How can I help someone",
+    overview: "Numbers for support",
   },
   {
-    title: "Myths & Facts",
-    description: "Numbers for support",
+    headline: "Myths & Facts",
+    overview: "Numbers for support",
   },
   {
-    title: "E-Counseling",
-    description: "Numbers for support",
+    headline: "E-Counseling",
+    overview: "Numbers for support",
   },
   {
-    title: "Self Management",
-    description: "Numbers for support",
+    headline: "Self Management",
+    overview: "Numbers for support",
   },
   {
-    title: "Warning Signs",
-    description: "Numbers for support",
+    headline: "Warning Signs",
+    overview: "Numbers for support",
   },
   {
-    title: "Search for a professional",
-    description: "Numbers for support",
+    headline: "Search for a professional",
+    overview: "Numbers for support",
   },
 ];
 const GetHelp = [
