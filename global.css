@@ -1,9 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  .wrapper {
-    @apply w-11/12 mx-auto pt-8 flex flex-1 flex-col; /* Adding 'flex' to initiate the flex layout */
-  }
-}
