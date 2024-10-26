@@ -1,11 +1,13 @@
 import React from "react";
-import { View, Text, ScrollView } from "react-native";
+import { View, Text, ScrollView, Image } from "react-native";
 import CallImmediately from "@/components/CallImmediately";
+import CompanyLogo from "@/components/CompanyLogo";
 
 export default function AboutScreen() {
   return (
     <ScrollView className="my-8">
       <View className="w-11/12 mx-auto max-w-[360] space-y-4">
+        <CompanyLogo />
         <CallImmediately />
         <Text className="text-2xl font-medium">About Screen</Text>
         <Text className="text-md leading-5">
