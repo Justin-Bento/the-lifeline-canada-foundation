@@ -149,6 +149,77 @@ const resources = [
   { headline: "Workplace Employers", overview: "Numbers for Support" },
   { headline: "Resource Organizations", overview: "Number for Support" },
 ];
-
+const PatternInterrupts = [
+  {
+    title: "Acts Of Kindness",
+    overview: "",
+  },
+  {
+    title: "Comedy",
+    overview: "",
+  },
+  {
+    title: "Coping Mechanisms",
+    overview: "",
+  },
+  {
+    title: "Emotional Support Videos",
+    overview: "",
+  },
+  {
+    title: "Helpful Movies",
+    overview: "",
+  },
+  {
+    title: "Image Gallery",
+    overview: "",
+  },
+  {
+    title: "Improve Your Mood",
+    overview: "",
+  },
+  {
+    title: "Inspiring Videos",
+    overview: "",
+  },
+  {
+    title: "Interactive Mind",
+    overview: "",
+  },
+  {
+    title: "Life Changing Books",
+    overview: "",
+  },
+  {
+    title: "Mental Health Apps",
+    overview: "",
+  },
+  {
+    title: "Movies of Inspiration",
+    overview: "",
+  },
+  {
+    title: "Self Management",
+    overview: "",
+  },
+  {
+    title: "Uplifting Music Videos",
+    overview: "",
+  },
+  {
+    title: "Transform Negative Thoughts",
+    overview: "",
+  },
+  {
+    title: "Words of Wisdom",
+    overview: "Inspirational Quotes.",
+  },
+];
 // Export the resources array
-export { HomeScreenContent, NationalHotlines, resources, GetHelp };
+export {
+  HomeScreenContent,
+  PatternInterrupts,
+  NationalHotlines,
+  resources,
+  GetHelp,
+};
