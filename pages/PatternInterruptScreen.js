@@ -6,7 +6,7 @@ import { PatternInterrupts } from "../utils/content";
 
 export default function PatternInterruptScreen() {
   return (
-    <ScrollView className="w-11/12 pt-8 mx-auto flex-1 flex-col space-y-4">
+    <ScrollView className="w-11/12 mx-auto max-w-[360] pt-8 flex-1 flex-col space-y-4">
       <View>
         <Headline
           title="Pattern Interrupts"

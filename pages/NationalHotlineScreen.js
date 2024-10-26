@@ -9,7 +9,7 @@ function getImagePath(path) {
 
 export default function NationalHotlineScreen() {
   return (
-    <ScrollView className="w-11/12 mx-auto py-10">
+    <ScrollView className="w-11/12 mx-auto max-w-[360] py-10">
       <View className="mb-7">
         <Text className="text-4xl font-medium text-start">
           National Hotlines
