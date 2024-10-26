@@ -36,9 +36,9 @@ const HomeScreenContent = [
     ay13Role: "button",
   },
   {
-    key: "More Resources",
+    key: "Self-Care Hub",
     overview: "Explore additional tools for mental wellness.",
-    href: "Details",
+    href: "Self-Care Hub",
     ay13Label: "Explore additional tools for mental wellness",
     ay13Role: "button",
   },

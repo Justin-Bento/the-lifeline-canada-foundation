@@ -2,7 +2,7 @@ import React from "react";
 import { ScrollView, View, Text } from "react-native";
 import Headline from "../components/Headline";
 
-export default function DetailsScreen() {
+export default function SelfCareHubScreen() {
   return (
     <ScrollView className="w-11/12 mx-auto pt-8 flex-1 flex-col space-y-4">
       <Headline

@@ -7,7 +7,7 @@ import NationalHotlineScreen from "./pages/NationalHotlineScreen";
 import GetHelpScreen from "./pages/GetHelpScreen";
 import ResourceScreen from "./pages/ResourceScreen";
 import PatternInterruptScreen from "./pages/PatternInterruptScreen";
-import DetailsScreen from "./pages/DetailsScreen";
+import SelfCareHubScreen from "./pages/SelfCareHubScreen";
 import "./global.css";
 
 const Stack = createNativeStackNavigator();
@@ -38,7 +38,7 @@ export default function App() {
         <Stack.Screen name="GetHelp" component={GetHelpScreen} />
         <Stack.Screen name="Resource" component={ResourceScreen} />
         <Stack.Screen name="Pattern" component={PatternInterruptScreen} />
-        <Stack.Screen name="Details" component={DetailsScreen} />
+        <Stack.Screen name="Self-Care Hub" component={SelfCareHubScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
