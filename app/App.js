@@ -8,7 +8,7 @@ import GetHelpScreen from "./pages/GetHelpScreen";
 import ResourceScreen from "./pages/ResourceScreen";
 import PatternInterruptScreen from "./pages/PatternInterruptScreen";
 import SelfCareHubScreen from "./pages/SelfCareHubScreen";
-import "./global.css";
+import "../global.css";
 
 const Stack = createNativeStackNavigator();
 
