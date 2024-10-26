@@ -1,50 +1,95 @@
-# Welcome to your Expo app 👋
+# The LifeLine Canada Foundation aka TLC
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+The LifeLine Canada Foundation (or TLC) is a registered non-profit, committed to positive mental health and suicide prevention & awareness and is constantly developing new initiatives in support of these goals. The LifeLine Canada Foundation is not a crisis hotline. If in Crisis, call or text 988 for Canada’s new suicide prevention hotline. If you or someone you know is in danger of hurting themselves or others, call 911 immediately. See our directory of [mental health crisis support](https://thelifelinecanada.ca/incrisisneedhelp/) in your area.
 
-## Get started
+> **Note: This app is currently in the development stage. Stay tuned for updates!**
 
-1. Install dependencies
+![The Lifeline Canada Main Image](https://thelifelinecanada.ca/wp-content/uploads/2023/11/LG.jpg)
 
-   ```bash
-   npm install
-   ```
+## Installation
 
-2. Start the app
+Before you install The Lifeline App, ensure that you have [Node.js](https://nodejs.org/en/download/package-manager) installed on your machine.
 
-   ```bash
-    npx expo start
-   ```
+> **Note:** I recommend using `asdf` to install Node.js so that you can easily manage different versions of Node.js and Expo for this project.
 
-In the output, you'll find options to open the app in a
+### Step 1: Set Up a Development Directory (Optional)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+If you're using Linux or WSL, you might want to create a dedicated directory for all your development projects:
 
 ```bash
-npm run reset-project
+mkdir development
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+head into the development direcotry
 
-## Learn more
+```bash
+cd development
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### Step 2: Fork the Repository
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Before cloning the repository, it's a good practice to fork it to your own GitHub account. This will allow you to make changes in your own copy of the repository without affecting the original one.
 
-## Join the community
+1. Go to the [Lifeline App GitHub repository](https://github.com/Justin-Bento/the-lifeline-canada-foundation).
+2. Click the "Fork" button at the top right of the repository page.
+3. Once the fork is created, you'll have your own copy of the repository under your GitHub account.
 
-Join our community of developers creating universal apps.
+### Step 2: Clone the Repository
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Navigate to the development or your preferred directory, then clone the repository:
+
+```bash
+git clone git@github.com:Justin-Bento/the-lifeline-canada-foundation.git
+cd the-lifeline-canada-foundation
+```
+
+### Step 3: Install Dependencies
+
+Navigate to the project folder and install the necessary dependencies:
+
+```bash
+cd the-lifeline-canada-foundation
+npm install
+```
+
+### Step 4: Start the App
+
+Ensure you have the [Expo Go app](https://expo.dev/client) installed on your phone. Then plug in your phone, and run the following command to start the app:
+
+```bash
+npx expo start
+```
+
+## Usage
+
+The LifeLine App provides awareness education and prevention strategies to guide people in crisis all across the Globe. It serves as a centralized hub that connect people with accredited resources in Canada and throughout the world some additional features of the application includes:
+
+- One touch dialing from anywhere in Canada
+- Fast and easy access to crisis centres all across Canada
+- Available Resources
+- Connect someone in crisis with the support and guidance they need 24/7
+- Aid in positive mental well being
+- Aid in suicide prevention
+- Build suicide awareness
+- Help guide loved ones left behind after a suicide
+- And much more….
+
+**The LifeLine App also includes direct access to:**
+
+- Online Chat, Text and Email Crisis Help
+- Canadian Crisis Line Centres Mapping
+- Self Management tools
+- E-Counselling
+- Pattern Interrupts
+- Mental Health Apps from across the Globe
+- Attempt Survivor Support Access
+- Canadian and Global Online Resources
+- International Crisis Lines
+- Other available Resources
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
