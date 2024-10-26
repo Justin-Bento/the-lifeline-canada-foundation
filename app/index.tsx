@@ -1,10 +1,9 @@
-import React from "react";
 import { ScrollView, Text } from "react-native";
 
-export default function index() {
+export default function Page() {
   return (
-    <ScrollView className="">
-      <Text className="">Welcome, Home Page!</Text>
+    <ScrollView className="w-11/12 mx-auto">
+      <Text>Top-level page</Text>
     </ScrollView>
   );
 }
