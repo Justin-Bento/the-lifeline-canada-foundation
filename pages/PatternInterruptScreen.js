@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollView, View, Text } from "react-native";
+import { ScrollView, View } from "react-native";
 import Headline from "../components/Headline";
 
 export default function PatternInterruptScreen() {
