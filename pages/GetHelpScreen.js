@@ -5,7 +5,7 @@ import { GetHelp } from "../utils/content";
 
 export default function GetHelpScreen() {
   return (
-    <ScrollView className="w-11/12 pt-8 mx-auto">
+    <ScrollView className="w-11/12 pt-8 mx-auto flex-1 flex-col space-y-4">
       <View className="space-y-2">
         <Text className="text-3xl font-medium tracking-tight line-clamp-2">
           Get Help
@@ -16,25 +16,29 @@ export default function GetHelpScreen() {
         </Text>
       </View>
       {/* End of Headline */}
-      <View className="flex flex-row">
-        <View className="flex flex-col items-center">
-          <View className="block bg-purple-300 w-20 h-20 rounded-full"></View>
-          <Text className="p-10">Phase Chat Line</Text>
+      <View className="flex-row w-full space-x-4 justify-between">
+        <View className="flex-1 items-center space-y-2">
+          <View className="w-20 aspect-square bg-gray-300 rounded-full border-2 border-offset-2" />
+          <Text>Phase Chat Line</Text>
         </View>
-        <View className="flex flex-col items-center">
-          <Text className="p-10">Phase Chat Line</Text>
+        <View className="flex-1 items-center space-y-2">
+          <View className="w-20 aspect-square bg-gray-300 rounded-full border-2 border-offset-2" />
+          <Text>Phase Chat Line</Text>
+        </View>
+        <View className="flex-1 items-center space-y-2">
+          <View className="w-20 aspect-square bg-gray-300 rounded-full border-2 border-offset-2" />
+          <Text>Phase Chat Line</Text>
         </View>
       </View>
       {/* End of Pressable Filters Headline */}
-      <View className="flex flex-col gap-8">
-        <FlatList
-          data={GetHelp}
-          keyExtractor={(item) => item.key}
-          renderItem={({ item }) => (
-            <ContentCard title={item.headline} supporting={item.overview} />
-          )}
-        />
-      </View>
+      <FlatList
+        data={GetHelp}
+        keyExtractor={(item) => item.key}
+        renderItem={({ item }) => (
+          <ContentCard title={item.headline} supporting={item.overview} />
+        )}
+        contentContainerStyle={{ paddingVertical: 8, gap: 8 }} // To add space between cards
+      />
     </ScrollView>
   );
 }
