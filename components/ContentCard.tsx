@@ -20,7 +20,7 @@ export default function ContentCard({
       onPressOut={handlePressOut}
       onPress={openURL}
       style={{ opacity }}
-      className="bg-white border border-gray-300 rounded-lg my-2 last:mb-32"
+      className="bg-white border border-gray-300 rounded-lg my-2"
     >
       <View className="w-full h-60 bg-gray-200">
         {image ? (
