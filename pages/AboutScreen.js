@@ -5,7 +5,7 @@ import CallImmediately from "../components/CallImmediately";
 export default function AboutScreen() {
   return (
     <ScrollView className="my-8">
-      <View className="w-11/12 mx-auto max-w-[360] space-y-4">
+      <View className="w-11/12 mx-auto space-y-4">
         <CallImmediately />
         <Text className="text-2xl font-medium">About Screen</Text>
         <Text className="text-md leading-5">

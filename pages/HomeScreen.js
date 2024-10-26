@@ -6,7 +6,7 @@ import { HomeScreenContent } from "../utils/content";
 export default function HomeScreen() {
   const navigation = useNavigation();
   return (
-    <ScrollView className="w-11/12 mx-auto max-w-[360] pt-4">
+    <ScrollView className="w-11/12 mx-auto pt-4">
       <View className="space-y-2 mb-2 flex-1 justify-center items-center ">
         <Image
           className="w-full h-24"
