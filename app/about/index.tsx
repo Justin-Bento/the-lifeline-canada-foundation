@@ -1,9 +1,12 @@
-import { ScrollView, Text } from "react-native";
+import { ScrollView } from "react-native";
+import CallImmediately from "@/components/CallImmediately";
+import Headline from "@/components/Headline";
 
 export default function Page() {
   return (
     <ScrollView className="w-11/12 mx-auto">
-      <Text>Welcome, About page!</Text>
+      <CallImmediately />
+      <Headline title="Welcome, About page!" />
     </ScrollView>
   );
 }
