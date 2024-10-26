@@ -1,9 +1,9 @@
 import { ScrollView, Text } from "react-native";
 
-export default function Page() {
+export default function GetSupportPage() {
   return (
     <ScrollView className="w-11/12 mx-auto">
-      <Text>Welcome, Resources page!</Text>
+      <Text>Welcome, National Hotlines page!</Text>
     </ScrollView>
   );
 }

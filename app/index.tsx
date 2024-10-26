@@ -9,10 +9,9 @@ import {
 } from "react-native";
 import { HomeScreenContentItem } from "../types";
 import { HomeScreenContent } from "../assets/content";
-import { useNavigation, NavigationProp } from "@react-navigation/native";
+import { Link } from "expo-router";
 
 export default function Index() {
-  const navigation = useNavigation<NavigationProp<any>>();
   return (
     <ScrollView className="wrapper center-content space-y-4">
       <Image
@@ -28,17 +27,18 @@ export default function Index() {
         data={HomeScreenContent}
         keyExtractor={(item) => item.key}
         renderItem={({ item }) => (
-          <Pressable
-            accessibilityLabel={item.ay13Label}
-            accessibilityRole="button"
-            onPress={() => navigation.navigate(item.href)}
-            className="w-full bg-purple-200 p-4 rounded border border-purple-400 active:bg-purple-300/30 active:opacity-75 my-1.5"
-          >
-            <Text className="text-xl font-semibold leading-none tracking-tight">
-              {item.key}
-            </Text>
-            <Text className="text-sm text-gray-700">{item.overview}</Text>
-          </Pressable>
+          <Link href={`/${item.href}`} asChild>
+            <Pressable
+              accessibilityLabel={item.ay13Label}
+              accessibilityRole="button"
+              className="w-full bg-purple-200 p-4 rounded border border-purple-400 active:bg-purple-300/30 active:opacity-75 my-1.5"
+            >
+              <Text className="text-xl font-semibold leading-none tracking-tight">
+                {item.key}
+              </Text>
+              <Text className="text-sm text-gray-700">{item.overview}</Text>
+            </Pressable>
+          </Link>
         )}
       />
     </ScrollView>
