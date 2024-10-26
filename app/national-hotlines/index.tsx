@@ -3,6 +3,7 @@ import { View, Text, ScrollView, Image, FlatList } from "react-native";
 import { NationalHotlines } from "@/assets/content";
 import ContentCard from "@/components/ContentCard";
 import CallImmediately from "@/components/CallImmediately";
+import CompanyLogo from "@/components/CompanyLogo";
 
 // function getImagePath(path: string): string | null {
 //   return images[path] || null;
@@ -11,6 +12,7 @@ import CallImmediately from "@/components/CallImmediately";
 export default function NationalHotlineScreen() {
   return (
     <ScrollView className="wrapper">
+      <CompanyLogo />
       <View className="mb-7">
         <Text className="text-4xl font-medium text-start">
           National Hotlines

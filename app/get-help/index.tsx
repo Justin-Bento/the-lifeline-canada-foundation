@@ -2,11 +2,13 @@ import React from "react";
 import { ScrollView, FlatList, View, Text } from "react-native";
 import ContentCard from "@/components/ContentCard";
 import { GetHelp } from "@/assets/content";
+import CompanyLogo from "@/components/CompanyLogo";
 
 export default function GetHelpScreen() {
   return (
     <ScrollView className="w-11/12 mx-auto max-w-[360] pt-8 flex-1 flex-col space-y-4">
       <View className="space-y-2">
+        <CompanyLogo />
         <Text className="text-3xl font-medium tracking-tight line-clamp-2">
           Get Help
         </Text>
