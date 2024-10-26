@@ -7,7 +7,7 @@ export default function Headline({ title, supporting }) {
       <Text className="scroll-m-20 text-3xl font-semibold tracking-tight">
         {title || "Resources"}
       </Text>
-      <Text className="">
+      <Text className="text-base leading-6">
         {supporting ||
           `Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus natus perferendis rerum nobis fugiat eum dolor dolorem, exercitationem nostrum aperiam, quos odit in, necessitatibus dolorum odio porro deserunt.`}
       </Text>
