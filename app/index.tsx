@@ -1,22 +1,27 @@
 import React from "react";
-import { ScrollView, FlatList, View, Text, Pressable } from "react-native";
-import { useNavigation, NavigationProp } from "@react-navigation/native";
-import { Image } from "expo-image";
-import { HomeScreenContent } from "../assets/content";
+import {
+  ScrollView,
+  Text,
+  View,
+  Image,
+  FlatList,
+  Pressable,
+} from "react-native";
 import { HomeScreenContentItem } from "../types";
+import { HomeScreenContent } from "../assets/content";
+import { useNavigation, NavigationProp } from "@react-navigation/native";
 
-export default function HomeScreen() {
+export default function Index() {
   const navigation = useNavigation<NavigationProp<any>>();
-
   return (
-    <ScrollView className="w-11/12 mx-auto max-w-[360] pt-4">
-      <View className="space-y-2 mb-2 flex-1 justify-center items-center ">
+    <ScrollView className="w-11/12 mx-auto">
+      <View>
         <Image
-          className="w-full h-24"
           source={require("../assets/images/lifeline-logo-retina.png")}
-          placeholder={""}
-          contentFit="contain"
+          style={{ width: "100%", height: 120 }}
+          resizeMode="contain" // This replaces "objectFit: 'contain'"
         />
+
         <Text className="text-2xl font-medium tracking-tight line-clamp-2 text-center">
           Not until we are lost do we begin to understand ourselves - Henry T.
         </Text>
