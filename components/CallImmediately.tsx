@@ -13,7 +13,11 @@ export default function CallImmediately() {
         <Text className="text-xs text-gray-500 text-center">
           The LifeLine Canada is Not a Crisis Hotline.
         </Text>
-        <Image source={cardImage} className="w-80 h-60" />
+        <Image
+          source={cardImage}
+          resizeMode="contain"
+          style={[{ width: "100%" }, { height: 180 }]}
+        />
       </View>
     </View>
   );
