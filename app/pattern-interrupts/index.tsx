@@ -4,6 +4,7 @@ import Headline from "@/components/Headline";
 import ContentCard from "@/components/ContentCard";
 import { PatternInterrupts } from "@/assets/content";
 import CompanyLogo from "@/components/CompanyLogo";
+import { CreateSlug } from "@/constants/utils";
 
 export default function PatternInterruptScreen() {
   return (
@@ -19,7 +20,11 @@ export default function PatternInterruptScreen() {
         data={PatternInterrupts}
         keyExtractor={(item) => item.title}
         renderItem={({ item }) => (
-          <ContentCard title={item.title} supporting={item.overview} />
+          <ContentCard
+            title={item.title}
+            supporting={item.overview}
+            href={`/pattern-interrupts/${CreateSlug(item.title)}`}
+          />
         )}
         contentContainerStyle={{ paddingVertical: 8, gap: 8 }} // To add space between cards
       />
