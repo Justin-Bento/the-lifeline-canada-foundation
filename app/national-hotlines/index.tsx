@@ -4,6 +4,7 @@ import { NationalHotlines } from "@/assets/content";
 import ContentCard from "@/components/ContentCard";
 import CallImmediately from "@/components/CallImmediately";
 import CompanyLogo from "@/components/CompanyLogo";
+import { CreateSlug } from "@/constants/utils";
 
 // function getImagePath(path: string): string | null {
 //   return images[path] || null;
@@ -33,6 +34,7 @@ export default function NationalHotlineScreen() {
             title={item.headline}
             supporting={item.overview}
             image={`/assets/images/${item.media}`}
+            href={`/national-hotlines/${CreateSlug(item.headline)}`}
           />
         )}
       />
