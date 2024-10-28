@@ -2,9 +2,40 @@
 
 The LifeLine Canada Foundation (or TLC) is a registered non-profit, committed to positive mental health and suicide prevention & awareness and is constantly developing new initiatives in support of these goals. The LifeLine Canada Foundation is not a crisis hotline. If in Crisis, call or text 988 for Canada’s new suicide prevention hotline. If you or someone you know is in danger of hurting themselves or others, call 911 immediately. See our directory of [mental health crisis support](https://thelifelinecanada.ca/incrisisneedhelp/) in your area.
 
-> **Note: This app is currently in the development stage. Stay tuned for updates!**
-
 ![The Lifeline Canada Main Image](https://thelifelinecanada.ca/wp-content/uploads/2023/11/LG.jpg)
+
+## Application Purpose
+
+The LifeLine App is the National free Suicide Prevention and Awareness App that offers access and guidance to support for those suffering in crisis and those who have suffered the devastating loss of a loved one from suicide. 
+
+The LifeLine App also provides awareness education and prevention strategies to guide people in crisis all across the Globe. The App was developed as a centralized hub to connect people with accredited resources in Canada and throughout the world.
+
+The LifeLine App has several main goals:
+
+- One touch dialing from anywhere in Canada
+- Fast and easy access to crisis centres all across Canada
+- Available Resources
+- Connect someone in crisis with the support and guidance they need 24/7
+- Aid in positive mental well being
+- Aid in suicide prevention
+- Build suicide awareness
+- Help guide loved ones left behind after a suicide
+- And much more….
+
+The LifeLine App also includes direct access to:
+
+- Online Chat, Text and Email Crisis Help
+- Canadian Crisis Line Centres Mapping
+- Self Management tools
+- E-Counselling
+- Pattern Interrupts
+- Mental Health Apps from across the Globe
+- Attempt Survivor Support Access
+- Canadian and Global Online Resources
+- International Crisis Lines
+- Other available Resources
+
+> **Note: This app is currently in the development stage!**
 
 ## Installation
 
@@ -59,33 +90,6 @@ Ensure you have the [Expo Go app](https://expo.dev/client) installed on your pho
 ```bash
 npx expo start
 ```
-
-## Usage
-
-The LifeLine App provides awareness education and prevention strategies to guide people in crisis all across the Globe. It serves as a centralized hub that connect people with accredited resources in Canada and throughout the world some additional features of the application includes:
-
-- One touch dialing from anywhere in Canada
-- Fast and easy access to crisis centres all across Canada
-- Available Resources
-- Connect someone in crisis with the support and guidance they need 24/7
-- Aid in positive mental well being
-- Aid in suicide prevention
-- Build suicide awareness
-- Help guide loved ones left behind after a suicide
-- And much more….
-
-**The LifeLine App also includes direct access to:**
-
-- Online Chat, Text and Email Crisis Help
-- Canadian Crisis Line Centres Mapping
-- Self Management tools
-- E-Counselling
-- Pattern Interrupts
-- Mental Health Apps from across the Globe
-- Attempt Survivor Support Access
-- Canadian and Global Online Resources
-- International Crisis Lines
-- Other available Resources
 
 ## Contributing
 
