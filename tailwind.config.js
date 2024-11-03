@@ -1,17 +1,28 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  // NOTE: Update this to include the paths to all of your component files.
+import colors from "tailwindcss/colors";
+import nativewindPreset from "nativewind/preset";
+
+export default {
   content: [
     "./app/**/*.{js,jsx,ts,tsx}",
     "./components/**/*.{js,jsx,ts,tsx}",
-    // ...
+    // Additional paths if necessary
   ],
   presets: [
-    require("nativewind/preset"),
-    // ...
+    nativewindPreset,
+    // Additional presets if necessary
   ],
   theme: {
-    extend: {},
+    colors: {
+      white: colors.gray[50],
+      black: colors.gray[950],
+      gray: colors.zinc,
+      primary: "##9b51e0",
+      secondary: "#89009b",
+      accent: "#d06cc8",
+      transparent: "transparent",
+      current: "currentColor",
+    },
   },
   plugins: [],
 };
