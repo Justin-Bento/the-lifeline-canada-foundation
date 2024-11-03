@@ -22,9 +22,7 @@ export default function Index() {
               accessibilityRole="button"
               className="w-full bg-purple-200 p-4 rounded border border-purple-400 active:bg-purple-300/30 active:opacity-75 my-1.5"
             >
-              <Text className="text-xl font-semibold leading-none tracking-tight">
-                {item.key}
-              </Text>
+              <Text className="text-xl font-semibold leading-none tracking-tight">{item.key}</Text>
               <Text className="text-sm text-gray-700">{item.overview}</Text>
             </Pressable>
           </Link>
