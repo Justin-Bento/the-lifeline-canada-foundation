@@ -4,6 +4,8 @@ The LifeLine Canada Foundation (or TLC) is a registered non-profit, committed to
 
 ![The Lifeline Canada Main Image](https://thelifelinecanada.ca/wp-content/uploads/2023/11/LG.jpg)
 
+- Prodject has been outsourced due to project being too advanced for my current knowledge. 
+
 ## Application Purpose
 
 The LifeLine App is the National free Suicide Prevention and Awareness App that offers access and guidance to support for those suffering in crisis and those who have suffered the devastating loss of a loved one from suicide. 
