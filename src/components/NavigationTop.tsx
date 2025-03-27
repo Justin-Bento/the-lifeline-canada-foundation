@@ -8,12 +8,14 @@ export default function NavigationTop() {
   return (
     <header>
       <Card className="rounded-none p-0">
-        <CardHeader className="bg-purple-500 p-2 flex items-center justify-end px-10">
-          <p className="text-white text-sm">English Support</p>
-          <p className="text-white text-sm">French Support</p>
-          <p className="text-white text-sm">Site Map</p>
+        <CardHeader className="bg-purple-500 p-2">
+          <div className="container mx-auto lg:px-6 flex items-center justify-end px-10">
+            <p className="text-white text-sm">English Support</p>
+            <p className="text-white text-sm">French Support</p>
+            <p className="text-white text-sm">Site Map</p>
+          </div>
         </CardHeader>
-        <CardContent className="flex items-center justify-between pb-6">
+        <CardContent className="container mx-auto lg:px-6 flex items-center justify-between pb-6">
           <Image
             className="dark:invert"
             src="/media/logo/theLifeLineApp.png"
