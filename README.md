@@ -1,101 +1,36 @@
-# The LifeLine Canada Foundation aka TLC
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-The LifeLine Canada Foundation (or TLC) is a registered non-profit, committed to positive mental health and suicide prevention & awareness and is constantly developing new initiatives in support of these goals. The LifeLine Canada Foundation is not a crisis hotline. If in Crisis, call or text 988 for Canada’s new suicide prevention hotline. If you or someone you know is in danger of hurting themselves or others, call 911 immediately. See our directory of [mental health crisis support](https://thelifelinecanada.ca/incrisisneedhelp/) in your area.
+## Getting Started
 
-![The Lifeline Canada Main Image](https://thelifelinecanada.ca/wp-content/uploads/2023/11/LG.jpg)
-
-- Prodject has been outsourced due to project being too advanced for my current knowledge. 
-
-## Application Purpose
-
-The LifeLine App is the National free Suicide Prevention and Awareness App that offers access and guidance to support for those suffering in crisis and those who have suffered the devastating loss of a loved one from suicide. 
-
-The LifeLine App also provides awareness education and prevention strategies to guide people in crisis all across the Globe. The App was developed as a centralized hub to connect people with accredited resources in Canada and throughout the world.
-
-The LifeLine App has several main goals:
-
-- One touch dialing from anywhere in Canada
-- Fast and easy access to crisis centres all across Canada
-- Available Resources
-- Connect someone in crisis with the support and guidance they need 24/7
-- Aid in positive mental well being
-- Aid in suicide prevention
-- Build suicide awareness
-- Help guide loved ones left behind after a suicide
-- And much more….
-
-The LifeLine App also includes direct access to:
-
-- Online Chat, Text and Email Crisis Help
-- Canadian Crisis Line Centres Mapping
-- Self Management tools
-- E-Counselling
-- Pattern Interrupts
-- Mental Health Apps from across the Globe
-- Attempt Survivor Support Access
-- Canadian and Global Online Resources
-- International Crisis Lines
-- Other available Resources
-
-> **Note: This app is currently in the development stage!**
-
-## Installation
-
-Before you install The Lifeline App, ensure that you have [Node.js](https://nodejs.org/en/download/package-manager) installed on your machine.
-
-> **Note:** I recommend using `asdf` to install Node.js so that you can easily manage different versions of Node.js and Expo for this project.
-
-### Step 1: Set Up a Development Directory (Optional)
-
-If you're using Linux or WSL, you might want to create a dedicated directory for all your development projects:
+First, run the development server:
 
 ```bash
-mkdir development
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-head into the development direcotry
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```bash
-cd development
-```
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### Step 2: Fork the Repository
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-Before cloning the repository, it's a good practice to fork it to your own GitHub account. This will allow you to make changes in your own copy of the repository without affecting the original one.
+## Learn More
 
-1. Go to the [Lifeline App GitHub repository](https://github.com/Justin-Bento/the-lifeline-canada-foundation).
-2. Click the "Fork" button at the top right of the repository page.
-3. Once the fork is created, you'll have your own copy of the repository under your GitHub account.
+To learn more about Next.js, take a look at the following resources:
 
-### Step 2: Clone the Repository
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Navigate to the development or your preferred directory, then clone the repository:
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-```bash
-git clone git@github.com:Justin-Bento/the-lifeline-canada-foundation.git
-cd the-lifeline-canada-foundation
-```
+## Deploy on Vercel
 
-### Step 3: Install Dependencies
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Navigate to the project folder and install the necessary dependencies:
-
-```bash
-cd the-lifeline-canada-foundation
-npm install
-```
-
-### Step 4: Start the App
-
-Ensure you have the [Expo Go app](https://expo.dev/client) installed on your phone. Then plug in your phone, and run the following command to start the app:
-
-```bash
-npx expo start
-```
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
