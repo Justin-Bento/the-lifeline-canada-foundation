@@ -1,21 +1,13 @@
 import { Button } from "@/components/ui/button";
 import {
   Card,
-  CardAction,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import { resourceAid } from "@/lib/data";
-import {
-  FlagTriangleRight,
-  HeartHandshake,
-  HeartPulse,
-  PawPrint,
-  Smartphone,
-} from "lucide-react";
+import { HeartHandshake, HeartPulse, PawPrint } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -40,13 +32,8 @@ export default function Home() {
               Canada Foundation.
             </p>
             <div className="flex items-center gap-6">
-              <Button className="bg-purple-700 hover:bg-purple-800 shadow-none">
-                Start Reading &rarr;
-              </Button>
-              <Button
-                variant="secondary"
-                className="bg-purple-100 hover:bg-purple-200 shadow-none"
-              >
+              <Button className="shadow-none">Start Reading &rarr;</Button>
+              <Button variant="secondary" className="shadow-none">
                 Get Involved &rarr;
               </Button>
             </div>
@@ -100,6 +87,16 @@ export default function Home() {
               );
             })}
           </ul>
+          <Button
+            size="lg"
+            variant="outline"
+            className="relative isolate shadow-none"
+          >
+            <Link href="#">
+              <span className="absoloute z-10"></span>
+              View More
+            </Link>
+          </Button>
         </section>
         <section className="space-y-3">
           <Card className="bg-purple-100 rounded-2xl shadow-none border-none">
@@ -127,23 +124,71 @@ export default function Home() {
         </section>
         <section className="space-y-16">
           <div className="space-y-4">
-            <Smartphone className="text-purple-500 size-8" />
             <h2 className="scroll-m-20 text-4xl font-bold tracking-tight capitalize">
               Projects Going On The Lifeline Canada Foundation
             </h2>
           </div>
-          <div className="space-y-4">
-            <HeartPulse className="text-purple-500 size-6" />
-            <h3 className="scroll-m-20 text-3xl font-semibold tracking-tight transition-colors first:mt-0 capitalize">
-              The Lifeline App
-            </h3>
-          </div>
-          <div className="space-y-4">
-            <PawPrint className="text-purple-500 size-6" />
-            <h3 className="scroll-m-20 text-3xl font-semibold tracking-tight transition-colors first:mt-0 capitalize">
-              Companion Paws Canada
-            </h3>
-          </div>
+          <ul className="grid grid-cols-2 gap-12">
+            <li>
+              <Card>
+                <CardContent className="p-8 px-12 space-y-4">
+                  <HeartPulse className="text-purple-500 size-6" />
+                  <h3 className="scroll-m-20 text-3xl font-semibold tracking-tight transition-colors first:mt-0 capitalize">
+                    The Lifeline App
+                  </h3>
+                  <p className="line-clamp-3">
+                    The LifeLine App is a free Suicide Prevention and Awareness
+                    App that offers access and guidance to support for those
+                    suffering in crisis, and those who have suffered the
+                    devastating loss of a loved one from suicide, as well as for
+                    those struggling with any degree of anxiety or depression.
+                  </p>
+                  <ul className="list-disc list-inside pl-4">
+                    <li>One touch dialing from anywhere in Canada.</li>
+                    <li className="">
+                      Fast and easy access to crisis centres all across Canada
+                    </li>
+                    <li className="">
+                      Fast and easy access to crisis centres all across Canada
+                    </li>
+                    <li className="">
+                      Fast and easy access to crisis centres all across Canada
+                    </li>
+                    <li className="">
+                      Fast and easy access to crisis centres all across Canada
+                    </li>
+                  </ul>
+                  <Button>Learn More</Button>
+                </CardContent>
+              </Card>
+            </li>
+            <li>
+              <Card className="">
+                <CardContent className="p-8 px-12 space-y-4">
+                  <PawPrint className="text-purple-500 size-6" />
+                  <h3 className="scroll-m-20 text-3xl font-semibold tracking-tight transition-colors first:mt-0 capitalize">
+                    Companion Paws Canada
+                  </h3>
+                  <p className="max-w-[100ch] text-balance">
+                    Companion Paws is dedicated to supporting Canadians in need
+                    while also providing a second chance for pets in rescues.
+                    The main programs are:
+                  </p>
+                  <ul className="list-disc list-inside pl-4">
+                    <li>Personal Therapy Dog Adoption Program</li>
+                    <li>Assisted Therapy Dog Adoption Program</li>
+                    <li>Certify Your Own Therapy Dog Program</li>
+                  </ul>
+                  <p className="max-w-[100ch] text-balance">
+                    These programs are available in all Provinces across Canada.
+                    All information and the steps involved are at
+                    CompanionPaws.ca
+                  </p>
+                  <Button>Visit Companion Paw Website</Button>
+                </CardContent>
+              </Card>
+            </li>
+          </ul>
         </section>
       </main>
     </>
