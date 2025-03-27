@@ -1,5 +1,14 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import {
+  Card,
+  CardAction,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { resourceAid } from "@/lib/data";
 import {
   FlagTriangleRight,
   HeartHandshake,
@@ -8,6 +17,7 @@ import {
   Smartphone,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -55,6 +65,41 @@ export default function Home() {
           <h2 className="scroll-m-20 text-4xl font-bold tracking-tight capitalize">
             What Can We Help You With?
           </h2>
+          <ul className="grid grid-cols-1 lg:grid-cols-3 gap-12 my-12">
+            {resourceAid.map((resource) => {
+              return (
+                <li key={resource.id}>
+                  <Card className="group relative isolate shadow-none p-0 overflow-hidden border-neutral-300 hover:border-neutral-500 hover:cursor-pointer">
+                    <CardHeader className="p-0">
+                      <div className="relative w-full aspect-video">
+                        <Image
+                          fill
+                          src={`/media/image/landingPage/${resource.image.name}`}
+                          alt={resource.image.alt}
+                          className="object-fill object-center"
+                        />
+                      </div>
+                    </CardHeader>
+                    <CardContent className="space-y-2 pb-6">
+                      <CardTitle className="text-xl capitalize group-hover:underline">
+                        {resource.title}
+                      </CardTitle>
+                      <CardDescription className="line-clamp-3 text-base/6 line-clamp-1">
+                        {resource.description}
+                      </CardDescription>
+                      <Link
+                        href="#"
+                        className="pl-0 text-muted-foreground text-sm"
+                      >
+                        <span className="absolute inset-0 z-10"></span>
+                        Read More &rarr;
+                      </Link>
+                    </CardContent>
+                  </Card>
+                </li>
+              );
+            })}
+          </ul>
         </section>
         <section className="space-y-3">
           <Card className="bg-purple-100 rounded-2xl shadow-none border-none">
