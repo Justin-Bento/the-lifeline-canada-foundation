@@ -8,7 +8,7 @@ export default function NavigationTop() {
   return (
     <header>
       <Card className="rounded-none p-0">
-        <CardHeader className="bg-purple-500 p-2 flex items-center">
+        <CardHeader className="bg-purple-500 p-2 flex items-center justify-end px-10">
           <p className="text-white text-sm">English Support</p>
           <p className="text-white text-sm">French Support</p>
           <p className="text-white text-sm">Site Map</p>
