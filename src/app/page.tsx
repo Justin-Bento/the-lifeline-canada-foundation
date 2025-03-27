@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   FlagTriangleRight,
   HeartHandshake,
@@ -56,10 +57,28 @@ export default function Home() {
           </h2>
         </section>
         <section className="space-y-3">
-          <FlagTriangleRight className="text-purple-500 size-8" />
-          <h2 className="scroll-m-20 text-4xl font-bold tracking-tight capitalize">
-            The LifeLine Canada Foundation is not a crisis hotline!
-          </h2>
+          <Card className="bg-purple-100 rounded-2xl shadow-none border-none">
+            <CardContent className="py-32 flex flex-col items-center justify-centerg gap-10">
+              <div className="space-y-2 text-center">
+                <h2 className="scroll-m-20 text-xl tracking-tight capitalize">
+                  The LifeLine Canada Foundation is not a crisis hotline!
+                </h2>
+                <p className="text-2xl capitalize">
+                  In Crisis? Call or Text 988 Canada’s new suicide prevention
+                  hotline.
+                </p>
+                <p className="text-2xl capitalize">
+                  If you or someone you know is in danger of hurting themselves
+                  or others, call 911 immediately.
+                </p>
+                <p className="text-xl capitalize">
+                  Additionally, see our directory of mental health crisis
+                  support in your area.
+                </p>
+              </div>
+              <Button className="shadow-none">Support Services</Button>
+            </CardContent>
+          </Card>
         </section>
         <section className="space-y-16">
           <div className="space-y-4">
