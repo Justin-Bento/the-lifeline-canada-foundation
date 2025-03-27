@@ -25,7 +25,9 @@ export default function NavigationTop() {
             {navigationLinks.map((link, index) => {
               return (
                 <li key={index} className="">
-                  <Button variant="link">{link}</Button>
+                  <Button variant="link" className="text-base">
+                    {link}
+                  </Button>
                 </li>
               );
             })}
