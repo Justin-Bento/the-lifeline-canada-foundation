@@ -1,11 +1,18 @@
 import { Button } from "@/components/ui/button";
+import {
+  FlagTriangleRight,
+  HeartHandshake,
+  HeartPulse,
+  PawPrint,
+  Smartphone,
+} from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <>
-      <main className="container mx-auto lg:p-6 min-h-dvh">
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center pt-32">
+      <main className="container mx-auto lg:px-6 min-h-dvh space-y-32 py-32">
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <h1 className="scroll-m-20 text-4xl font-semibold tracking-tight  lg:text-5xl">
               Mental Health Resources At Your Fingertips
@@ -40,6 +47,38 @@ export default function Home() {
               alt="Crisis Resources for Suicide Prevention"
               className="rounded-xl"
             />
+          </div>
+        </section>
+        <section className="space-y-3">
+          <HeartHandshake className="text-purple-500 size-8" />
+          <h2 className="scroll-m-20 text-4xl font-bold tracking-tight capitalize">
+            What Can We Help You With?
+          </h2>
+        </section>
+        <section className="space-y-3">
+          <FlagTriangleRight className="text-purple-500 size-8" />
+          <h2 className="scroll-m-20 text-4xl font-bold tracking-tight capitalize">
+            The LifeLine Canada Foundation is not a crisis hotline!
+          </h2>
+        </section>
+        <section className="space-y-16">
+          <div className="space-y-4">
+            <Smartphone className="text-purple-500 size-8" />
+            <h2 className="scroll-m-20 text-4xl font-bold tracking-tight capitalize">
+              Projects Going On The Lifeline Canada Foundation
+            </h2>
+          </div>
+          <div className="space-y-4">
+            <HeartPulse className="text-purple-500 size-6" />
+            <h3 className="scroll-m-20 text-3xl font-semibold tracking-tight transition-colors first:mt-0 capitalize">
+              The Lifeline App
+            </h3>
+          </div>
+          <div className="space-y-4">
+            <PawPrint className="text-purple-500 size-6" />
+            <h3 className="scroll-m-20 text-3xl font-semibold tracking-tight transition-colors first:mt-0 capitalize">
+              Companion Paws Canada
+            </h3>
           </div>
         </section>
       </main>
