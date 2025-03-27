@@ -71,7 +71,7 @@ export default function Home() {
                 <li key={resource.id}>
                   <Card className="group relative isolate shadow-none p-0 overflow-hidden border-neutral-300 hover:border-neutral-500 hover:cursor-pointer">
                     <CardHeader className="p-0">
-                      <div className="relative w-full aspect-video">
+                      <div className="relative w-full aspect-[16/10]">
                         <Image
                           fill
                           src={`/media/image/landingPage/${resource.image.name}`}
