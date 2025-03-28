@@ -10,7 +10,6 @@ import { resourceAid } from "@/lib/data";
 import { HeartHandshake, HeartPulse, PawPrint } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { CircleAlert } from "lucide-react";
 
 export default function Home() {
   return (
@@ -65,12 +64,12 @@ export default function Home() {
               We Offer Resources, Not Emergency Help!
             </h2>
             <p className="max-w-5xl text-balance mt-6 text-lg md:text-xl text-primary-950 drop-shadow-sm">
-              While we are deeply committed to supporting mental wellness, it's
-              important to note that we are not a crisis hotline. If in Crisis,
-              call or text 988 for Canada’s new suicide prevention hotline. If
-              you or someone you know is in danger of hurting themselves or
-              others, call 911 immediately. See our directory of mental health
-              crisis support in your area.
+              While we are deeply committed to supporting mental wellness,
+              it&#39;s important to note that we are not a crisis hotline. If in
+              Crisis, call or text 988 for Canada&#39;s new suicide prevention
+              hotline. If you or someone you know is in danger of hurting
+              themselves or others, call 911 immediately. See our directory of
+              mental health crisis support in your area.
             </p>
             <div className="mt-8 flex items-center justify-start gap-x-8">
               <Button>View Our Directory</Button>
@@ -158,15 +157,15 @@ export default function Home() {
               anim id veniam aliqua proident excepteur commodo do ea.
             </p>
             <div className="mt-10 flex items-center justify-start gap-x-6">
-              <a
+              <Link
                 href="#"
                 className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-xs hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Get started
-              </a>
-              <a href="#" className="text-sm/6 font-semibold text-white">
+              </Link>
+              <Link href="#" className="text-sm/6 font-semibold text-white">
                 Learn more <span aria-hidden="true">→</span>
-              </a>
+              </Link>
             </div>
             <svg
               viewBox="0 0 1024 1024"
