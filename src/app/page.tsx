@@ -57,24 +57,34 @@ export default function Home() {
           </div>
         </section>
         <section className="">
-          <Card className="shadow-none border-none bg-primary/10 py-32 px-16">
-            <CardContent className="space-y-4">
-              <CircleAlert className="text-primary size-6" strokeWidth={3} />
-              <h2 className="scroll-m-20 text-4xl font-bold tracking-tight capitalize">
-                We Offer Resources, Not Emergency Help.
-              </h2>
-              <p className="text-xl/8">
-                While we are deeply committed to supporting mental wellness,
-                it's important to note that we are not a crisis hotline.
-              </p>
-              <p className="max-w-[120ch] text-balance">
-                If in Crisis, call or text 988 for Canada’s new suicide
-                prevention hotline. If you or someone you know is in danger of
-                hurting themselves or others, call 911 immediately. See our
-                directory of mental health crisis support in your area.
-              </p>
-            </CardContent>
-          </Card>
+          <div className="relative isolate overflow-hidden bg-neutral-200 px-6 py-24 text-start sm:rounded-3xl sm:py-40 sm:px-20">
+            <h2 className="text-neutral-950 text-4xl font-semibold capitalize sm:text-5xl">
+              Boost your productivity today
+            </h2>
+            <p className="mt-6 text-lg text-neutral-950 drop-shadow-sm">
+              Incididunt sint fugiat pariatur cupidatat consectetur sit cillum
+              anim id veniam aliqua proident excepteur commodo do ea.
+            </p>
+            <div className="mt-8 flex items-center justify-start gap-x-8">
+              <Button variant="secondary">Get started</Button>
+              <Button variant="link" className="text-foreground">
+                Learn more <span aria-hidden="true">→</span>
+              </Button>
+            </div>
+            <svg
+              viewBox="0 0 1024 1024"
+              aria-hidden="true"
+              className="absolute top-1/2 left-1/2 -z-10 size-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
+            >
+              <circle r={512} cx={512} cy={512} className="fill-neutral-900" />
+              <defs>
+                <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
+                  <stop stopColor="#7775D6" />
+                  <stop offset={1} stopColor="#E935C1" />
+                </radialGradient>
+              </defs>
+            </svg>
+          </div>
         </section>
         <section className="space-y-3">
           <HeartHandshake className="text-purple-500 size-8" />
