@@ -10,6 +10,7 @@ import { resourceAid } from "@/lib/data";
 import { HeartHandshake, HeartPulse, PawPrint } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { CircleAlert } from "lucide-react";
 
 export default function Home() {
   return (
@@ -55,7 +56,26 @@ export default function Home() {
             />
           </div>
         </section>
-        <section className=""></section>
+        <section className="">
+          <Card className="shadow-none border-none bg-primary/10 py-32 px-16">
+            <CardContent className="space-y-4">
+              <CircleAlert className="text-primary size-6" strokeWidth={3} />
+              <h2 className="scroll-m-20 text-4xl font-bold tracking-tight capitalize">
+                We Offer Resources, Not Emergency Help.
+              </h2>
+              <p className="text-xl/8">
+                While we are deeply committed to supporting mental wellness,
+                it's important to note that we are not a crisis hotline.
+              </p>
+              <p className="max-w-[120ch] text-balance">
+                If in Crisis, call or text 988 for Canada’s new suicide
+                prevention hotline. If you or someone you know is in danger of
+                hurting themselves or others, call 911 immediately. See our
+                directory of mental health crisis support in your area.
+              </p>
+            </CardContent>
+          </Card>
+        </section>
         <section className="space-y-3">
           <HeartHandshake className="text-purple-500 size-8" />
           <h2 className="scroll-m-20 text-4xl font-bold tracking-tight capitalize">
