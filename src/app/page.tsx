@@ -57,18 +57,29 @@ export default function Home() {
           </div>
         </section>
         <section className="">
-          <div className="relative isolate overflow-hidden bg-neutral-200 px-6 py-24 text-start sm:rounded-3xl sm:py-40 sm:px-20">
-            <h2 className="text-neutral-950 text-4xl font-semibold capitalize sm:text-5xl">
-              Boost your productivity today
+          <div className="relative isolate overflow-hidden bg-primary/20 px-6 py-24 text-start sm:rounded-3xl sm:py-40 sm:px-20">
+            <p className="font-mono text-xs uppercase tracking-wider mb-4">
+              Quick Reminder!
+            </p>
+            <h2 className="text-primary-950 text-4xl font-semibold capitalize sm:text-5xl">
+              We Offer Resources, Not Emergency Help!
             </h2>
-            <p className="mt-6 text-lg text-neutral-950 drop-shadow-sm">
-              Incididunt sint fugiat pariatur cupidatat consectetur sit cillum
-              anim id veniam aliqua proident excepteur commodo do ea.
+            <p className="max-w-5xl text-balance mt-6 text-lg md:text-xl text-primary-950 drop-shadow-sm">
+              While we are deeply committed to supporting mental wellness, it's
+              important to note that we are not a crisis hotline. If in Crisis,
+              call or text 988 for Canada’s new suicide prevention hotline. If
+              you or someone you know is in danger of hurting themselves or
+              others, call 911 immediately. See our directory of mental health
+              crisis support in your area.
             </p>
             <div className="mt-8 flex items-center justify-start gap-x-8">
-              <Button variant="secondary">Get started</Button>
-              <Button variant="link" className="text-foreground">
-                Learn more <span aria-hidden="true">→</span>
+              <Button>View Our Directory</Button>
+              <Button
+                variant="secondary"
+                className="bg-transparent border-1 border-primary text-primary shadow-none"
+              >
+                Find Crisis Center In Your Area{" "}
+                <span aria-hidden="true">→</span>
               </Button>
             </div>
             <svg
@@ -76,7 +87,7 @@ export default function Home() {
               aria-hidden="true"
               className="absolute top-1/2 left-1/2 -z-10 size-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
             >
-              <circle r={512} cx={512} cy={512} className="fill-neutral-900" />
+              <circle r={512} cx={512} cy={512} className="fill-primary/50" />
               <defs>
                 <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
                   <stop stopColor="#7775D6" />
