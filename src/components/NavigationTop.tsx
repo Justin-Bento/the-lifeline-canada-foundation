@@ -57,7 +57,7 @@ export default function NavigationTop() {
             </button>
           </div>
         </CardHeader>
-        <CardContent className="container mx-auto lg:px-6 grid grid-cols-1 lg:grid-cols-2 pb-6">
+        <CardContent className="container mx-auto space-y-6 pb-6">
           <span className="flex items-center justify-between">
             <Image
               className="dark:invert"
@@ -95,7 +95,11 @@ export default function NavigationTop() {
           >
             {navigationLinks.map((link, index) => (
               <li key={index}>
-                <Button size="sm" variant="link" className="text-foreground">
+                <Button
+                  size="sm"
+                  variant="outline"
+                  className="shaodw-none text-foreground"
+                >
                   {link}
                 </Button>
               </li>

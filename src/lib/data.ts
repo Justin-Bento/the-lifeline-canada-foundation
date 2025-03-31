@@ -6,6 +6,8 @@ export const navigationLinks = [
   "The Lifeline App",
   "Companion Paws",
   "Get Involved",
+  "Email Support",
+  "Site Map",
   "Contact Us",
 ];
 
