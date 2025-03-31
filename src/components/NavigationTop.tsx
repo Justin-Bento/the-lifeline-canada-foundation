@@ -101,7 +101,7 @@ export default function NavigationTop() {
           >
             {navigationLinks.map((link, index) => (
               <li key={index}>
-                <Link href={createSlug(link)}>
+                <Link href={link === "Home" ? "/" : createSlug(link)}>
                   <Button
                     size="sm"
                     variant="outline"
