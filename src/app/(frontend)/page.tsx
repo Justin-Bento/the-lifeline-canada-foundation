@@ -5,6 +5,7 @@ import {
   CardDescription,
   CardTitle,
 } from "@/components/ui/card";
+import { PhoneIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -72,6 +73,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <Card className="shadow-none">
               <CardContent className="space-y-2">
+                <PhoneIcon className="size-5" />
                 <CardTitle className="text-lg font-semibold">
                   Mental Health Resources.
                 </CardTitle>
@@ -87,6 +89,7 @@ export default function Home() {
             </Card>
             <Card className="shadow-none">
               <CardContent className="space-y-2">
+                <PhoneIcon className="size-5" />
                 <CardTitle className="text-lg font-semibold">
                   Pattern Intterupts
                 </CardTitle>
@@ -103,6 +106,7 @@ export default function Home() {
             </Card>
             <Card className="shadow-none">
               <CardContent className="space-y-2">
+                <PhoneIcon className="size-5" />
                 <CardTitle className="text-lg font-semibold">
                   In Crisis? Need Help?
                 </CardTitle>
@@ -118,6 +122,7 @@ export default function Home() {
             </Card>
             <Card className="shadow-none">
               <CardContent className="space-y-2">
+                <PhoneIcon className="size-5" />
                 <CardTitle className="text-lg font-semibold">
                   The LifeLine Application
                 </CardTitle>
