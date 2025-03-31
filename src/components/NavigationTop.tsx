@@ -52,7 +52,7 @@ export default function NavigationTop() {
             </div>
           </div>
         </CardHeader>
-        <CardContent className="flex items-center justify-center">
+        <CardContent className="flex items-center justify-start lg:justify-center">
           <Image
             className="dark:invert"
             src="/media/logo/theLifeLineApp.png"
