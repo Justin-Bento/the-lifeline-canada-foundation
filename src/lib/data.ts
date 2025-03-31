@@ -1,7 +1,7 @@
 export const navigationLinks = [
   "About Us",
   "In Crisis?",
-  "Mental Health Resources",
+  "Resources",
   "Pattern Interrupts",
   "The Lifeline App",
   "Companion Paws",
