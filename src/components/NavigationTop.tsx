@@ -44,7 +44,10 @@ export default function NavigationTop() {
           </div>
           <p className="text-sm/6 text-gray-900">
             Volunteering with TLC is rewarding and fun!{" "}
-            <Link href="#" className="font-semibold whitespace-nowrap">
+            <Link
+              href="/get-involved"
+              className="font-semibold whitespace-nowrap"
+            >
               Get Involved&nbsp;<span aria-hidden="true">&rarr;</span>
             </Link>
           </p>
