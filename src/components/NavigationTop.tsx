@@ -63,13 +63,15 @@ export default function NavigationTop() {
         </CardHeader>
         <CardContent className="container mx-auto space-y-6 pb-6">
           <span className="flex items-center justify-between">
-            <Image
-              className="dark:invert"
-              src="/media/logo/theLifeLineApp.png"
-              alt="Next.js logo"
-              width={240}
-              height={56}
-            />
+            <Link href="/">
+              <Image
+                className="dark:invert"
+                src="/media/logo/theLifeLineApp.png"
+                alt="Next.js logo"
+                width={240}
+                height={56}
+              />
+            </Link>
             {/* Mobile menu toggle button */}
             {isVisible ? (
               <Button
