@@ -6,6 +6,7 @@ import { navigationLinks } from "@/lib/data";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
+import { createSlug } from "@/lib/utils";
 
 export default function NavigationTop() {
   const [isVisible, setIsVisible] = useState(false); // Start with mobile menu hidden
@@ -95,13 +96,15 @@ export default function NavigationTop() {
           >
             {navigationLinks.map((link, index) => (
               <li key={index}>
-                <Button
-                  size="sm"
-                  variant="outline"
-                  className="shaodw-none text-foreground"
-                >
-                  {link}
-                </Button>
+                <Link href={createSlug(link)}>
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    className="shaodw-none text-foreground"
+                  >
+                    {link}
+                  </Button>
+                </Link>
               </li>
             ))}
           </ul>
