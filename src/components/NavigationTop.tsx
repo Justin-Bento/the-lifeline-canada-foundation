@@ -78,7 +78,11 @@ export default function NavigationTop() {
         )}
 
         {/* Main Navigation */}
-        <CardContent className="flex items-center justify-between container mx-auto pt-6 lg:px-9">
+        <CardContent
+          className={`flex items-center justify-between container mx-auto lg:px-9 ${
+            isBannerVisible ? "pt-0" : "pt-8"
+          }`}
+        >
           <div className="flex items-center gap-4">
             <Button
               size="icon"
