@@ -1,14 +1,21 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
-import { X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Image from "next/image";
-
-// -[] Include a Getting Involved banner.
+import { navigationLinks } from "@/lib/data";
+import { createSlug } from "@/lib/utils";
+import { Button } from "./ui/button";
+import Link from "next/link";
 
 export default function NavigationTop() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const closeMenu = () => setIsMenuOpen(false);
+
   return (
-    <header>
-      <Card className="pt-0">
+    <header className="sticky top-0 z-50">
+      <Card className="pt-0 rounded-none border-none shadow-sm">
+        {/* Announcement Banner */}
         <CardHeader className="px-0">
           <div className="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
             <div
@@ -52,17 +59,71 @@ export default function NavigationTop() {
             </div>
           </div>
         </CardHeader>
-        <CardContent className="flex items-center justify-start lg:justify-center">
-          <Image
-            className="dark:invert"
-            src="/media/logo/theLifeLineApp.png"
-            alt="Next.js logo"
-            width={240}
-            height={56}
-          />
+
+        {/* Main Navigation */}
+        <CardContent className="flex items-center justify-between container mx-auto lg:px-9">
+          <div className="flex items-center gap-4">
+            <Button
+              size="icon"
+              variant="outline"
+              className="shadow-none lg:hidden"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isMenuOpen}
+              aria-controls="primary-navigation"
+            >
+              {isMenuOpen ? (
+                <X className="size-4" />
+              ) : (
+                <Menu className="size-4" />
+              )}
+            </Button>
+            <Link href="/" onClick={closeMenu} aria-label="Home">
+              <Image
+                className="dark:invert h-auto w-40 sm:w-60"
+                src="/media/logo/theLifeLineApp.png"
+                alt="The Lifeline App Logo"
+                width={240}
+                height={56}
+                priority
+              />
+            </Link>
+          </div>
+          <span className="">
+            <Button asChild>
+              <Link href="/get-involved" onClick={closeMenu}>
+                Get Involved &rarr;
+              </Link>
+            </Button>
+          </span>
         </CardContent>
-        <CardFooter>
-          <p className="">Card Footer</p>
+
+        {/* Navigation Links */}
+        <CardFooter className="container mx-auto lg:pb-4">
+          <nav aria-label="Primary navigation" className="w-full">
+            <ul
+              id="primary-navigation"
+              className={`${
+                isMenuOpen ? "flex" : "hidden"
+              } flex-col w-full gap-2 lg:flex lg:flex-row lg:gap-4 lg:justify-evenly`}
+            >
+              {navigationLinks.map((link) => (
+                <li key={link}>
+                  <Link
+                    href={link === "Home" ? "/" : createSlug(link)}
+                    onClick={closeMenu}
+                  >
+                    <Button
+                      variant="outline"
+                      className="text-foreground shadow-none hover:bg-accent w-full"
+                    >
+                      {link}
+                    </Button>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </CardFooter>
       </Card>
     </header>
