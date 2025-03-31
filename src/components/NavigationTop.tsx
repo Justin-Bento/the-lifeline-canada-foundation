@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
 import { X } from "lucide-react";
+import Image from "next/image";
 
 // -[] Include a Getting Involved banner.
 
@@ -51,8 +52,14 @@ export default function NavigationTop() {
             </div>
           </div>
         </CardHeader>
-        <CardContent>
-          <p className="">Card Content</p>
+        <CardContent className="flex items-center justify-center">
+          <Image
+            className="dark:invert"
+            src="/media/logo/theLifeLineApp.png"
+            alt="Next.js logo"
+            width={240}
+            height={56}
+          />
         </CardContent>
         <CardFooter>
           <p className="">Card Footer</p>
