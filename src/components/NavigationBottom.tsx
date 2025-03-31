@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const navigation = {
@@ -90,55 +91,55 @@ export default function NavigationBottom() {
               width={240}
               height={56}
             />
-            <p className="text-sm/6 text-balance text-gray-600">
+            <p className="text-sm/6 text-balance text-foreground">
               Making the world a better place through constructing elegant
               hierarchies.
             </p>
             <div className="flex gap-x-6">
               {navigation.social.map((item) => (
-                <a
+                <Link
                   key={item.name}
                   href={item.href}
-                  className="text-gray-600 hover:text-gray-800"
+                  className="text-foreground/70"
                 >
                   <span className="sr-only">{item.name}</span>
                   <item.icon aria-hidden="true" className="size-6" />
-                </a>
+                </Link>
               ))}
             </div>
           </div>
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm/6 font-semibold text-gray-900">
+                <h3 className="text-sm/6 font-semibold text-foreground">
                   Solutions
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.solutions.map((item) => (
                     <li key={item.name}>
-                      <a
+                      <Link
                         href={item.href}
-                        className="text-sm/6 text-gray-600 hover:text-gray-900"
+                        className="text-sm/6 text-foreground/60 hover:text-foreground hover:underline hover:cursor-pointer"
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm/6 font-semibold text-gray-900">
+                <h3 className="text-sm/6 font-semibold text-foreground">
                   Support
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.support.map((item) => (
                     <li key={item.name}>
-                      <a
+                      <Link
                         href={item.href}
-                        className="text-sm/6 text-gray-600 hover:text-gray-900"
+                        className="text-sm/6 text-foreground/60 hover:text-foreground hover:underline hover:cursor-pointer"
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -146,33 +147,35 @@ export default function NavigationBottom() {
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm/6 font-semibold text-gray-900">
+                <h3 className="text-sm/6 font-semibold text-foreground">
                   Company
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.company.map((item) => (
                     <li key={item.name}>
-                      <a
+                      <Link
                         href={item.href}
-                        className="text-sm/6 text-gray-600 hover:text-gray-900"
+                        className="text-sm/6 text-foreground/60 hover:text-foreground hover:underline hover:cursor-pointer"
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm/6 font-semibold text-gray-900">Legal</h3>
+                <h3 className="text-sm/6 font-semibold text-foreground">
+                  Legal
+                </h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.legal.map((item) => (
                     <li key={item.name}>
-                      <a
+                      <Link
                         href={item.href}
-                        className="text-sm/6 text-gray-600 hover:text-gray-900"
+                        className="text-sm/6 text-foreground/60 hover:text-foreground hover:underline hover:cursor-pointer"
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -181,7 +184,7 @@ export default function NavigationBottom() {
           </div>
         </div>
         <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24">
-          <p className="text-sm/6 text-gray-600">
+          <p className="text-sm/6 text-foreground/60">
             &copy; {new Date().getFullYear()} The Lifeline Canada Foundation,
             Inc. All rights reserved.
           </p>
