@@ -16,6 +16,14 @@ export default function Home() {
     <>
       <main className="container mx-auto lg:px-6 min-h-dvh space-y-32 py-32">
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="relative w-full aspect-[16/10]">
+            <Image
+              fill
+              src="/media/image/landingPage/home-hero-image.jpg"
+              alt="Crisis Resources for Suicide Prevention"
+              className="rounded-xl"
+            />
+          </div>
           <div className="space-y-6">
             <p className="text-primary font-bold font-mono capitalize">
               Mental Wellness Starts Here!
@@ -45,14 +53,6 @@ export default function Home() {
                 Get Involved &rarr;
               </Button>
             </div>
-          </div>
-          <div className="relative w-full aspect-[16/11]">
-            <Image
-              fill
-              src="/media/image/home-hero-image.jpg"
-              alt="Crisis Resources for Suicide Prevention"
-              className="rounded-xl"
-            />
           </div>
         </section>
         <section className="">
