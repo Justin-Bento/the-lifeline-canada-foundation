@@ -71,11 +71,12 @@ export default function Home() {
             </h2>
           </span>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <Card className="shadow-none">
+            <Card className="shadow-none group relative isolate overflow-hidden hover:border-foreground/25 hover:cursor-pointer">
               <CardContent className="space-y-2">
                 <PhoneIcon className="size-5" />
                 <CardTitle className="text-lg font-semibold">
                   Mental Health Resources.
+                  <span className="absolute inset-0 group-hover:bg-foreground/5 z-10"></span>
                 </CardTitle>
                 <CardDescription className="line-clamp-3 text-sm/6">
                   The guides, tool kits and resources throughout this site
@@ -85,14 +86,20 @@ export default function Home() {
                   affiliated with, but supported by The LifeLine Canada
                   Foundation.
                 </CardDescription>
+                <CardDescription className="line-clamp-3 text-sm/6 group-hover:underline">
+                  See More
+                </CardDescription>
               </CardContent>
             </Card>
-            <Card className="shadow-none">
+            <Card className="shadow-none group relative isolate overflow-hidden hover:border-foreground/25 hover:cursor-pointer">
               <CardContent className="space-y-2">
                 <PhoneIcon className="size-5" />
-                <CardTitle className="text-lg font-semibold">
-                  Pattern Intterupts
-                </CardTitle>
+                <Link href="#">
+                  <CardTitle className="text-lg font-semibold">
+                    Pattern Intterupts
+                    <span className="absolute inset-0 group-hover:bg-foreground/5 z-10"></span>
+                  </CardTitle>
+                </Link>
                 <CardDescription className="line-clamp-3 text-sm/6">
                   A Pattern Interrupt is a way to alter our mental, emotional,
                   or behavioral state in order to break negative habits. Pattern
@@ -102,14 +109,20 @@ export default function Home() {
                   pathways for more productive thoughts, behaviors, and emotions
                   and make lasting changes in our lives.
                 </CardDescription>
+                <CardDescription className="line-clamp-3 text-sm/6 group-hover:underline">
+                  See More
+                </CardDescription>
               </CardContent>
             </Card>
-            <Card className="shadow-none">
+            <Card className="shadow-none group relative isolate overflow-hidden hover:border-foreground/25 hover:cursor-pointer">
               <CardContent className="space-y-2">
                 <PhoneIcon className="size-5" />
-                <CardTitle className="text-lg font-semibold">
-                  In Crisis? Need Help?
-                </CardTitle>
+                <Link href="#">
+                  <CardTitle className="text-lg font-semibold">
+                    In Crisis? Need Help?
+                    <span className="absolute inset-0 group-hover:bg-foreground/5 z-10"></span>
+                  </CardTitle>
+                </Link>
                 <CardDescription className="line-clamp-3 text-sm/6">
                   In Crisis? Call or Text 988 Canada’s new suicide prevention
                   hotline. If you or someone you know is in danger of hurting
@@ -118,14 +131,20 @@ export default function Home() {
                   advice of an appropriately qualified healthcare professional
                   before making decisions about your circumstances.
                 </CardDescription>
+                <CardDescription className="line-clamp-3 text-sm/6 group-hover:underline">
+                  See More
+                </CardDescription>
               </CardContent>
             </Card>
-            <Card className="shadow-none">
+            <Card className="shadow-none group relative isolate overflow-hidden hover:border-foreground/25 hover:cursor-pointer">
               <CardContent className="space-y-2">
                 <PhoneIcon className="size-5" />
-                <CardTitle className="text-lg font-semibold">
-                  The LifeLine Application
-                </CardTitle>
+                <Link href="#">
+                  <CardTitle className="text-lg font-semibold">
+                    The LifeLine Application
+                    <span className="absolute inset-0 group-hover:bg-foreground/5 z-10"></span>
+                  </CardTitle>
+                </Link>
                 <CardDescription className="line-clamp-3 text-sm/6">
                   The LifeLine App is a free Suicide Prevention and Awareness
                   App that offers access and guidance to support for those
@@ -134,6 +153,9 @@ export default function Home() {
                   those struggling with any degree of anxiety or depression. The
                   LifeLine App also provides awareness, education and prevention
                   strategies to guide people in crisis.
+                </CardDescription>
+                <CardDescription className="line-clamp-3 text-sm/6 group-hover:underline">
+                  See More
                 </CardDescription>
               </CardContent>
             </Card>
