@@ -5,7 +5,7 @@ import {
   CardDescription,
   CardTitle,
 } from "@/components/ui/card";
-import { PhoneIcon } from "lucide-react";
+import { Brain, Notebook, PhoneCall, Smartphone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -73,7 +73,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <Card className="shadow-none group relative isolate overflow-hidden hover:border-foreground/25 hover:cursor-pointer">
               <CardContent className="space-y-2">
-                <PhoneIcon className="size-5" />
+                <Notebook className="size-5" />
                 <CardTitle className="text-lg font-semibold">
                   Mental Health Resources.
                   <span className="absolute inset-0 group-hover:bg-foreground/5 z-10"></span>
@@ -93,7 +93,7 @@ export default function Home() {
             </Card>
             <Card className="shadow-none group relative isolate overflow-hidden hover:border-foreground/25 hover:cursor-pointer">
               <CardContent className="space-y-2">
-                <PhoneIcon className="size-5" />
+                <Brain className="size-5" />
                 <Link href="#">
                   <CardTitle className="text-lg font-semibold">
                     Pattern Intterupts
@@ -116,7 +116,7 @@ export default function Home() {
             </Card>
             <Card className="shadow-none group relative isolate overflow-hidden hover:border-foreground/25 hover:cursor-pointer">
               <CardContent className="space-y-2">
-                <PhoneIcon className="size-5" />
+                <PhoneCall className="size-5" />
                 <Link href="#">
                   <CardTitle className="text-lg font-semibold">
                     In Crisis? Need Help?
@@ -138,7 +138,7 @@ export default function Home() {
             </Card>
             <Card className="shadow-none group relative isolate overflow-hidden hover:border-foreground/25 hover:cursor-pointer">
               <CardContent className="space-y-2">
-                <PhoneIcon className="size-5" />
+                <Smartphone className="size-5" />
                 <Link href="#">
                   <CardTitle className="text-lg font-semibold">
                     The LifeLine Application
