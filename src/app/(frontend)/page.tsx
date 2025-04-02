@@ -166,7 +166,7 @@ export default function Home() {
         </section>
 
         {/* Call To Action - Get Involved With Us. */}
-        <div className="relative rounded-3xl bg-primary/10 overflow-hidden">
+        <section className="relative rounded-3xl bg-primary/10 overflow-hidden">
           <div className="relative h-80 overflow-hidden bg-primary/60 md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2">
             <img
               className="size-full object-cover"
@@ -221,7 +221,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </main>
     </>
   );
