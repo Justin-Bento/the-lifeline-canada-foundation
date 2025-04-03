@@ -63,140 +63,141 @@ export default function Home() {
         </section>
 
         {/* Products / Services Section */}
-        <section className="space-y-12">
-          <span className="">
-            <p className="text-xs font-mono">What Can We Help You With?</p>
-            <h2 className="mb-10 mt-2 scroll-m-20 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
-              Mental Health Resources At Your Fingertips.
+        <section className="mx-auto max-w-2xl px-6 lg:container lg:mx-auto lg:px-6">
+          <div className="space-y-4">
+            <h2 className="text-base/7 font-semibold text-indigo-600">
+              Where Here to Support You!
             </h2>
-          </span>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <Card className="shadow-none group relative isolate overflow-hidden hover:border-foreground/25 hover:cursor-pointer">
-              <CardContent className="space-y-2">
-                <Notebook className="size-5" />
-                <CardTitle className="text-lg font-semibold">
-                  Mental Health Resources.
-                  <span className="absolute inset-0 group-hover:bg-foreground/5 z-10"></span>
-                </CardTitle>
-                <CardDescription className="line-clamp-3 text-sm/6">
-                  The guides, tool kits and resources throughout this site
-                  represent a compilation of curated suicide prevention
-                  resources from various sources around the world. When clicking
-                  3rd party links, you will be redirected to websites not
-                  affiliated with, but supported by The LifeLine Canada
-                  Foundation.
-                </CardDescription>
-                <CardDescription className="line-clamp-3 text-sm/6 group-hover:underline">
-                  See More
-                </CardDescription>
-              </CardContent>
-            </Card>
-            <Card className="shadow-none group relative isolate overflow-hidden hover:border-foreground/25 hover:cursor-pointer">
-              <CardContent className="space-y-2">
-                <Brain className="size-5" />
-                <Link href="#">
-                  <CardTitle className="text-lg font-semibold">
-                    Pattern Intterupts
-                    <span className="absolute inset-0 group-hover:bg-foreground/5 z-10"></span>
-                  </CardTitle>
-                </Link>
-                <CardDescription className="line-clamp-3 text-sm/6">
-                  A Pattern Interrupt is a way to alter our mental, emotional,
-                  or behavioral state in order to break negative habits. Pattern
-                  interrupts offer an effective way to break negative cycles and
-                  regain control over our actions, thoughts, and emotions. By
-                  recognizing our patterns, we can intervene and create new
-                  pathways for more productive thoughts, behaviors, and emotions
-                  and make lasting changes in our lives.
-                </CardDescription>
-                <CardDescription className="line-clamp-3 text-sm/6 group-hover:underline">
-                  See More
-                </CardDescription>
-              </CardContent>
-            </Card>
-            <Card className="shadow-none group relative isolate overflow-hidden hover:border-foreground/25 hover:cursor-pointer">
-              <CardContent className="space-y-2">
-                <PhoneCall className="size-5" />
-                <Link href="#">
-                  <CardTitle className="text-lg font-semibold">
-                    In Crisis? Need Help?
-                    <span className="absolute inset-0 group-hover:bg-foreground/5 z-10"></span>
-                  </CardTitle>
-                </Link>
-                <CardDescription className="line-clamp-3 text-sm/6">
-                  In Crisis? Call or Text 988 Canada’s new suicide prevention
-                  hotline. If you or someone you know is in danger of hurting
-                  themselves or others, call 911 immediately. See our directory
-                  of mental health crisis support in your area below. Seek the
-                  advice of an appropriately qualified healthcare professional
-                  before making decisions about your circumstances.
-                </CardDescription>
-                <CardDescription className="line-clamp-3 text-sm/6 group-hover:underline">
-                  See More
-                </CardDescription>
-              </CardContent>
-            </Card>
-            <Card className="shadow-none group relative isolate overflow-hidden hover:border-foreground/25 hover:cursor-pointer">
-              <CardContent className="space-y-2">
-                <Smartphone className="size-5" />
-                <Link href="#">
-                  <CardTitle className="text-lg font-semibold">
-                    The LifeLine Application
-                    <span className="absolute inset-0 group-hover:bg-foreground/5 z-10"></span>
-                  </CardTitle>
-                </Link>
-                <CardDescription className="line-clamp-3 text-sm/6">
-                  The LifeLine App is a free Suicide Prevention and Awareness
-                  App that offers access and guidance to support for those
-                  suffering in crisis, and those who have suffered the
-                  devastating loss of a loved one from suicide, as well as for
-                  those struggling with any degree of anxiety or depression. The
-                  LifeLine App also provides awareness, education and prevention
-                  strategies to guide people in crisis.
-                </CardDescription>
-                <CardDescription className="line-clamp-3 text-sm/6 group-hover:underline">
-                  See More
-                </CardDescription>
-              </CardContent>
-            </Card>
+            <p className="mt-2 capitalize text-4xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl">
+              We're not a crisis hotline, but we're here to help in any way we
+              can.
+            </p>
+            <p className="mt-4 max-w-3xl text-balance">
+              While we may not be equipped for emergency situations, we can
+              connect you with the resources and support you need. How can we
+              assist you today? We're here for you.
+            </p>
           </div>
-          <div className="">
-            <Button>View More</Button>
+          <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
+            <div className="relative lg:row-span-2">
+              <div className="absolute inset-px rounded-lg bg-white lg:rounded-l-[2rem]"></div>
+              <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
+                <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
+                  <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
+                    Mental Health Resources.
+                  </p>
+                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
+                    qui lorem cupidatat commodo.
+                  </p>
+                  <Link
+                    href="#"
+                    className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center"
+                  >
+                    <span className="absolou"></span>
+                    Read More
+                  </Link>
+                </div>
+                <div className="@container relative min-h-[30rem] w-full grow max-lg:mx-auto max-lg:max-w-sm">
+                  <div className="absolute inset-x-10 top-10 bottom-0 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
+                    <img
+                      className="size-full object-cover object-top"
+                      src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-mobile-friendly.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 lg:rounded-l-[2rem]"></div>
+            </div>
+            <div className="relative max-lg:row-start-1">
+              <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem]"></div>
+              <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
+                <div className="px-8 pt-8 sm:px-10 sm:pt-10">
+                  <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
+                    Pattern Interupts
+                  </p>
+                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit
+                    maiores impedit.
+                  </p>
+                </div>
+                <div className="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
+                  <img
+                    className="w-full max-lg:max-w-xs"
+                    src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-performance.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-t-[2rem]"></div>
+            </div>
+            <div className="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
+              <div className="absolute inset-px rounded-lg bg-white"></div>
+              <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
+                <div className="px-8 pt-8 sm:px-10 sm:pt-10">
+                  <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
+                    In Crisis? Need Help?
+                  </p>
+                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                    Morbi viverra dui mi arcu sed. Tellus semper adipiscing
+                    suspendisse semper morbi.
+                  </p>
+                </div>
+                <div className="@container flex flex-1 items-center max-lg:py-6 lg:pb-2">
+                  <img
+                    className="h-[min(152px,40cqw)] object-cover"
+                    src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-security.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5"></div>
+            </div>
+            <div className="relative lg:row-span-2">
+              <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
+              <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
+                <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
+                  <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
+                    Powerful APIs
+                  </p>
+                  <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                    Sit quis amet rutrum tellus ullamcorper ultricies libero
+                    dolor eget sem sodales gravida.
+                  </p>
+                </div>
+                <div className="relative min-h-[30rem] w-full grow">
+                  <div className="absolute top-10 right-0 bottom-0 left-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl">
+                    <div className="flex bg-gray-800/40 ring-1 ring-white/5">
+                      <div className="-mb-px flex text-sm/6 font-medium text-gray-400">
+                        <div className="border-r border-b border-r-white/10 border-b-white/20 bg-white/5 px-4 py-2 text-white">
+                          NotificationSetting.jsx
+                        </div>
+                        <div className="border-r border-gray-600/10 px-4 py-2">
+                          App.jsx
+                        </div>
+                      </div>
+                    </div>
+                    <div className="px-6 pt-6 pb-14">
+                      {/* Your code example */}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
+            </div>
           </div>
         </section>
 
         {/* Call To Action - Get Involved With Us. */}
         <section className="relative rounded-3xl bg-primary/10 overflow-hidden">
-          <div className="relative h-80 overflow-hidden bg-primary/60 md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2">
+          <div className="relative isolate h-80 overflow-hidden fill-primary/60 md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2">
+            <span className="w-full absolute z-10 h-full backdrop-saturate-200 backdrop-brightness-50 bg-primary/10"></span>
             <img
               className="size-full object-cover"
-              src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply"
+              src="https://images.unsplash.com/photo-1578357078586-491adf1aa5ba?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt=""
             />
-            <svg
-              viewBox="0 0 926 676"
-              aria-hidden="true"
-              className="absolute -bottom-24 left-24 w-[57.875rem] transform-gpu blur-[118px]"
-            >
-              <path
-                className="fill-primary"
-                fill-opacity=".4"
-                d="m254.325 516.708-90.89 158.331L0 436.427l254.325 80.281 163.691-285.15c1.048 131.759 36.144 345.144 168.149 144.613C751.171 125.508 707.17-93.823 826.603 41.15c95.546 107.978 104.766 294.048 97.432 373.585L685.481 297.694l16.974 360.474-448.13-141.46Z"
-              />
-              <defs>
-                <linearGradient
-                  id="60c3c621-93e0-4a09-a0e6-4c228a0116d8"
-                  x1="926.392"
-                  x2="-109.635"
-                  y1=".176"
-                  y2="321.024"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#776FFF" />
-                  <stop offset="1" stop-color="#FF4694" />
-                </linearGradient>
-              </defs>
-            </svg>
           </div>
           <div className="relative mx-auto max-w-7xl py-24 sm:py-32 lg:px-8 lg:py-40">
             <div className="pr-6 pl-6 md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2 lg:pr-0 lg:pl-24 xl:pl-32">
