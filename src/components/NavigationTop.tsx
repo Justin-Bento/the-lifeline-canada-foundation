@@ -8,9 +8,7 @@ import Link from "next/link";
 import { SidebarTrigger } from "./ui/sidebar";
 
 export default function NavigationTop() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isBannerVisible, setIsBannerVisible] = useState(true);
-  const closeMenu = () => setIsMenuOpen(false);
 
   const dismissBanner = () => {
     sessionStorage.setItem("bannerDismissed", "true");
@@ -84,7 +82,7 @@ export default function NavigationTop() {
         >
           <div className="flex items-center gap-4">
             <SidebarTrigger />
-            <Link href="/" onClick={closeMenu} aria-label="Home">
+            <Link href="/" aria-label="Home">
               <Image
                 className="w-40 h-auto dark:invert sm:w-60"
                 src="/media/logo/theLifeLineApp.png"
@@ -96,10 +94,8 @@ export default function NavigationTop() {
             </Link>
           </div>
           <span className="">
-            <Button asChild size="sm" className="text-xs">
-              <Link href="/get-involved" onClick={closeMenu}>
-                Get Involved &rarr;
-              </Link>
+            <Button asChild size="sm" className="hidden text-xs xl:flex">
+              <Link href="/get-involved">Get Involved &rarr;</Link>
             </Button>
           </span>
         </CardContent>
