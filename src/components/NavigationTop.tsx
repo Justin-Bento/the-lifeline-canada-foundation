@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
-import { Menu, X } from "lucide-react";
+import { Card, CardContent, CardHeader } from "./ui/card";
+import { X } from "lucide-react";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import Link from "next/link";
