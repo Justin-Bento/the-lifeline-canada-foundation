@@ -138,11 +138,14 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="@container flex flex-1 items-center max-lg:py-6 lg:pb-2">
-                  <img
-                    className="h-[min(152px,40cqw)] object-cover"
-                    src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-security.png"
-                    alt=""
-                  />
+                  <div className="relative h-[min(152px,40cqw)]">
+                    <Image
+                      className="object-cover"
+                      src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-security.png"
+                      alt=""
+                      fill
+                    />
+                  </div>
                 </div>
               </div>
               <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5"></div>
@@ -186,11 +189,14 @@ export default function Home() {
         <section className="relative rounded-3xl bg-primary/10 overflow-hidden">
           <div className="relative isolate h-80 overflow-hidden fill-primary/60 md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2">
             <span className="w-full absolute z-10 h-full backdrop-saturate-200 backdrop-brightness-50 bg-primary/10"></span>
-            <img
-              className="size-full object-cover"
-              src="https://images.unsplash.com/photo-1578357078586-491adf1aa5ba?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
-            />
+            <div className="relative size-full">
+              <Image
+                fill
+                className=" object-cover"
+                src="https://images.unsplash.com/photo-1578357078586-491adf1aa5ba?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
           </div>
           <div className="relative mx-auto max-w-7xl py-24 sm:py-32 lg:px-8 lg:py-40">
             <div className="pr-6 pl-6 md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2 lg:pr-0 lg:pl-24 xl:pl-32">
