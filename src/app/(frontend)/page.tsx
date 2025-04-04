@@ -93,11 +93,14 @@ export default function Home() {
                 </div>
                 <div className="@container relative min-h-[30rem] w-full grow max-lg:mx-auto max-lg:max-w-sm">
                   <div className="absolute inset-x-10 top-10 bottom-0 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
-                    <img
-                      className="size-full object-cover object-top"
-                      src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-mobile-friendly.png"
-                      alt=""
-                    />
+                    <div className="relative size-full">
+                      <Image
+                        fill
+                        className="object-cover object-top"
+                        src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-mobile-friendly.png"
+                        alt=""
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
