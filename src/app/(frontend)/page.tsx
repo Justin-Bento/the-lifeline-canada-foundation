@@ -119,11 +119,13 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
-                  <img
-                    className="w-full max-lg:max-w-xs"
-                    src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-performance.png"
-                    alt=""
-                  />
+                  <div className="relative w-full max-lg:max-w-xs">
+                    <Image
+                      fill
+                      src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-performance.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
               <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-t-[2rem]"></div>
