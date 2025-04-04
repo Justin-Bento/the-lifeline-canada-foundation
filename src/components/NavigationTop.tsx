@@ -27,7 +27,7 @@ export default function NavigationTop() {
 
   return (
     <header className="sticky top-0 z-50">
-      <Card className="pt-0 rounded-none border-none shadow-sm">
+      <Card className="pt-0 border-none rounded-none shadow-sm">
         {/* Announcement Banner */}
         {isBannerVisible && (
           <CardHeader className="px-0">
@@ -56,13 +56,13 @@ export default function NavigationTop() {
                   className="aspect-577/310 w-[36.0625rem] bg-linear-to-r from-[#ff80b5] to-[#9089fc] opacity-30"
                 />
               </div>
-              <p className="text-sm/6 text-gray-900">
+              <p className="text-gray-900 text-sm/6">
                 GeneriCon 2023 is on June 7 – 9 in Denver.{" "}
                 <a href="#" className="font-semibold whitespace-nowrap">
                   Get your ticket&nbsp;<span aria-hidden="true">&rarr;</span>
                 </a>
               </p>
-              <div className="flex flex-1 justify-end">
+              <div className="flex justify-end flex-1">
                 <button
                   type="button"
                   onClick={dismissBanner}
@@ -70,7 +70,7 @@ export default function NavigationTop() {
                   className="-m-3 p-3 focus-visible:outline-offset-[-4px]"
                 >
                   <span className="sr-only">Dismiss</span>
-                  <X aria-hidden="true" className="size-5 text-gray-900" />
+                  <X aria-hidden="true" className="text-gray-900 size-5" />
                 </button>
               </div>
             </div>
@@ -101,7 +101,7 @@ export default function NavigationTop() {
             </Button>
             <Link href="/" onClick={closeMenu} aria-label="Home">
               <Image
-                className="dark:invert h-auto w-40 sm:w-60"
+                className="w-40 h-auto dark:invert sm:w-60"
                 src="/media/logo/theLifeLineApp.png"
                 alt="The Lifeline App Logo"
                 width={240}
@@ -136,7 +136,7 @@ export default function NavigationTop() {
                   >
                     <Button
                       variant="outline"
-                      className="text-foreground shadow-none hover:bg-accent w-full"
+                      className="w-full shadow-none text-foreground hover:bg-accent"
                     >
                       {link}
                     </Button>
