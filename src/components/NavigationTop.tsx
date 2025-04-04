@@ -83,21 +83,6 @@ export default function NavigationTop() {
           }`}
         >
           <div className="flex items-center gap-4">
-            <Button
-              size="icon"
-              variant="outline"
-              className="shadow-none lg:hidden"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-              aria-expanded={isMenuOpen}
-              aria-controls="primary-navigation"
-            >
-              {isMenuOpen ? (
-                <X className="size-4" />
-              ) : (
-                <Menu className="size-4" />
-              )}
-            </Button>
             <SidebarTrigger />
             <Link href="/" onClick={closeMenu} aria-label="Home">
               <Image
