@@ -62,13 +62,13 @@ export default function Home() {
               Where Here to Support You!
             </h2>
             <p className="mt-2 capitalize text-4xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl">
-              We're not a crisis hotline, but we're here to help in any way we
-              can.
+              We&#39;re not a crisis hotline, but we&#39;re here to help in any
+              way we can.
             </p>
             <p className="mt-4 max-w-3xl text-balance">
               While we may not be equipped for emergency situations, we can
               connect you with the resources and support you need. How can we
-              assist you today? We're here for you.
+              assist you today? We&#39;re here for you.
             </p>
           </div>
           <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
