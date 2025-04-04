@@ -3,10 +3,9 @@ import React, { useEffect, useState } from "react";
 import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
-import { navigationLinks } from "@/lib/data";
-import { createSlug } from "@/lib/utils";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { SidebarTrigger } from "./ui/sidebar";
 
 export default function NavigationTop() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -79,7 +78,7 @@ export default function NavigationTop() {
 
         {/* Main Navigation */}
         <CardContent
-          className={`flex items-center justify-between container mx-auto lg:px-9 ${
+          className={`flex items-center justify-between container mx-auto ${
             isBannerVisible ? "pt-0" : "pt-8"
           }`}
         >
@@ -99,6 +98,7 @@ export default function NavigationTop() {
                 <Menu className="size-4" />
               )}
             </Button>
+            <SidebarTrigger />
             <Link href="/" onClick={closeMenu} aria-label="Home">
               <Image
                 className="w-40 h-auto dark:invert sm:w-60"
@@ -111,41 +111,13 @@ export default function NavigationTop() {
             </Link>
           </div>
           <span className="">
-            <Button asChild>
+            <Button asChild size="sm" className="text-xs">
               <Link href="/get-involved" onClick={closeMenu}>
                 Get Involved &rarr;
               </Link>
             </Button>
           </span>
         </CardContent>
-
-        {/* Navigation Links */}
-        <CardFooter className="container mx-auto lg:pb-4">
-          <nav aria-label="Primary navigation" className="w-full">
-            <ul
-              id="primary-navigation"
-              className={`${
-                isMenuOpen ? "flex" : "hidden"
-              } flex-col w-full gap-2 lg:flex lg:flex-row lg:gap-4 lg:justify-evenly`}
-            >
-              {navigationLinks.map((link) => (
-                <li key={link}>
-                  <Link
-                    href={link === "Home" ? "/" : createSlug(link)}
-                    onClick={closeMenu}
-                  >
-                    <Button
-                      variant="outline"
-                      className="w-full shadow-none text-foreground hover:bg-accent"
-                    >
-                      {link}
-                    </Button>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </CardFooter>
       </Card>
     </header>
   );
