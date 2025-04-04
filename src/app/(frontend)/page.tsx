@@ -1,11 +1,4 @@
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardTitle,
-} from "@/components/ui/card";
-import { Brain, Notebook, PhoneCall, Smartphone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
