@@ -6,51 +6,49 @@ export const data = {
       items: [
         {
           title: "Home",
-          url: "#",
+          url: "/",
         },
         {
           title: "About Us",
-          url: "#",
+          url: "about-us",
         },
         {
           title: "In Crisis?",
-          url: "#",
+          url: "in-crisis",
         },
         {
           title: "Resources",
-          url: "#",
+          url: "resources",
         },
         {
           title: "Pattern Interrupts",
-          url: "#",
+          url: "pattern-interrupts",
         },
         {
           title: "The Lifeline App",
-          url: "#",
+          url: "the-lifeline-app",
         },
         {
           title: "Companion Paws",
-          url: "#",
+          url: "companion-paws",
         },
         {
           title: "Get Involved",
-          url: "#",
+          url: "get-involved",
         },
         {
           title: "Email Support",
-          url: "#",
+          url: "email-support",
         },
         {
           title: "Site Map",
-          url: "#",
+          url: "site-map",
         },
         {
           title: "Contact Us",
-          url: "#",
+          url: "contact-us",
         },
       ],
-
-      url: "#",
     },
     {
       title: "Building Your Application",
