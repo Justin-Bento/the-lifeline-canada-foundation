@@ -51,57 +51,168 @@ export const data = {
       ],
     },
     {
-      title: "Building Your Application",
+      title: "Mental Health Resources",
       url: "#",
       items: [
         {
-          title: "Routing",
+          title: "Coping with Suicidal Thoughts",
           url: "#",
+          //...
         },
         {
-          title: "Data Fetching",
+          title: "Warning Signs",
           url: "#",
-          isActive: true,
+          //...
         },
         {
-          title: "Rendering",
+          title: "Search for a Professional",
           url: "#",
+          //...
         },
         {
-          title: "Caching",
+          title: "E Counselling",
           url: "#",
+          //...
         },
         {
-          title: "Styling",
+          title: "Self Management",
           url: "#",
+          //...
         },
         {
-          title: "Optimizing",
+          title: "Post Traumatic Stress Disorder",
           url: "#",
+          //...
         },
         {
-          title: "Configuring",
+          title: "Grief",
           url: "#",
+          //...
         },
         {
-          title: "Testing",
+          title: "Depression",
           url: "#",
+          //...
         },
         {
-          title: "Authentication",
+          title: "Addiction",
           url: "#",
+          //...
         },
         {
-          title: "Deploying",
+          title: "Anxiety",
           url: "#",
+          //...
         },
         {
-          title: "Upgrading",
+          title: "Myths & Facts",
           url: "#",
+          //...
         },
         {
-          title: "Examples",
+          title: "How Can I Help Someone",
           url: "#",
+          //...
+        },
+        {
+          title: "Teens & Youth",
+          url: "#",
+          //...
+        },
+        {
+          title: "Parents",
+          url: "#",
+          //...
+        },
+        {
+          title: "College Students",
+          url: "#",
+          //...
+        },
+        {
+          title: "LGBTQ2S",
+          url: "#",
+          //...
+        },
+        {
+          title: "Indigenous Issues",
+          url: "#",
+          //...
+        },
+        {
+          title: "Seniors",
+          url: "#",
+          //...
+        },
+        {
+          title: "Men",
+          url: "#",
+          //...
+        },
+        {
+          title: "Veterans & Military",
+          url: "#",
+          //...
+        },
+        {
+          title: "Refugees",
+          url: "#",
+          //...
+        },
+        {
+          title: "Attempt Survivors",
+          url: "#",
+          //...
+        },
+        {
+          title: "Survivors of Suicide Loss",
+          url: "#",
+          //...
+        },
+        {
+          title: "Bereaved Support",
+          url: "#",
+          //...
+        },
+        {
+          title: "After a Suicide Loss",
+          url: "#",
+          //...
+        },
+        {
+          title: "Educators",
+          url: "#",
+          //...
+        },
+        {
+          title: "Health Professionals",
+          url: "#",
+          //...
+        },
+        {
+          title: "First Responders",
+          url: "#",
+          //...
+        },
+        {
+          title: "Care Givers",
+          url: "#",
+          //...
+        },
+        {
+          title: "Media Professionals",
+          url: "#",
+          //...
+        },
+        {
+          title: "Workplace Employers",
+          url: "#",
+          //...
+        },
+        {
+          title: "Resource Organizations",
+          url: "#",
+          //...
         },
       ],
     },
