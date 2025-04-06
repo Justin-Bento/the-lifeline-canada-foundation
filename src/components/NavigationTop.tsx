@@ -28,7 +28,7 @@ export default function NavigationTop() {
         {/* Announcement Banner */}
         {isBannerVisible && (
           <CardHeader className="px-0">
-            <div className="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+            <div className="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2 sm:px-3.5 sm:before:flex-1">
               <div
                 aria-hidden="true"
                 className="absolute top-1/2 left-[max(-7rem,calc(50%-52rem))] -z-10 -translate-y-1/2 transform-gpu blur-2xl"
@@ -53,7 +53,7 @@ export default function NavigationTop() {
                   className="aspect-577/310 w-[36.0625rem] bg-linear-to-r from-[#ff80b5] to-[#9089fc] opacity-30"
                 />
               </div>
-              <p className="text-gray-900 text-sm/6">
+              <p className="text-gray-900 text-xs/6">
                 GeneriCon 2023 is on June 7 – 9 in Denver.{" "}
                 <a href="#" className="font-semibold whitespace-nowrap">
                   Get your ticket&nbsp;<span aria-hidden="true">&rarr;</span>
@@ -67,7 +67,7 @@ export default function NavigationTop() {
                   className="-m-3 p-3 focus-visible:outline-offset-[-4px]"
                 >
                   <span className="sr-only">Dismiss</span>
-                  <X aria-hidden="true" className="text-gray-900 size-5" />
+                  <X aria-hidden="true" className="text-gray-900 size-4" />
                 </button>
               </div>
             </div>
