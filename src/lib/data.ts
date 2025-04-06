@@ -1,19 +1,58 @@
+import { createSlug } from "./utils";
+
 export const data = {
-  versions: ["1.0.1", "1.1.0-alpha", "2.0.0-beta1"],
   navMain: [
     {
       title: "Getting Started",
       url: "#",
       items: [
         {
-          title: "Installation",
+          title: "Home",
           url: "#",
         },
         {
-          title: "Project Structure",
+          title: "About Us",
+          url: "#",
+        },
+        {
+          title: "In Crisis?",
+          url: "#",
+        },
+        {
+          title: "Resources",
+          url: "#",
+        },
+        {
+          title: "Pattern Interrupts",
+          url: "#",
+        },
+        {
+          title: "The Lifeline App",
+          url: "#",
+        },
+        {
+          title: "Companion Paws",
+          url: "#",
+        },
+        {
+          title: "Get Involved",
+          url: "#",
+        },
+        {
+          title: "Email Support",
+          url: "#",
+        },
+        {
+          title: "Site Map",
+          url: "#",
+        },
+        {
+          title: "Contact Us",
           url: "#",
         },
       ],
+
+      url: "#",
     },
     {
       title: "Building Your Application",
