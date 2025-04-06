@@ -37,14 +37,6 @@ export const data = {
           url: "get-involved",
         },
         {
-          title: "Email Support",
-          url: "email-support",
-        },
-        {
-          title: "Site Map",
-          url: "site-map",
-        },
-        {
           title: "Contact Us",
           url: "contact-us",
         },
@@ -295,19 +287,11 @@ export const data = {
           url: "#",
         },
         {
-          title: "Fast Refresh",
+          title: "Site Map",
           url: "#",
         },
         {
-          title: "Next.js Compiler",
-          url: "#",
-        },
-        {
-          title: "Supported Browsers",
-          url: "#",
-        },
-        {
-          title: "Turbopack",
+          title: "Email Support",
           url: "#",
         },
       ],
