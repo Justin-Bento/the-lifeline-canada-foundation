@@ -1,5 +1,3 @@
-import { createSlug } from "./utils";
-
 export const data = {
   navMain: [
     {
