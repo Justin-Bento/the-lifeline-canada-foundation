@@ -1,4 +1,9 @@
 export const data = {
+  langugaes: [
+    "English",
+    "French",
+    // ...
+  ],
   navMain: [
     {
       title: "Getting Started",
@@ -7,6 +12,7 @@ export const data = {
         {
           title: "Home",
           url: "/",
+          isActive: true,
         },
         {
           title: "About Us",
