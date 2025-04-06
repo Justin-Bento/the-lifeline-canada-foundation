@@ -11,12 +11,16 @@ import {
 } from "@/components/ui/sidebar";
 import { data } from "@/lib/data";
 import Link from "next/link";
+import { VersionSwitcher } from "@/components/version-switcher";
 
 export function AppSidebar() {
   return (
     <Sidebar>
       <SidebarHeader>
-        <p className="">The Lifeline Canada Foundation</p>
+        <VersionSwitcher
+          versions={data.langugaes}
+          defaultVersion={data.langugaes[0]}
+        />
       </SidebarHeader>
       <SidebarContent>
         {/* We create a SidebarGroup for each parent. */}
