@@ -217,31 +217,71 @@ export const data = {
       ],
     },
     {
-      title: "API Reference",
+      title: "Pattern Intterupts",
       url: "#",
       items: [
         {
-          title: "Components",
+          title: "Improve Your Mood",
           url: "#",
         },
         {
-          title: "File Conventions",
+          title: "Comedy",
           url: "#",
         },
         {
-          title: "Functions",
+          title: "Inspiring Videos",
           url: "#",
         },
         {
-          title: "next.config.js Options",
+          title: "Emotional Support Videos",
           url: "#",
         },
         {
-          title: "CLI",
+          title: "Uplifting Music Videos",
           url: "#",
         },
         {
-          title: "Edge Runtime",
+          title: "Life Changing Books",
+          url: "#",
+        },
+        {
+          title: "Helpful Movies",
+          url: "#",
+        },
+        {
+          title: "Movies of Inspiration",
+          url: "#",
+        },
+        {
+          title: "Self Management",
+          url: "#",
+        },
+        {
+          title: "Coping Mechanisms",
+          url: "#",
+        },
+        {
+          title: "Interactive Mind",
+          url: "#",
+        },
+        {
+          title: "Mental Health Apps",
+          url: "#",
+        },
+        {
+          title: "Transform Negative Thoughts",
+          url: "#",
+        },
+        {
+          title: "Words of Wisdom",
+          url: "#",
+        },
+        {
+          title: "Image Gallery",
+          url: "#",
+        },
+        {
+          title: "Acts of Kindness",
           url: "#",
         },
       ],
