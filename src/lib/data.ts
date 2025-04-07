@@ -53,7 +53,7 @@ export const data = {
       url: "#",
       items: [
         {
-          title: "Coping with Suicidal Thoughts",
+          title: "Suicidal Thoughts",
           url: "#",
           //...
         },
@@ -231,7 +231,7 @@ export const data = {
           url: "#",
         },
         {
-          title: "Emotional Support Videos",
+          title: "Support Videos",
           url: "#",
         },
         {
@@ -267,7 +267,7 @@ export const data = {
           url: "#",
         },
         {
-          title: "Transform Negative Thoughts",
+          title: "Transform Thoughts",
           url: "#",
         },
         {

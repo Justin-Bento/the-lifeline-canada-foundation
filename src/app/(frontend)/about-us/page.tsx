@@ -1,8 +1,14 @@
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardTitle,
+} from "@/components/ui/card";
 import React from "react";
 
 export default function page() {
   return (
-    <main className="container mx-auto min-h-dvh px-6 lg:py-24">
+    <main className="container mx-auto min-h-dvh px-6 lg:py-24 space-y-24">
       <section className="mx-auto max-w-3xl lg:mx-0 text-balance space-y-4">
         <h1 className="text-lg font-semibold">About Us.</h1>
         <p className="scroll-m-20 text-4xl font-semibold tracking-tight lg:text-5xl capitalize">
@@ -27,6 +33,38 @@ export default function page() {
           to continue to lower the risk of suicide to where it is a rare event
           across the country and to build mental health resilience for all.
         </p>
+      </section>
+      <section className="grid  grid-cols-1 lg:grid-cols-2 gap-12">
+        <Card className="shadow-none border-none bg-primary/10">
+          <CardContent className="text-balance space-y-2 p-12">
+            <CardTitle className="text-xl font-semibold">
+              Remember: Help Exists for Adults– Call 988 for Suicide Prevention
+              (Canada),
+            </CardTitle>
+            <CardDescription className="text-md/7 text-foreground">
+              The LifeLine Canada Foundation is not a crisis hotline. If in
+              Crisis, call or text 988 for Canada’s new suicide prevention
+              hotline. If you or someone you know is in danger of hurting
+              themselves or others, call 911 immediately. See our directory of
+              mental health crisis support in your area. .
+            </CardDescription>
+          </CardContent>
+        </Card>
+        <Card className="shadow-none border-none bg-primary/10">
+          <CardContent className="text-balance space-y-2 p-12">
+            <CardTitle className="text-xl font-semibold">
+              Remember: Help Exists For Young Adults – Call 988 for Suicide
+              Prevention (Canada),
+            </CardTitle>
+            <CardDescription className="text-md/7 text-foreground">
+              The LifeLine Canada Foundation is not a crisis hotline. If in
+              Crisis, call or text 988 for Canada’s new suicide prevention
+              hotline. If you or someone you know is in danger of hurting
+              themselves or others, call 911 immediately. See our directory of
+              mental health crisis support in your area. .
+            </CardDescription>
+          </CardContent>
+        </Card>
       </section>
     </main>
   );
