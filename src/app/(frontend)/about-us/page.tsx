@@ -35,15 +35,15 @@ export default function page() {
         </p>
       </section>
       <section className="">
-        <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-          Make a Contribution
+        <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl capitalize">
+          Our mission
         </h2>
         <p className="text-lg leading-7 [&:not(:first-child)]:mt-6">
-          mission is to open minds, save lives and restore hope. Whether it be
-          through the information provided on this website, through the LifeLine
-          App, or through any of our initiatives like Companion Paws Canada, we
-          are constantly looking for ways to reduce the suicide rate and
-          minimize the consequences of suicidal behavior.
+          Is to open minds, save lives and restore hope. Whether it be through
+          the information provided on this website, through the LifeLine App, or
+          through any of our initiatives like Companion Paws Canada, we are
+          constantly looking for ways to reduce the suicide rate and minimize
+          the consequences of suicidal behavior.
         </p>
         <p className="text-lg leading-7 [&:not(:first-child)]:mt-6">
           A gift to The LifeLine Canada Foundation helps fund our mission to
@@ -52,6 +52,23 @@ export default function page() {
           ways in which one could contribute, please don’t hesitate to contact
           us.
         </p>
+      </section>
+      <section className="">
+        <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl capitalize">
+          Why Volunteer with us?
+        </h2>
+        <p className="text-lg leading-7 [&:not(:first-child)]:mt-6">
+          If you’d like to get involved, we are always looking for dedicated and
+          committed volunteers for short, long term and task specific help. We
+          offer enthusiastic volunteers an opportunity to make a significant
+          difference in the lives of Canadians in keeping with our vision:
+        </p>
+        <blockquote className="text-lg leading-7 [&:not(:first-child)]:mt-6 max-w-4xl text-balance">
+          “To continue to lower the risk of suicide to where it is a rare event
+          across the country and to build mental health resilience for all.” It
+          is also an opportunity to gain important experience in specific
+          vocational areas and/or with the non-profit sector.
+        </blockquote>
       </section>
       <section className="grid  grid-cols-1 lg:grid-cols-2 gap-12">
         <Card className="shadow-none border-none bg-primary/10">
