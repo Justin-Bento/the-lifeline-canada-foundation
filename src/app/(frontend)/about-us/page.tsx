@@ -3,7 +3,7 @@ import React from "react";
 export default function page() {
   return (
     <main className="container mx-auto min-h-dvh px-6 lg:py-24">
-      <section className="">
+      <section className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none text-balance">
         <h1 className="">Hello, About.</h1>
         <p className="">Our strength is collaboration</p>
         <p className="">
