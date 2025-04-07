@@ -34,6 +34,25 @@ export default function page() {
           across the country and to build mental health resilience for all.
         </p>
       </section>
+      <section className="">
+        <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+          Make a Contribution
+        </h2>
+        <p className="text-lg leading-7 [&:not(:first-child)]:mt-6">
+          mission is to open minds, save lives and restore hope. Whether it be
+          through the information provided on this website, through the LifeLine
+          App, or through any of our initiatives like Companion Paws Canada, we
+          are constantly looking for ways to reduce the suicide rate and
+          minimize the consequences of suicidal behavior.
+        </p>
+        <p className="text-lg leading-7 [&:not(:first-child)]:mt-6">
+          A gift to The LifeLine Canada Foundation helps fund our mission to
+          save lives and give hope to those affected by suicide, depression,
+          anxiety and PTSD. If you have questions about your gift or about other
+          ways in which one could contribute, please don’t hesitate to contact
+          us.
+        </p>
+      </section>
       <section className="grid  grid-cols-1 lg:grid-cols-2 gap-12">
         <Card className="shadow-none border-none bg-primary/10">
           <CardContent className="text-balance space-y-2 p-12">
