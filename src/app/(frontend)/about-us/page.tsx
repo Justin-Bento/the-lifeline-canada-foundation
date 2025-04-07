@@ -6,23 +6,26 @@ export default function page() {
       <section className="mx-auto max-w-3xl lg:mx-0 text-balance space-y-4">
         <h1 className="text-lg font-semibold">About Us.</h1>
         <p className="scroll-m-20 text-4xl font-semibold tracking-tight lg:text-5xl capitalize">
-          Our strength is collaboration
+          Our strength is our Commitment
         </p>
         <p className="text-xl text-muted-foreground">
-          We believe that our strength lies in our collaborative approach, which
-          puts our clients at the center of everything we do.
+          The LifeLine Canada Foundation (or TLC) is a registered non-profit,
+          committed to positive mental health and suicide prevention & awareness
+          and is constantly developing new initiatives in support of these
+          goals.
         </p>
         <p className="leading-7 [&:not(:first-child)]:mt-6">
-          Studio was started by three friends who noticed that developer studios
-          were charging clients double what an in-house team would cost. Since
-          the beginning, we have been committed to doing things differently by
-          charging triple instead.
+          The LifeLine Canada Foundation was started To aid in suicide reduction
+          across Canada by raising awareness of risk factors, delivering
+          programs for positive mental health development, providing access to
+          available resource options, and promoting local programs to build
+          mental health resilience for all. .
         </p>
         <p className="leading-7 [&:not(:first-child)]:mt-6">
-          At Studio, we’re more than just colleagues — we’re a family. This
-          means we pay very little and expect people to work late. We want our
-          employees to bring their whole selves to work. In return, we just ask
-          that they keep themselves there until at least 6:30pm.
+          At The Lifeline Canada Foundation, we’re more than just enthusiastic
+          volunteers — we’re make a significant difference, by raising awareness
+          to continue to lower the risk of suicide to where it is a rare event
+          across the country and to build mental health resilience for all.
         </p>
       </section>
     </main>
