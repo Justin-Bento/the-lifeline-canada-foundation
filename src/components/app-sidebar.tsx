@@ -15,6 +15,7 @@ import {
   SidebarRail,
 } from "@/components/ui/sidebar";
 import { data } from "@/lib/data";
+import Link from "next/link";
 
 // This is sample data.
 
@@ -44,9 +45,9 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             {data.navMain.map((item) => (
               <SidebarMenuItem key={item.title}>
                 <SidebarMenuButton asChild>
-                  <a href={item.url} className="font-medium">
+                  <Link href={item.url} className="font-medium">
                     {item.title}
-                  </a>
+                  </Link>
                 </SidebarMenuButton>
                 {item.items?.length ? (
                   <SidebarMenuSub>
