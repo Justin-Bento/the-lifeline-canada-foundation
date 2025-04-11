@@ -16,7 +16,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "The LifeLine Canada Foundation",
+  title: {
+    default: "The LifeLine Canada Foundation",
+    template: "%s - The LifeLine Canada Foundation",
+  },
   description:
     "Our mission is to raise awareness of risk factors, delivering programs for positive mental health development, providing access to available resource options, and promoting local programs to build mental health resilience for all",
 };
