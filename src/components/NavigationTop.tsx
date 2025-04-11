@@ -104,7 +104,7 @@ export default function NavigationTop() {
                       variant="ghost"
                       className="hidden text-xs xl:flex"
                     >
-                      <Link href="/get-involved">{items}</Link>
+                      <Link href={items.url}>{items.name}</Link>
                     </Button>
                   </li>
                 );
