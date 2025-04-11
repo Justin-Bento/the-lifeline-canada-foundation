@@ -1,4 +1,3 @@
-import NavigationBottom from "@/components/NavigationBottom";
 import {
   Card,
   CardContent,
@@ -107,7 +106,6 @@ export default function page() {
           </Card>
         </section>
       </main>
-      <NavigationBottom />
     </>
   );
 }
