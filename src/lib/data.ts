@@ -305,6 +305,17 @@ export const data = {
   ],
 };
 
+export const topNavgation = [
+  "Home",
+  "About",
+  "In Crisis?",
+  "Resources",
+  "Pattern Inttterupts",
+  "Projects",
+  "Get Involved",
+  "Contact",
+];
+
 /*   <...>
       Home Page
      <...>

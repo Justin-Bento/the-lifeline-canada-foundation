@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { SidebarTrigger } from "./ui/sidebar";
+import { topNavgation } from "@/lib/data";
 
 export default function NavigationTop() {
   const [isBannerVisible, setIsBannerVisible] = useState(true);
@@ -93,11 +94,23 @@ export default function NavigationTop() {
               />
             </Link>
           </div>
-          <span className="">
-            <Button asChild size="sm" className="hidden text-xs xl:flex">
-              <Link href="/get-involved">Get Involved &rarr;</Link>
-            </Button>
-          </span>
+          <nav className="">
+            <ul className="flex">
+              {topNavgation.map((items) => {
+                return (
+                  <li>
+                    <Button
+                      size="sm"
+                      variant="ghost"
+                      className="hidden text-xs xl:flex"
+                    >
+                      <Link href="/get-involved">{items}</Link>
+                    </Button>
+                  </li>
+                );
+              })}
+            </ul>
+          </nav>
         </CardContent>
       </Card>
     </header>
