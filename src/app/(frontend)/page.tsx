@@ -115,7 +115,7 @@ export default function Home() {
               <CardHeader className="relative w-full aspect-video bg-gray-200">
                 <Image
                   fill
-                  src="/media/image/landing-image-3.png"
+                  src="/media/image/landingPage/landing-image-3.png"
                   alt=""
                   className="object-cover "
                 />
