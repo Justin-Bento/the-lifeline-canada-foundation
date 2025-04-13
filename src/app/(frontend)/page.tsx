@@ -23,7 +23,7 @@ export default function Home() {
           <div className="relative w-full aspect-[16/10]">
             <Image
               fill
-              src="/media/image/landingPage/home-hero-image.jpg"
+              src="/media/image/landingPage/landing-image-0.jpg"
               alt="Crisis Resources for Suicide Prevention"
               className="rounded-xl"
             />
@@ -83,7 +83,7 @@ export default function Home() {
           <div className="grid grid-cols-3 gap-12 mt-12">
             <Card className="col-span-3 aspect-video lg:col-span-2 relative overflow-hidden">
               <Image
-                src="/media/image/landing-page-2.jpg"
+                src="/media/image/landingPage/landing-image-2.jpg"
                 alt=""
                 fill
                 className="object-cover"
