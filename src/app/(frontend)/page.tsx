@@ -6,7 +6,12 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { CircleAlert, CornerDownRight } from "lucide-react";
+import {
+  CircleAlert,
+  CornerDownRight,
+  PawPrint,
+  Smartphone,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -315,6 +320,7 @@ export default function Home() {
           </div>
           <Card className="flex flex-col justify-center text-primary shadow-none bg-purple-200 h-96 mt-20 text-foreground">
             <CardContent className="space-y-4 px-20">
+              <Smartphone />
               <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
                 The Lifeline App
               </h3>
@@ -331,6 +337,7 @@ export default function Home() {
           </Card>
           <Card className="flex flex-col justify-center text-primary shadow-none bg-purple-200 h-96 mt-20 text-foreground">
             <CardContent className="space-y-4 px-20">
+              <PawPrint />
               <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
                 Companion Paws Canada
               </h3>
