@@ -96,9 +96,9 @@ export default function NavigationTop() {
           </div>
           <nav className="">
             <ul className="flex">
-              {topNavgation.map((items) => {
+              {topNavgation.map((items, index) => {
                 return (
-                  <li>
+                  <li key={index}>
                     <Button
                       size="sm"
                       variant="ghost"
