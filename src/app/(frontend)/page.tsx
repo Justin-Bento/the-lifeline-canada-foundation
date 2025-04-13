@@ -92,10 +92,10 @@ export default function Home() {
                   any way we can.
                 </CardTitle>
                 <CardDescription className="text-base/relaxed text-balance mt-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Minima enim nam similique inventore vel ipsam error illum
-                  reprehenderit earum neque commodi soluta omnis magni ratione
-                  vitae, sit consequuntur dignissimos sequi?
+                  In Crisis? Call or Text 988 Canada’s new suicide prevention
+                  hotline. If you or someone you know is in danger of hurting
+                  themselves or others, call 911 immediately. Additionally, see
+                  our directory of mental health crisis support in your area.
                 </CardDescription>
                 <Button
                   size="sm"
@@ -297,6 +297,21 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Project - Happening Within The LifeLine Canada.  */}
+        <section className="">
+          <div className="text-blance">
+            <h2 className="max-w-2xl mt-2 text-4xl font-semibold tracking-tight text-foreground capitalize sm:text-5xl/16">
+              A Fresh Chapter for LifeLine Canada – Discover What&#39;s Next!
+            </h2>
+            <p className="text-base/7 mt-4 max-w-[100ch] text-foreground">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              corporis placeat voluptates odit commodi minus fugit totam impedit
+              ipsum autem molestiae, modi, soluta itaque molestias quos
+              praesentium id minima. Quibusdam?
+            </p>
           </div>
         </section>
       </main>
