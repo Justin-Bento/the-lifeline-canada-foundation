@@ -313,6 +313,37 @@ export default function Home() {
               praesentium id minima. Quibusdam?
             </p>
           </div>
+          <Card className="flex flex-col justify-center text-primary shadow-none bg-purple-200 h-96 mt-20 text-foreground">
+            <CardContent className="space-y-4 px-20">
+              <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
+                The Lifeline App
+              </h3>
+              <p className="max-w-4xl text-balance">
+                The LifeLine App is a free Suicide Prevention and Awareness App
+                that offers access and guidance to support for those suffering
+                in crisis, and those who have suffered the devastating loss of a
+                loved one from suicide, as well as for those struggling with any
+                degree of anxiety or depression. The LifeLine App also provides
+                awareness, education and prevention strategies to guide people
+                in crisis.
+              </p>
+            </CardContent>
+          </Card>
+          <Card className="flex flex-col justify-center text-primary shadow-none bg-purple-200 h-96 mt-20 text-foreground">
+            <CardContent className="space-y-4 px-20">
+              <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
+                Companion Paws Canada
+              </h3>
+              <p className="max-w-4xl text-balance">
+                Companion Paws is dedicated to supporting Canadians in need
+                while providing a second chance for pets in rescues through The
+                LifeLine Canada’s (T.L.C.) Companion Paws Therapy Dog Adoption
+                Program and a Certify Your Own Dog Program for ones with their
+                own fully trained and temperament suitable dogs. TLC’s Companion
+                Paws programs are available in all Provinces across Canada.
+              </p>
+            </CardContent>
+          </Card>
         </section>
       </main>
     </>
