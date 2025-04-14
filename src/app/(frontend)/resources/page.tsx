@@ -38,7 +38,12 @@ export default function page() {
           <li key={index}>
             <Card className="relative isolate shadow-none pt-0 overflow-hidden group:">
               <CardHeader className="relative w-full aspect-video">
-                <Image fill src="" alt="#" className="bg-muted-foreground" />
+                <Image
+                  fill
+                  src={`/media/image/resourcesPage/${resource.media.image}`}
+                  alt={resource.media.alt}
+                  className="object-cover"
+                />
               </CardHeader>
               <CardContent>
                 <Link
