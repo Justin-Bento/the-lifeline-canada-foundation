@@ -417,7 +417,7 @@ export const resourcesPage = [
     id: 2,
     title: "Warning Signs",
     media: {
-      image: "resource-image-0.webp",
+      image: "resource-image-1.webp",
       alt: "here is the alt text",
     },
   },
@@ -425,7 +425,7 @@ export const resourcesPage = [
     id: 3,
     title: "Search for a Professional",
     media: {
-      image: "resource-image-0.webp",
+      image: "resource-image-2.png",
       alt: "here is the alt text",
     },
   },
@@ -433,7 +433,7 @@ export const resourcesPage = [
     id: 4,
     title: "E-Counselling",
     media: {
-      image: "resource-image-0.webp",
+      image: "resource-image-3.png",
       alt: "here is the alt text",
     },
   },
@@ -441,7 +441,7 @@ export const resourcesPage = [
     id: 5,
     title: "Self Management",
     media: {
-      image: "resource-image-0.webp",
+      image: "resource-image-4.jpg",
       alt: "here is the alt text",
     },
   },
@@ -449,7 +449,7 @@ export const resourcesPage = [
     id: 6,
     title: "PTST - Post Truamatic Stress disorder",
     media: {
-      image: "resource-image-0.webp",
+      image: "resource-image-5.jpg",
       alt: "here is the alt text",
     },
   },
@@ -457,7 +457,7 @@ export const resourcesPage = [
     id: 7,
     title: "grief",
     media: {
-      image: "resource-image-0.webp",
+      image: "resource-image-6.png",
       alt: "here is the alt text",
     },
   },
@@ -465,7 +465,7 @@ export const resourcesPage = [
     id: 8,
     title: "depression",
     media: {
-      image: "resource-image-0.webp",
+      image: "resource-image-8.png",
       alt: "here is the alt text",
     },
   },
