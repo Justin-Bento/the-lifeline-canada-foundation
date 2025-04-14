@@ -1,4 +1,6 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { resourcesPage } from "@/lib/data";
+import { createSlug } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -32,7 +34,7 @@ export default function page() {
         </p>
       </div>
       <ul className="grid grid-cols-1 md:grid-cols-3 gap-9 mt-12">
-        {Array.from({ length: 31 }).map((_, index) => (
+        {resourcesPage.map((resource, index) => (
           <li key={index}>
             <Card className="relative isolate shadow-none pt-0 overflow-hidden group:">
               <CardHeader className="relative w-full aspect-video">
@@ -40,11 +42,11 @@ export default function page() {
               </CardHeader>
               <CardContent>
                 <Link
-                  href={`/resources/${index + 1}`}
+                  href={`/resources/${createSlug(resource.title)}`}
                   className="text-lg font-semibold group-hover:underline"
                 >
                   <span className="absolute inset-0 hover:bg-purple-300/10 z-10"></span>
-                  New Item {index + 1}
+                  {resource.title}
                 </Link>
               </CardContent>
             </Card>
