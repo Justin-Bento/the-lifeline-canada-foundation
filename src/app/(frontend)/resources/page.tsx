@@ -48,7 +48,7 @@ export default function page() {
               <CardContent>
                 <Link
                   href={`/resources/${createSlug(resource.title)}`}
-                  className="text-lg font-semibold group-hover:underline"
+                  className="text-lg font-semibold group-hover:underline capitalize"
                 >
                   <span className="absolute inset-0 hover:bg-purple-300/10 z-10"></span>
                   {resource.title}
