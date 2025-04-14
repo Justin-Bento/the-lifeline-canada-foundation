@@ -403,3 +403,262 @@ export const resourceAid = [
     },
   },
 ];
+
+export const resourcesPage = [
+  {
+    id: 1,
+    title: "Coping with Suicidal Thoughts",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 2,
+    title: "Warning Signs",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 3,
+    title: "Search for a Professional",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 4,
+    title: "E-Counselling",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 5,
+    title: "Self Management",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 6,
+    title: "PTST - Post Truamatic Stress disorder",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 7,
+    title: "grief",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 8,
+    title: "depression",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 9,
+    title: "addiction",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 10,
+    title: "anxiety",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 11,
+    title: "myths and facts",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 12,
+    title: "how can i help someone",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 23,
+    title: "teens and youth",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 14,
+    title: "parents",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 15,
+    title: "college students",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 16,
+    title: "LGBTQ2S",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 17,
+    title: "indigenous issues",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 18,
+    title: "seniors",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 19,
+    title: "men",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 20,
+    title: "veterans and military",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 21,
+    title: "refugees",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 22,
+    title: "attempted survivors",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 23,
+    title: "survivors of suicide loss",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 24,
+    title: "breaved support",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 25,
+    title: "after a suicide losss",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 26,
+    title: "educators",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 27,
+    title: "health professionals",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 28,
+    title: "first responders",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 29,
+    title: "care givers",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 30,
+    title: "media professionals",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 31,
+    title: "worklpace employers",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+  {
+    id: 31,
+    title: "resource organizations",
+    media: {
+      image: "resource-image-0.webp",
+      alt: "here is the alt text",
+    },
+  },
+];
