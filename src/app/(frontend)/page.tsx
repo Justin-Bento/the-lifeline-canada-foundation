@@ -19,15 +19,7 @@ export default function Home() {
   return (
     <>
       <main className="container mx-auto min-h-dvh space-y-40 py-40 px-4  lg:px-6">
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="relative w-full aspect-[16/10]">
-            <Image
-              fill
-              src="/media/image/landingPage/landing-image-0.jpg"
-              alt="Crisis Resources for Suicide Prevention"
-              className="rounded-xl"
-            />
-          </div>
+        <section className="grid grid-cols-1 xl:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-primary font-bold font-mono capitalize">
               Mental Wellness Starts Here!
@@ -65,6 +57,14 @@ export default function Home() {
                 </Link>
               </li>
             </ul>
+          </div>
+          <div className="relative w-full aspect-video xl:aspect-[16/12]">
+            <Image
+              fill
+              src="/media/image/landingPage/landing-image-0.jpg"
+              alt="Crisis Resources for Suicide Prevention"
+              className="rounded-xl object-center"
+            />
           </div>
         </section>
 
