@@ -80,7 +80,7 @@ export default function Home() {
               assist you today? We&#39;re here for you.
             </p>
           </div>
-          <div className="grid grid-cols-3 gap-12 mt-12">
+          <div className="grid grid-cols-1 xl:grid-cols-3 gap-12 mt-12">
             <Card className="col-span-3 aspect-video lg:col-span-2 relative overflow-hidden">
               <Image
                 src="/media/image/landingPage/landing-image-2.jpg"
