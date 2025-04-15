@@ -19,15 +19,7 @@ export default function Home() {
   return (
     <>
       <main className="container mx-auto min-h-dvh space-y-40 py-40 px-4  lg:px-6">
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="relative w-full aspect-[16/10]">
-            <Image
-              fill
-              src="/media/image/landingPage/landing-image-0.jpg"
-              alt="Crisis Resources for Suicide Prevention"
-              className="rounded-xl"
-            />
-          </div>
+        <section className="grid grid-cols-1 xl:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-primary font-bold font-mono capitalize">
               Mental Wellness Starts Here!
@@ -66,6 +58,14 @@ export default function Home() {
               </li>
             </ul>
           </div>
+          <div className="relative w-full aspect-video xl:aspect-[16/12]">
+            <Image
+              fill
+              src="/media/image/landingPage/landing-image-0.jpg"
+              alt="Crisis Resources for Suicide Prevention"
+              className="rounded-xl object-center"
+            />
+          </div>
         </section>
 
         {/* Products / Services Section */}
@@ -80,7 +80,7 @@ export default function Home() {
               assist you today? We&#39;re here for you.
             </p>
           </div>
-          <div className="grid grid-cols-3 gap-12 mt-12">
+          <div className="grid grid-cols-1 xl:grid-cols-3 gap-12 mt-12">
             <Card className="col-span-3 aspect-video lg:col-span-2 relative overflow-hidden">
               <Image
                 src="/media/image/landingPage/landing-image-2.jpg"
@@ -318,8 +318,8 @@ export default function Home() {
               praesentium id minima. Quibusdam?
             </p>
           </div>
-          <Card className="flex flex-col justify-center text-primary shadow-none bg-purple-200 h-96 mt-20 text-foreground">
-            <CardContent className="space-y-4 px-20">
+          <Card className="flex flex-col justify-center shadow-none bg-purple-200 h-96 mt-20 text-foreground">
+            <CardContent className="space-y-4 px-14 py-24 lg:px-20">
               <Smartphone />
               <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
                 The Lifeline App
@@ -335,8 +335,8 @@ export default function Home() {
               </p>
             </CardContent>
           </Card>
-          <Card className="flex flex-col justify-center text-primary shadow-none bg-purple-200 h-96 mt-20 text-foreground">
-            <CardContent className="space-y-4 px-20">
+          <Card className="flex flex-col justify-center shadow-none bg-purple-200 h-96 mt-20 text-foreground">
+            <CardContent className="space-y-4 px-14 py-24 lg:px-20">
               <PawPrint />
               <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
                 Companion Paws Canada
