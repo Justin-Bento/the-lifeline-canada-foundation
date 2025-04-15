@@ -20,8 +20,8 @@ export default function page() {
           circumstances.
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-        <Card className="flex items-center justify-center lg:col-span-2 shadow-none border-0 bg-purple-100 my-12">
+      <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-12">
+        <Card className="flex items-center justify-center lg:col-span-2 shadow-none border-0 bg-purple-100 lg:my-12">
           <CardContent>
             <p className="max-w-4xl text-balance">
               The guides, tool kits and resources throughout this site represent
@@ -32,7 +32,7 @@ export default function page() {
             </p>
           </CardContent>
         </Card>
-        <Card className=" flex items-center justify-centershadow-none border-0 bg-purple-100 my-12">
+        <Card className=" flex items-center justify-centershadow-none border-0 bg-purple-100 lg:my-12">
           <CardContent>
             <p className="max-w-4xl text-balance">
               In Crisis? Call or Text 988 Canada’s new suicide prevention
