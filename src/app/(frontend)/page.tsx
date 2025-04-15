@@ -318,8 +318,8 @@ export default function Home() {
               praesentium id minima. Quibusdam?
             </p>
           </div>
-          <Card className="flex flex-col justify-center text-primary shadow-none bg-purple-200 h-96 mt-20 text-foreground">
-            <CardContent className="space-y-4 px-20">
+          <Card className="flex flex-col justify-center shadow-none bg-purple-200 h-96 mt-20 text-foreground">
+            <CardContent className="space-y-4 px-14 py-24 lg:px-20">
               <Smartphone />
               <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
                 The Lifeline App
@@ -335,8 +335,8 @@ export default function Home() {
               </p>
             </CardContent>
           </Card>
-          <Card className="flex flex-col justify-center text-primary shadow-none bg-purple-200 h-96 mt-20 text-foreground">
-            <CardContent className="space-y-4 px-20">
+          <Card className="flex flex-col justify-center shadow-none bg-purple-200 h-96 mt-20 text-foreground">
+            <CardContent className="space-y-4 px-14 py-24 lg:px-20">
               <PawPrint />
               <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
                 Companion Paws Canada
