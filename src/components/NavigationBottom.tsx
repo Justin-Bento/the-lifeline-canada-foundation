@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Wrapper from "./Wrapper";
 
 const navigation = {
   solutions: [
@@ -81,7 +82,7 @@ const navigation = {
 export default function NavigationBottom() {
   return (
     <footer className="bg-primary/10">
-      <div className="container mx-auto px-6 pt-16 pb-8 sm:pt-24 lg:px-8 lg:pt-32">
+      <Wrapper className="pt-16 pb-8 sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
             <Image
@@ -189,7 +190,7 @@ export default function NavigationBottom() {
             Inc. All rights reserved.
           </p>
         </div>
-      </div>
+      </Wrapper>
     </footer>
   );
 }

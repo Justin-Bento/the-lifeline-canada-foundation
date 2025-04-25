@@ -7,6 +7,7 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 import { SidebarTrigger } from "./ui/sidebar";
 import { topNavgation } from "@/lib/data";
+import Wrapper from "./Wrapper";
 
 export default function NavigationTop() {
   const [isBannerVisible, setIsBannerVisible] = useState(true);
@@ -76,41 +77,43 @@ export default function NavigationTop() {
         )}
 
         {/* Main Navigation */}
-        <CardContent
-          className={`flex items-center justify-between container mx-auto ${
-            isBannerVisible ? "pt-0" : "pt-8"
-          }`}
-        >
-          <div className="flex items-center gap-4">
-            <SidebarTrigger />
-            <Link href="/" aria-label="Home">
-              <Image
-                className="w-40 h-auto dark:invert sm:w-60"
-                src="/media/logo/theLifeLineApp.png"
-                alt="The Lifeline App Logo"
-                width={240}
-                height={56}
-                priority
-              />
-            </Link>
-          </div>
-          <nav className="">
-            <ul className="flex">
-              {topNavgation.map((items, index) => {
-                return (
-                  <li key={index}>
-                    <Button
-                      size="sm"
-                      variant="ghost"
-                      className="hidden text-xs xl:flex"
-                    >
-                      <Link href={items.url}>{items.name}</Link>
-                    </Button>
-                  </li>
-                );
-              })}
-            </ul>
-          </nav>
+        <CardContent>
+          <Wrapper
+            className={`flex items-center justify-between ${
+              isBannerVisible ? "pt-0" : "pt-8"
+            }`}
+          >
+            <div className="flex items-center gap-4">
+              <SidebarTrigger />
+              <Link href="/" aria-label="Home">
+                <Image
+                  className="w-40 h-auto dark:invert sm:w-60"
+                  src="/media/logo/theLifeLineApp.png"
+                  alt="The Lifeline App Logo"
+                  width={240}
+                  height={56}
+                  priority
+                />
+              </Link>
+            </div>
+            <nav className="">
+              <ul className="flex">
+                {topNavgation.map((items, index) => {
+                  return (
+                    <li key={index}>
+                      <Button
+                        size="sm"
+                        variant="ghost"
+                        className="hidden text-xs xl:flex"
+                      >
+                        <Link href={items.url}>{items.name}</Link>
+                      </Button>
+                    </li>
+                  );
+                })}
+              </ul>
+            </nav>
+          </Wrapper>
         </CardContent>
       </Card>
     </header>
