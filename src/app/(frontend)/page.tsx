@@ -6,6 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Wrapper from "@/components/Wrapper";
 import {
   CircleAlert,
   CornerDownRight,
@@ -17,8 +18,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <>
-      <main className="container mx-auto min-h-dvh space-y-40 py-40 px-4  lg:px-6">
+    <main>
+      <Wrapper className="min-h-dvh space-y-40 py-20 xl:py-40">
         <section className="grid grid-cols-1 xl:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-primary font-bold font-mono capitalize">
@@ -69,7 +70,7 @@ export default function Home() {
         </section>
 
         {/* Products / Services Section */}
-        <section className="mx-auto lg:container lg:mx-auto lg:px-6">
+        <section className="">
           <div className="space-y-4">
             <h2 className="mt-2 capitalize text-4xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl">
               Where Here to Support You!
@@ -352,7 +353,7 @@ export default function Home() {
             </CardContent>
           </Card>
         </section>
-      </main>
-    </>
+      </Wrapper>
+    </main>
   );
 }

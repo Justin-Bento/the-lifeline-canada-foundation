@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import Wrapper from "@/components/Wrapper";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -15,7 +16,7 @@ export default function page() {
         />
         <div className="absolute inset-0 bg-linear-to-t from-white" />
       </div>
-      <div className="container mx-auto min-h-dvh px-6 space-y-32">
+      <Wrapper className="min-h-dvh px-6 space-y-32 pb-32">
         <div className="">
           <h2 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl">
             In Crisis? Need Help?
@@ -199,7 +200,7 @@ export default function page() {
             </li>
           </ul>
         </div>
-      </div>
+      </Wrapper>
     </main>
   );
 }
