@@ -13,7 +13,7 @@ export default function page() {
         <Image
           fill
           alt=""
-          src="/media/image/image-2.png"
+          src="/media/image/image-3.jpg"
           className="object-cover"
         />
         <div className="absolute inset-0 bg-linear-to-t from-white" />
