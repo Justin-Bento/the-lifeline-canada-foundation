@@ -8,7 +8,16 @@ import React from "react";
 
 export default function page() {
   return (
-    <main className="min-h-dvh py-15 xl:py-24">
+    <main className="min-h-dvh">
+      <div className="relative w-full h-96">
+        <Image
+          fill
+          alt=""
+          src="/media/image/image-2.png"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-linear-to-t from-white" />
+      </div>
       <Wrapper>
         <h1 className="scroll-m-20 text-4xl font-semibold lg:text-5xl">
           Resources
