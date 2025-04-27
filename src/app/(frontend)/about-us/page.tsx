@@ -5,11 +5,21 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Wrapper from "@/components/Wrapper";
+import Image from "next/image";
 import React from "react";
 
 export default function page() {
   return (
     <>
+      <div className="relative w-full h-96">
+        <Image
+          fill
+          alt=""
+          src="/media/image/image-5.jpg"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-linear-to-t from-white" />
+      </div>
       <Wrapper className="min-h-dvh lg:py-24 space-y-24">
         <section className="mx-auto max-w-3xl lg:mx-0 text-balance space-y-4">
           <h1 className="text-lg font-semibold">About Us.</h1>
