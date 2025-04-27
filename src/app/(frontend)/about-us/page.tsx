@@ -41,9 +41,9 @@ export default function page() {
               local programs to build mental health resilience for all. .
             </p>
             <p>
-              At The Lifeline Canada Foundation, we’re more than just
-              enthusiastic volunteers — we’re make a significant difference, by
-              raising awareness to continue to lower the risk of suicide to
+              At The Lifeline Canada Foundation, we&#39;re more than just
+              enthusiastic volunteers — we&#39;re make a significant difference,
+              by raising awareness to continue to lower the risk of suicide to
               where it is a rare event across the country and to build mental
               health resilience for all.
             </p>
@@ -64,8 +64,8 @@ export default function page() {
             A gift to The LifeLine Canada Foundation helps fund our mission to
             save lives and give hope to those affected by suicide, depression,
             anxiety and PTSD. If you have questions about your gift or about
-            other ways in which one could contribute, please don’t hesitate to
-            contact us.
+            other ways in which one could contribute, please don&#39;t hesitate
+            to contact us.
           </p>
         </section>
         <section className="">
@@ -73,11 +73,11 @@ export default function page() {
             Why Volunteer with us?
           </h2>
           <p className="text-lg leading-7 [&:not(:first-child)]:mt-6">
-            If you’d like to get involved, we are always looking for dedicated
-            and committed volunteers for short, long term and task specific
-            help. We offer enthusiastic volunteers an opportunity to make a
-            significant difference in the lives of Canadians in keeping with our
-            vision:
+            If you&#39;d like to get involved, we are always looking for
+            dedicated and committed volunteers for short, long term and task
+            specific help. We offer enthusiastic volunteers an opportunity to
+            make a significant difference in the lives of Canadians in keeping
+            with our vision:
           </p>
           <blockquote className="text-lg leading-7 [&:not(:first-child)]:mt-6 max-w-4xl text-balance">
             “To continue to lower the risk of suicide to where it is a rare
@@ -95,7 +95,7 @@ export default function page() {
               </CardTitle>
               <CardDescription className="text-md/7 text-foreground">
                 The LifeLine Canada Foundation is not a crisis hotline. If in
-                Crisis, call or text 988 for Canada’s new suicide prevention
+                Crisis, call or text 988 for Canada&#39;s new suicide prevention
                 hotline. If you or someone you know is in danger of hurting
                 themselves or others, call 911 immediately. See our directory of
                 mental health crisis support in your area. .
@@ -110,7 +110,7 @@ export default function page() {
               </CardTitle>
               <CardDescription className="text-md/7 text-foreground">
                 The LifeLine Canada Foundation is not a crisis hotline. If in
-                Crisis, call or text 988 for Canada’s new suicide prevention
+                Crisis, call or text 988 for Canada&#39;s new suicide prevention
                 hotline. If you or someone you know is in danger of hurting
                 themselves or others, call 911 immediately. See our directory of
                 mental health crisis support in your area. .
