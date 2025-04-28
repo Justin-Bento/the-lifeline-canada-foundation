@@ -10,15 +10,22 @@ const wrapperVariants = cva("mx-auto px-4 sm:px-6", {
   variants: {
     layout: {
       container: "max-w-6xl xl:container", // Tailwind's container + fallback
-      containerVH: "max-w-6xl xl:container min-h-dvh", // + full viewport height
+      fullHeight: "max-w-6xl xl:container min-h-dvh", // + full viewport height
       full: "w-full", // Full parent width
       screen: "w-screen", // Full viewport width
       prose: "max-w-prose", // Optimal text width
       none: "", // No constraints (just padding)
     },
+    spacing: {
+      default: "my-0",
+      small: "my-8",
+      medium: "my-16",
+      large: "my-24",
+    },
   },
   defaultVariants: {
     layout: "container", // Default to constrained container
+    spacing: "default",
   },
 });
 
@@ -26,10 +33,11 @@ export default function Wrapper({
   children,
   className,
   layout,
+  spacing,
   ...props
 }: WrapperProps) {
   return (
-    <div className={wrapperVariants({ layout, className })} {...props}>
+    <div className={wrapperVariants({ layout, spacing, className })} {...props}>
       {children}
     </div>
   );
