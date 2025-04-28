@@ -104,7 +104,7 @@ export default function NavigationTop() {
                       <Button
                         size="sm"
                         variant="ghost"
-                        className="hidden text-xs xl:flex"
+                        className="hidden text-xs md:flex"
                       >
                         <Link href={items.url}>{items.name}</Link>
                       </Button>
