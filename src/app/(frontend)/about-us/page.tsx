@@ -53,20 +53,22 @@ export default function page() {
           <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl capitalize">
             Our mission
           </h2>
-          <p className="text-lg leading-7 [&:not(:first-child)]:mt-6">
-            Is to open minds, save lives and restore hope. Whether it be through
-            the information provided on this website, through the LifeLine App,
-            or through any of our initiatives like Companion Paws Canada, we are
-            constantly looking for ways to reduce the suicide rate and minimize
-            the consequences of suicidal behavior.
-          </p>
-          <p className="text-lg leading-7 [&:not(:first-child)]:mt-6">
-            A gift to The LifeLine Canada Foundation helps fund our mission to
-            save lives and give hope to those affected by suicide, depression,
-            anxiety and PTSD. If you have questions about your gift or about
-            other ways in which one could contribute, please don&#39;t hesitate
-            to contact us.
-          </p>
+          <div className="[&>p]:text-lg [&>p]:leading-7 [&:not(:first-child)]:[&>p]:mt-6">
+            <p>
+              Is to open minds, save lives and restore hope. Whether it be
+              through the information provided on this website, through the
+              LifeLine App, or through any of our initiatives like Companion
+              Paws Canada, we are constantly looking for ways to reduce the
+              suicide rate and minimize the consequences of suicidal behavior.
+            </p>
+            <p>
+              A gift to The LifeLine Canada Foundation helps fund our mission to
+              save lives and give hope to those affected by suicide, depression,
+              anxiety and PTSD. If you have questions about your gift or about
+              other ways in which one could contribute, please don&#39;t
+              hesitate to contact us.
+            </p>
+          </div>
         </section>
         <section className="">
           <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl capitalize">
