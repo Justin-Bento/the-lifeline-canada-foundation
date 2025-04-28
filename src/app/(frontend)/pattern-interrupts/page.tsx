@@ -14,7 +14,7 @@ export default function page() {
         />
         <div className="absolute inset-0 bg-linear-to-t from-white" />
       </div>
-      <Wrapper className="mb-24">
+      <Wrapper layout="fullHeight" spacing="medium">
         <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl">
           Pattern Interruptions
         </h1>

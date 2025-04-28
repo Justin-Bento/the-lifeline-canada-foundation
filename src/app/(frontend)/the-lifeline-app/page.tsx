@@ -4,7 +4,7 @@ import Wrapper from "@/components/Wrapper";
 
 export default function page() {
   return (
-    <main className="space-y-8 mb-16 min-h-dvh">
+    <main>
       <div className="relative w-full h-96">
         <Image
           fill
@@ -14,7 +14,7 @@ export default function page() {
         />
         <div className="absolute inset-0 bg-linear-to-t from-white" />
       </div>
-      <Wrapper className="mb-24">
+      <Wrapper layout="fullHeight" spacing="medium">
         <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl">
           The LifeLine Mobile App
         </h1>

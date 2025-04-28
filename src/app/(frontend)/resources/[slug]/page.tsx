@@ -11,7 +11,7 @@ import Wrapper from "@/components/Wrapper";
 export default function Page() {
   return (
     <main>
-      <Wrapper className="min-h-dvh py-12 lg:py-16 xl:py-24">
+      <Wrapper layout="fullHeight" spacing="medium">
         <Breadcrumb className="mb-4">
           <BreadcrumbList>
             <BreadcrumbItem>

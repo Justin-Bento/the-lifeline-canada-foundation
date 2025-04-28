@@ -3,8 +3,8 @@ import React from "react";
 
 export default function page() {
   return (
-    <main className="min-h-dvh lg:py-24">
-      <Wrapper>
+    <main>
+      <Wrapper layout="fullHeight" spacing="medium">
         <h1 className="">Hello, Site Map Page.</h1>
       </Wrapper>
     </main>
