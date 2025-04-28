@@ -312,7 +312,7 @@ export const topNavgation = [
   },
   {
     name: "About",
-    url: "/about",
+    url: "/about-us",
   },
   {
     name: "In Crisis?",
