@@ -7,10 +7,10 @@ export default function page() {
     <Wrapper layout="fullHeight" spacing="medium">
       <section className="">
         <h1>Canadian Crisis Centres</h1>
-        <span>
+        <span className="block [&>p]:text-balance [&>p]:text-base/snug space-y-8 my-8">
           <p>
-            NEW! Canada’s 988 hotline, gives people access to suicide prevention
-            services via call or text.
+            NEW! Canada&#39;s 988 hotline, gives people access to suicide
+            prevention services via call or text.
           </p>
           <p>
             People in every province and territory who are experiencing a mental
