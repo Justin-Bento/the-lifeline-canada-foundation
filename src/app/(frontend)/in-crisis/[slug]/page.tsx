@@ -6,7 +6,9 @@ export default function page() {
   return (
     <Wrapper layout="fullHeight" spacing="medium">
       <section className="">
-        <h1>Canadian Crisis Centres</h1>
+        <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl">
+          Canadian Crisis Centres
+        </h1>
         <span className="block [&>p]:text-balance [&>p]:text-base/snug space-y-8 my-8">
           <p>
             NEW! Canada&#39;s 988 hotline, gives people access to suicide
