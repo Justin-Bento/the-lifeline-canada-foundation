@@ -1,4 +1,5 @@
 import Wrapper from "@/components/Wrapper";
+import Image from "next/image";
 import React from "react";
 
 export default function page() {
@@ -25,6 +26,14 @@ export default function page() {
           in English and French.
         </p>
       </span>
+      <div className="relative w-full aspect-video">
+        <Image
+          fill
+          src="/media/image/image-5.jpg"
+          alt="sample image of main banner"
+          className="rounded-3xl object-cover object-center"
+        />
+      </div>
     </Wrapper>
   );
 }
