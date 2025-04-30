@@ -19,7 +19,7 @@ const wrapperVariants = cva("mx-auto px-4 sm:px-6", {
     whiteSpace: {
       default: "my-0",
       small: "my-8",
-      medium: "my-16",
+      medium: "p-20",
       large: "my-24",
     },
   },
