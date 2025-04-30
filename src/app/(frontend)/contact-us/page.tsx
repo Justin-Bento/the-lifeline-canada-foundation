@@ -16,7 +16,19 @@ export default function page() {
         <div className="absolute inset-0 bg-linear-to-t from-white" />
       </div>
       <Wrapper layout="fullHeight" whiteSpace="medium">
-        <h1 className="">Hello, Contact Us Page.</h1>
+        <section className="space-y-5">
+          <span className="flex flex-col-reverse gap-1">
+            <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl">
+              Contact Us
+            </h1>
+            <p className="text-sm text-purple-500 font-mono">Get Involved</p>
+          </span>
+          <p className="text-xl/8 leading-relaxed max-w-4xl text-balance">
+            For non crisis questions and comments or to contact The LifeLine
+            Canada Foundation about collaborating please use the contact form
+            below.
+          </p>
+        </section>
       </Wrapper>
     </main>
   );
