@@ -20,7 +20,7 @@ export default function page() {
         />
         <div className="absolute inset-0 bg-linear-to-t from-white" />
       </div>
-      <Wrapper layout="fullHeight" whiteSpace="medium">
+      <Wrapper layout="fullHeight" whiteSpace="medium" className="space-y-24">
         <section className="mx-auto max-w-3xl lg:mx-0 text-balance space-y-4">
           <h1 className="text-lg font-semibold">About Us.</h1>
           <span className="block [&>p]:text-balance [&>p]:leading-relax space-y-4">
