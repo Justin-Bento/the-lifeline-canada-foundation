@@ -19,7 +19,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main>
-      <Wrapper layout="fullHeight" spacing="medium">
+      <Wrapper layout="fullHeight" whiteSpace="medium">
         <section className="grid grid-cols-1 xl:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-primary font-bold font-mono capitalize">

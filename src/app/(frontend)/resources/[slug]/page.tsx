@@ -11,7 +11,7 @@ import Wrapper from "@/components/Wrapper";
 export default function Page() {
   return (
     <main>
-      <Wrapper layout="fullHeight" spacing="medium">
+      <Wrapper layout="fullHeight" whiteSpace="medium">
         <Breadcrumb className="mb-4">
           <BreadcrumbList>
             <BreadcrumbItem>

@@ -18,7 +18,7 @@ export default function page() {
         />
         <div className="absolute inset-0 bg-linear-to-t from-white" />
       </div>
-      <Wrapper layout="fullHeight" spacing="medium">
+      <Wrapper layout="fullHeight" whiteSpace="medium">
         <h1 className="scroll-m-20 text-4xl font-semibold lg:text-5xl">
           Resources
         </h1>

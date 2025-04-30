@@ -82,7 +82,7 @@ const navigation = {
 export default function NavigationBottom() {
   return (
     <footer className="bg-primary/10">
-      <Wrapper className="pt-16 pb-8 sm:pt-24 lg:px-8 lg:pt-32">
+      <Wrapper whiteSpace="medium">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
             <Image
