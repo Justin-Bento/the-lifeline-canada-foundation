@@ -17,16 +17,16 @@ const wrapperVariants = cva("mx-auto px-4 sm:px-6", {
       prose: "max-w-prose", // Optimal text width
       none: "", // No constraints (just padding)
     },
-    whiteSpace: {
-      default: "my-0",
-      small: "my-8",
-      medium: "p-20",
-      large: "my-24",
+    spacing: {
+      none: "my-0",
+      sm: "my-8",
+      md: "my-20",
+      lg: "my-24",
     },
   },
   defaultVariants: {
     width: "container", // Default to constrained container
-    whiteSpace: "default",
+    spacing: "none",
   },
 });
 
@@ -34,14 +34,11 @@ export default function Wrapper({
   children,
   className,
   width,
-  whiteSpace,
+  spacing,
   ...props
 }: WrapperProps) {
   return (
-    <div
-      className={wrapperVariants({ width, whiteSpace, className })}
-      {...props}
-    >
+    <div className={wrapperVariants({ width, spacing, className })} {...props}>
       {children}
     </div>
   );
