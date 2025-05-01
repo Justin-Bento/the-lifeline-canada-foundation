@@ -41,6 +41,7 @@ export default function Wrapper({
   children,
   className,
   width,
+  height,
   spacing,
   ...props
 }: WrapperProps) {
