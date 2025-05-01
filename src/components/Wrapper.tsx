@@ -24,10 +24,10 @@ const wrapperVariants = cva("mx-auto px-4 sm:px-6", {
       full: "h-full",
     },
     spacing: {
-      none: "my-0",
-      sm: "my-8",
-      md: "my-20",
-      lg: "my-24",
+      none: "py-0",
+      sm: "py-8",
+      md: "py-20",
+      lg: "py-24",
     },
   },
   defaultVariants: {
