@@ -16,7 +16,12 @@ export default function page() {
         />
         <div className="absolute inset-0 bg-linear-to-t from-white" />
       </div>
-      <Wrapper layout="fullHeight" whiteSpace="medium" className="space-y-24">
+      <Wrapper
+        width="container"
+        height="screen"
+        spacing="md"
+        className="space-y-24"
+      >
         <div className="">
           <h2 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl">
             In Crisis? Need Help?

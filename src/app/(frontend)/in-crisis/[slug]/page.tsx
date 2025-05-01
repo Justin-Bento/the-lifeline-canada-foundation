@@ -4,7 +4,12 @@ import React from "react";
 
 export default function page() {
   return (
-    <Wrapper layout="fullHeight" whiteSpace="medium">
+    <Wrapper
+      width="container"
+      height="screen"
+      spacing="md"
+      className="space-y-24"
+    >
       <section className="">
         <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl">
           Canadian Crisis Centres

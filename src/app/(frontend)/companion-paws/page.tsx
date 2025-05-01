@@ -15,7 +15,12 @@ export default function page() {
         />
         <div className="absolute inset-0 bg-linear-to-t from-white" />
       </div>
-      <Wrapper layout="fullHeight" whiteSpace="medium">
+      <Wrapper
+        width="container"
+        height="screen"
+        spacing="md"
+        className="space-y-24"
+      >
         <section className="space-y-5">
           <span className="flex flex-col-reverse gap-1">
             <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl">

@@ -79,6 +79,7 @@ export default function NavigationTop() {
         {/* Main Navigation */}
         <CardContent>
           <Wrapper
+            width="container"
             className={`flex items-center justify-between ${
               isBannerVisible ? "pt-0" : "pt-8"
             }`}
