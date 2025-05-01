@@ -8,7 +8,8 @@ type WrapperProps = React.HTMLAttributes<HTMLDivElement> &
 // Define layout variants using `cva`
 const wrapperVariants = cva("mx-auto px-4 sm:px-6", {
   variants: {
-    layout: {
+    // X-axis control (renamed from 'layout')
+    width: {
       container: "max-w-6xl xl:container", // Tailwind's container + fallback
       fullHeight: "max-w-6xl xl:container min-h-dvh", // + full viewport height
       full: "w-full", // Full parent width
@@ -24,7 +25,7 @@ const wrapperVariants = cva("mx-auto px-4 sm:px-6", {
     },
   },
   defaultVariants: {
-    layout: "container", // Default to constrained container
+    width: "container", // Default to constrained container
     whiteSpace: "default",
   },
 });
@@ -32,13 +33,13 @@ const wrapperVariants = cva("mx-auto px-4 sm:px-6", {
 export default function Wrapper({
   children,
   className,
-  layout,
+  width,
   whiteSpace,
   ...props
 }: WrapperProps) {
   return (
     <div
-      className={wrapperVariants({ layout, whiteSpace, className })}
+      className={wrapperVariants({ width, whiteSpace, className })}
       {...props}
     >
       {children}
