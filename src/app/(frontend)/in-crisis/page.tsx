@@ -57,7 +57,7 @@ export default function page() {
                     Reprehenderit, consequuntur? Sit, totam? Blanditiis
                   </p>
                   <Link
-                    href="/canadian-crisis-centres"
+                    href="/in-crisis/canadian-crisis-centres"
                     className="text-sm/relaxed text-muted-foreground group-hover:underline"
                   >
                     <span className="absolute group-hover:bg-gray-50/10 inset-0 w-full h-full z-10 group-hover:cursor-pointer"></span>
