@@ -18,7 +18,7 @@ export default function PageHeader({
 }: PageHeaderProps) {
   return (
     <header>
-      <div className="relative aspect-video h-[50vh] max-h-[600px] min-h-[300px]">
+      <div className="relative h-[50vh] max-h-[600px] min-h-[300px]">
         <Image
           fill
           priority
