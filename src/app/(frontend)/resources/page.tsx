@@ -8,7 +8,7 @@ import React from "react";
 
 export default function page() {
   return (
-    <main className="min-h-dvh">
+    <>
       <div className="relative w-full h-96">
         <Image
           fill
@@ -85,6 +85,6 @@ export default function page() {
           ))}
         </ul>
       </Wrapper>
-    </main>
+    </>
   );
 }
