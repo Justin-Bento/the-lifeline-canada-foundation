@@ -72,7 +72,7 @@ function Description({
   return (
     <div
       className={cn(
-        "max-w-4xl space-y-8 text-xl/8 text-muted-foreground leading-snug",
+        "max-w-4xl space-y-8 text-xl/8 text-muted-foreground leading-snug text-balance",
         className
       )}
       {...props}

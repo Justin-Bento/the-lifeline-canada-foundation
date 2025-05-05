@@ -1,26 +1,30 @@
 import React from "react";
-import PageHeader from "@/components/PageHeader";
 import Wrapper from "@/components/Wrapper";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
+import { PageHeader } from "@/components/PageHeader";
 
 export default function page() {
-  let content = {
-    media: {
-      URL: "/media/image/image-1.png", // Can be string URL or StaticImageData
-      ALT: "Group of actionable words about volenteering.",
-    },
-    title: "In Crisis? Need Help?",
-    description: `In Crisis? Call or Text 988 Canada’s new suicide prevention hotline. If you or someone you know is in danger of hurting themselves or others, call 911 immediately. See our directory of mental health crisis support in your area below. Seek the advice of an appropriately qualified healthcare professional before making decisions about your circumstances.`,
-  };
   return (
     <>
-      <PageHeader
-        Banner={content.media}
-        Title={content.title}
-        Description={content.description}
-      />
+      <PageHeader>
+        <PageHeader.Banner
+          image="/media/image/image-1.png"
+          alt="Group of actionable words about volenteering."
+        />
+        <PageHeader.Container>
+          <PageHeader.Headline>In Crisis? Need Help?</PageHeader.Headline>
+          <PageHeader.Description>
+            In Crisis? Call or Text 988 Canada’s new suicide prevention hotline.
+            If you or someone you know is in danger of hurting themselves or
+            others, call 911 immediately. See our directory of mental health
+            crisis support in your area below. Seek the advice of an
+            appropriately qualified healthcare professional before making
+            decisions about your circumstances.
+          </PageHeader.Description>
+        </PageHeader.Container>
+      </PageHeader>
       <Wrapper height="screen" spacing="md">
         <article className="space-y-16">
           <section className="">

@@ -1,3 +1,4 @@
+import { PageHeader } from "@/components/PageHeader";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import Wrapper from "@/components/Wrapper";
 import { resourcesPage } from "@/lib/data";
@@ -9,33 +10,32 @@ import React from "react";
 export default function page() {
   return (
     <>
-      <div className="relative w-full h-96">
-        <Image
-          fill
-          alt=""
-          src="/media/image/image-3.jpg"
-          className="object-cover"
+      <PageHeader>
+        <PageHeader.Banner
+          image="/media/image/image-3.jpg"
+          alt="Group of actionable words about volenteering."
         />
-        <div className="absolute inset-0 bg-linear-to-t from-white" />
-      </div>
-      <Wrapper
-        width="container"
-        height="screen"
-        spacing="lg"
-        className="space-y-24"
-      >
-        <h1 className="scroll-m-20 text-4xl font-semibold lg:text-5xl">
-          Resources
-        </h1>
-        <div className="max-w-4xl text-xl text-balance space-y-4 mt-4">
-          <p>
-            This site provides information about anxiety, depression and
-            suicide. Online resources alone are not a substitute for
-            professional medical advice, diagnosis or treatment. Seek the advice
-            of an appropriately qualified healthcare professional before making
-            decisions about your circumstances.
-          </p>
-        </div>
+        <PageHeader.Container>
+          <PageHeader.Headline>Resources</PageHeader.Headline>
+          <PageHeader.Description className="space-y-4">
+            <p>
+              This site provides information about anxiety, depression and
+              suicide. Online resources alone are not a substitute for
+              professional medical advice, diagnosis or treatment. Seek the
+              advice of an appropriately qualified healthcare professional
+              before making decisions about your circumstances.
+            </p>
+            <p>
+              The guides, tool kits and resources throughout this site represent
+              a compilation of curated suicide prevention resources from various
+              sources around the world. When clicking 3rd party links, you will
+              be redirected to websites not affiliated with, but supported by
+              The LifeLine Canada Foundation.
+            </p>
+          </PageHeader.Description>
+        </PageHeader.Container>
+      </PageHeader>
+      <Wrapper spacing="sm" height="screen">
         <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-12">
           <Card className="flex items-center justify-center lg:col-span-2 shadow-none border-0 bg-purple-100 lg:my-12">
             <CardContent>
