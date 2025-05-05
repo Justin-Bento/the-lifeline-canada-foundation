@@ -33,7 +33,7 @@ export default function PageHeader({
         />
       </div>
 
-      <Wrapper width="container" height="screen" className="space-y-24">
+      <Wrapper width="container" className="space-y-24">
         <article className="max-w-4xl">
           <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl">
             {Title}
