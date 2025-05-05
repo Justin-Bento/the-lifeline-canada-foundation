@@ -2,7 +2,20 @@ import React from "react";
 import Image from "next/image";
 import Wrapper from "./Wrapper";
 
-export default function PageHeader() {
+interface PageHeaderInterface {
+  Banner: {
+    URL: "string";
+    ALT: "string";
+  };
+  Title: "string";
+  Description: "string";
+}
+
+export default function PageHeader({
+  Banner,
+  Title,
+  Description,
+}: PageHeaderInterface) {
   return (
     <>
       <div className="relative w-full h-96">
