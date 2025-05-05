@@ -1,52 +1,55 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Wrapper from "./Wrapper";
 
-interface PageHeaderInterface {
+interface PageHeaderProps {
   Banner: {
-    URL: "string";
-    ALT: "string";
+    URL: string | StaticImageData;
+    ALT: string;
   };
-  Title: "string";
-  Description: "string";
+  Title?: string;
+  Description?: string;
 }
 
 export default function PageHeader({
   Banner,
-  Title,
-  Description,
-}: PageHeaderInterface) {
+  Title = "The Joke Tax Chronicles",
+  Description = "Once upon a time, in a far-off land, there was a very lazy king who spent all day lounging on his throne. One day, his advisors came to him with a problem: the kingdom was running out of money.",
+}: PageHeaderProps) {
   return (
-    <>
-      <div className="relative w-full h-96">
+    <header>
+      <div className="relative aspect-video h-[50vh] max-h-[600px] min-h-[300px]">
         <Image
           fill
-          alt={Banner.ALT}
+          priority
+          alt={Banner.ALT || "Page header image"}
           src={Banner.URL}
           className="object-cover"
+          sizes="(max-width: 768px) 100vw, 80vw"
         />
-        <div className="absolute inset-0 bg-linear-to-t from-white" />
+        <div
+          className="absolute inset-0 bg-gradient-to-t from-white to-transparent"
+          aria-hidden="true"
+        />
       </div>
+
       <Wrapper
         width="container"
         height="screen"
         spacing="lg"
         className="space-y-24"
       >
-        <div className="">
+        <article className="max-w-4xl">
           <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl">
-            {Title || "The Joke Tax Chronicles"}
+            {Title}
           </h1>
-          <span className="block max-w-4xl text-balance space-y-8 pt-8">
+          <div className="pt-8 space-y-8">
             <p className="text-xl/8 text-muted-foreground leading-snug">
-              {Description ||
-                `Once upon a time, in a far-off land, there was a very lazy king who
-spent all day lounging on his throne. One day, his advisors came to him
-with a problem: the kingdom was running out of money.`}
+              {Description}
             </p>
-          </span>
-        </div>
+          </div>
+        </article>
       </Wrapper>
-    </>
+    </header>
   );
 }
