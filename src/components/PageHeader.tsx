@@ -1,50 +1,84 @@
-import React from "react";
+import { cn } from "@/lib/utils";
 import Image, { StaticImageData } from "next/image";
-import Wrapper from "./Wrapper";
+import React from "react";
 
-interface PageHeaderProps {
-  Banner: {
-    URL: string | StaticImageData;
-    ALT: string;
-  };
-  Title?: string;
-  Description?: string;
+// Base container component
+function PageHeader({ className, ...props }: React.ComponentProps<"div">) {
+  return <div className={cn("flex flex-col gap-8", className)} {...props} />;
 }
 
-export default function PageHeader({
-  Banner,
-  Title = "The Joke Tax Chronicles",
-  Description = "Once upon a time, in a far-off land, there was a very lazy king who spent all day lounging on his throne. One day, his advisors came to him with a problem: the kingdom was running out of money.",
-}: PageHeaderProps) {
+// Banner with image and gradient overlay
+function Banner({
+  className,
+  image,
+  alt = "",
+  ...props
+}: React.ComponentProps<"div"> & {
+  image: string | StaticImageData;
+  alt?: string;
+}) {
   return (
-    <header>
-      <div className="relative h-[50vh] max-h-[600px] min-h-[300px]">
-        <Image
-          fill
-          priority
-          alt={Banner.ALT || "Page header image"}
-          src={Banner.URL}
-          className="object-cover"
-          sizes="(max-width: 768px) 100vw, 80vw"
-        />
-        <div
-          className="absolute inset-0 bg-gradient-to-t from-white to-transparent"
-          aria-hidden="true"
-        />
-      </div>
-
-      <Wrapper width="container" className="space-y-24">
-        <article className="max-w-4xl">
-          <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl">
-            {Title}
-          </h1>
-          <div className="pt-8 space-y-8">
-            <p className="text-xl/8 text-muted-foreground leading-snug">
-              {Description}
-            </p>
-          </div>
-        </article>
-      </Wrapper>
-    </header>
+    <div
+      className={cn("relative h-[50vh] min-h-[300px] w-full", className)}
+      {...props}
+    >
+      <Image
+        fill
+        priority
+        alt={alt}
+        src={image}
+        className="object-cover"
+        sizes="(max-width: 768px) 100vw, 80vw"
+      />
+      <div
+        className="absolute inset-0 bg-gradient-to-t from-white to-transparent"
+        aria-hidden="true"
+      />
+    </div>
   );
 }
+
+// Headline/title component
+function Headline({
+  className,
+  children,
+  ...props
+}: React.ComponentProps<"h1">) {
+  return (
+    <h1
+      className={cn(
+        "scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl",
+        className
+      )}
+      {...props}
+    >
+      {children}
+    </h1>
+  );
+}
+
+// Description text component
+function Description({
+  className,
+  children,
+  ...props
+}: React.ComponentProps<"div">) {
+  return (
+    <div
+      className={cn(
+        "max-w-4xl space-y-8 pt-8 text-xl/8 text-muted-foreground leading-snug",
+        className
+      )}
+      {...props}
+    >
+      {children}
+    </div>
+  );
+}
+
+// Compound component with default layout
+PageHeader.Banner = Banner;
+PageHeader.Headline = Headline;
+PageHeader.Description = Description;
+
+export { PageHeader, Banner, Headline, Description };
