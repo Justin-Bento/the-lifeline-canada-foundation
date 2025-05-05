@@ -25,7 +25,7 @@ export default function page() {
             The LifeLine Mobile App
           </h1>
           <span className="block max-w-4xl text-balance space-y-8 pt-8">
-            <p className="text-xl/8 leading-snug">
+            <p className="text-xl/8 text-muted-foreground leading-snug">
               The LifeLine App is the National free Suicide Prevention and
               Awareness App that offers access and guidance to support for those
               suffering in crisis and those who have suffered the devastating
