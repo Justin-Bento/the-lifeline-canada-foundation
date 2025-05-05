@@ -1,13 +1,14 @@
 import { cn } from "@/lib/utils";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
+import Wrapper from "./Wrapper";
 
-// Base container component
+// 1. Base PageHeader remains the same
 function PageHeader({ className, ...props }: React.ComponentProps<"div">) {
-  return <div className={cn("flex flex-col gap-8", className)} {...props} />;
+  return <div className={cn("space-y-4", className)} {...props} />;
 }
 
-// Banner with image and gradient overlay
+// 2. Banner component (unchanged)
 function Banner({
   className,
   image,
@@ -38,7 +39,12 @@ function Banner({
   );
 }
 
-// Headline/title component
+// 3. NEW: Wrapper component for content grouping
+function Container({ children }: React.ComponentProps<"div">) {
+  return <Wrapper>{children}</Wrapper>;
+}
+
+// 4. Headline component (now wrapped in Wrapper)
 function Headline({
   className,
   children,
@@ -47,7 +53,7 @@ function Headline({
   return (
     <h1
       className={cn(
-        "scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl",
+        "scroll-m-20 text-4xl font-bold tracking-tight lg:text-5xl mb-6",
         className
       )}
       {...props}
@@ -57,7 +63,7 @@ function Headline({
   );
 }
 
-// Description text component
+// 5. Description component (now wrapped in Wrapper)
 function Description({
   className,
   children,
@@ -66,7 +72,7 @@ function Description({
   return (
     <div
       className={cn(
-        "max-w-4xl space-y-8 pt-8 text-xl/8 text-muted-foreground leading-snug",
+        "max-w-4xl space-y-8 text-xl/8 text-muted-foreground leading-snug",
         className
       )}
       {...props}
@@ -76,9 +82,10 @@ function Description({
   );
 }
 
-// Compound component with default layout
+// Compound component setup
 PageHeader.Banner = Banner;
+PageHeader.Container = Container;
 PageHeader.Headline = Headline;
 PageHeader.Description = Description;
 
-export { PageHeader, Banner, Headline, Description };
+export { PageHeader, Banner, Container, Headline, Description };
