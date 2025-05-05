@@ -4,7 +4,7 @@ import Wrapper from "@/components/Wrapper";
 
 export default function page() {
   return (
-    <main>
+    <>
       <div className="relative w-full h-96">
         <Image
           fill
@@ -36,6 +36,6 @@ export default function page() {
           </p>
         </span>
       </Wrapper>
-    </main>
+    </>
   );
 }
