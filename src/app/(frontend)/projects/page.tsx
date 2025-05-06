@@ -31,10 +31,22 @@ export default function page() {
         spacing="md"
         className="space-y-16 lg:space-y-24"
       >
-        <article className="">
+        <article className="[&>p]:text-balance [&>p]:leading-relaxed space-y-4">
           <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight">
             The LifeLine Mobile App
           </h2>
+          <p>
+            The LifeLine App is the National free Suicide Prevention and
+            Awareness App that offers access and guidance to support for those
+            suffering in crisis and those who have suffered the devastating loss
+            of a loved one from suicide.
+          </p>
+          <p>
+            The LifeLine App also provides awareness education and prevention
+            strategies to guide people in crisis all across the Globe. The App
+            was developed as a centralized hub to connect people with accredited
+            resources in Canada and throughout the world.
+          </p>
         </article>
         <article className="">
           <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight">
