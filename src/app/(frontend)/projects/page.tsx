@@ -27,7 +27,9 @@ export default function page() {
         </PageHeader.Container>
       </PageHeader>
       <Wrapper height="screen" spacing="lg">
-        <h1 className="">The LifeLine Mobile App</h1>
+        <article className="">
+          <h2 className="">The LifeLine Mobile App</h2>
+        </article>
       </Wrapper>
     </>
   );
