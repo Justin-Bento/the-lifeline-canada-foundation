@@ -24,7 +24,7 @@ export default function page() {
       <Wrapper
         height="screen"
         spacing="lg"
-        className="space-y-24 border-4 border-dashed bg-gray-300 rounded-2xl my-24"
+        className="space-y-24 border-4 border-dashed rounded-2xl my-24"
       ></Wrapper>
     </>
   );
