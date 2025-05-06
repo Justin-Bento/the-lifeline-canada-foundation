@@ -7,7 +7,7 @@ export default function page() {
     <>
       <PageHeader>
         <PageHeader.Banner
-          image="/media/image/image-1.png"
+          image="/media/image/image-9.jpg"
           alt="Group of actionable words about volenteering."
         />
         <PageHeader.Container>
