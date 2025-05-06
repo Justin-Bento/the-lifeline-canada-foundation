@@ -32,10 +32,14 @@ export default function page() {
         className="space-y-16 lg:space-y-24"
       >
         <article className="">
-          <h2 className="">The LifeLine Mobile App</h2>
+          <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight">
+            The LifeLine Mobile App
+          </h2>
         </article>
         <article className="">
-          <h2 className="">Companion Paws Canada (CPC)</h2>
+          <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight">
+            Companion Paws Canada (CPC)
+          </h2>
         </article>
       </Wrapper>
     </>
