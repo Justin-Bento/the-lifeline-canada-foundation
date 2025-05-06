@@ -1,8 +1,33 @@
 import { PageHeader } from "@/components/PageHeader";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import Wrapper from "@/components/Wrapper";
 import React from "react";
 
 export default function page() {
+  const products = [
+    {
+      id: 1,
+      name: "The LifeLine Mobile App",
+      href: "/projects/the-lifeline-app",
+      imageSrc:
+        "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+      imageAlt: "Front of men's Basic Tee in black.",
+      price: "$35",
+      color: "Black",
+    },
+    {
+      id: 2,
+      name: "Companion Paws Canada (CPC)",
+      href: "https://companionpaws.ca/",
+      imageSrc:
+        "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg",
+      imageAlt: "Front of men's Basic Tee in black.",
+      price: "$35",
+      color: "Black",
+    },
+    // More products...
+  ];
   return (
     <>
       <PageHeader>
@@ -31,28 +56,41 @@ export default function page() {
         spacing="md"
         className="space-y-16 lg:space-y-24"
       >
-        <article className="[&>p]:text-balance [&>p]:leading-relaxed space-y-4">
-          <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight">
-            The LifeLine Mobile App
-          </h2>
-          <p>
-            The LifeLine App is the National free Suicide Prevention and
-            Awareness App that offers access and guidance to support for those
-            suffering in crisis and those who have suffered the devastating loss
-            of a loved one from suicide.
-          </p>
-          <p>
-            The LifeLine App also provides awareness education and prevention
-            strategies to guide people in crisis all across the Globe. The App
-            was developed as a centralized hub to connect people with accredited
-            resources in Canada and throughout the world.
-          </p>
-        </article>
-        <article className="">
-          <h2 className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight">
-            Companion Paws Canada (CPC)
-          </h2>
-        </article>
+        <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 xl:gap-x-8">
+          {products.map((product) => (
+            <Card
+              key={product.id}
+              className="group relative p-0 overflow-hidden"
+            >
+              <div className="">
+                <img
+                  alt={product.imageAlt}
+                  src={product.imageSrc}
+                  className="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80"
+                />
+              </div>
+              <CardContent className="pb-6">
+                <h3 className="leading-7 text-xl font-bold group-hover:underline">
+                  <a href={product.href}>
+                    <span aria-hidden="true" className="absolute inset-0" />
+                    {product.name}
+                  </a>
+                </h3>
+                <p className="leading-snug mt-2">
+                  The king, seeing how much happier his subjects were, realized
+                  the error of his ways and repealed the joke tax.
+                </p>
+                <Button
+                  size="sm"
+                  variant="ghost"
+                  className="pl-0 mt-4 group-hover:opacity-50"
+                >
+                  View Project
+                </Button>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </Wrapper>
     </>
   );
