@@ -30,6 +30,9 @@ export default function page() {
         <article className="">
           <h2 className="">The LifeLine Mobile App</h2>
         </article>
+        <article className="">
+          <h2 className="">Companion Paws Canada (CPC)</h2>
+        </article>
       </Wrapper>
     </>
   );
