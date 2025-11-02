@@ -5,7 +5,6 @@ import { X } from "lucide-react";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import Link from "next/link";
-import { SidebarTrigger } from "./ui/sidebar";
 import { topNavgation } from "@/lib/data";
 import Wrapper from "./Wrapper";
 
@@ -85,7 +84,6 @@ export default function NavigationTop() {
             }`}
           >
             <div className="flex items-center gap-4">
-              <SidebarTrigger />
               <Link href="/" aria-label="Home">
                 <Image
                   className="w-40 h-auto dark:invert sm:w-60"
