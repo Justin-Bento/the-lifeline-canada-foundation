@@ -33,11 +33,9 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <main className="w-full">
-          <NavigationTop />
-          {children}
-          <NavigationBottom />
-        </main>
+        <NavigationTop />
+        <main className="w-full">{children}</main>
+        <NavigationBottom />
       </body>
     </html>
   );
