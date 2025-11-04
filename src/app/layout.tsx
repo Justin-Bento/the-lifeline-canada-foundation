@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavigationTop from "@/components/NavigationTop";
 import NavigationBottom from "@/components/NavigationBottom";
-import { cookies } from "next/headers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,11 +33,9 @@ export default async function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <main className="w-full">
-          <NavigationTop />
-          {children}
-          <NavigationBottom />
-        </main>
+        <NavigationTop />
+        <main className="min-h-dvh max-w-9xl container mx-auto px-6 lg:px-0 py-40">{children}</main>
+        <NavigationBottom />
       </body>
     </html>
   );
