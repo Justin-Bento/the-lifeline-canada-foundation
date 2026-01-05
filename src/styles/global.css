@@ -15,6 +15,9 @@
   ---color-brand-900: #5f3dc4;
   ---color-brand-950: #291065;
 }
+* {
+  vertical-align: baseline;
+}
 header {
   background-color: var(--color-white);
 }
