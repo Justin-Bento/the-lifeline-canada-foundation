@@ -1,7 +1,13 @@
 ---
 import Layout from "../layouts/BaseLayout.astro";
+import { contact_page_info } from "../lib/data";
 ---
 
-<Layout>
-  <h1 class="">Welcome, Contact Us!</h1>
+<Layout
+  title={contact_page_info.heading}
+  summary={contact_page_info.overview}
+  image_path={contact_page_info.media.path}
+  image_description={contact_page_info.media.description}
+>
+  <p>This is some additional content for the page!</p>
 </Layout>

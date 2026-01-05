@@ -1,10 +1,13 @@
 ---
 import Layout from "../layouts/BaseLayout.astro";
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import { pattern_interrupts_page_info } from "../lib/data";
 ---
 
-<Layout>
-  <h1 class="">Welcome Pattern Interrupts Page</h1>
+<Layout
+  title={pattern_interrupts_page_info.heading}
+  summary={pattern_interrupts_page_info.overview}
+  image_path={pattern_interrupts_page_info.media.path}
+  image_description={pattern_interrupts_page_info.media.description}
+>
+  <p>This is some additional content for the page!</p>
 </Layout>

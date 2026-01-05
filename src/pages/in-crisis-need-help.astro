@@ -1,7 +1,13 @@
 ---
 import Layout from "../layouts/BaseLayout.astro";
+import { in_crisis_page_info } from "../lib/data";
 ---
 
-<Layout>
-  <h1 class="">Welcome, In Crisis Need Help Page!</h1>
+<Layout
+  title={in_crisis_page_info.heading}
+  summary={in_crisis_page_info.overview}
+  image_path={in_crisis_page_info.media.path}
+  image_description={in_crisis_page_info.media.description}
+>
+  <p>This is some additional content for the page!</p>
 </Layout>
