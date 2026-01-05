@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+.wrapper {
+  width: 90%;
+  margin: 0rem auto;
+  max-width: var(--container-7xl);
+}
