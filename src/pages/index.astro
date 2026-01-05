@@ -6,5 +6,37 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <h1 class="">Welcome Home Page</h1>
+  <section class="grid grid-cols-2 items-center gap-16 mt-16">
+    <div class="col-span-2 lg:col-span-1 max-w-4xl text-balance">
+      <h1
+        class="text-black leading-loose text-4xl font-semibold tracking-tight text-balance lg:leading-[1.1] lg:font-semibold xl:text-5xl xl:tracking-tight"
+      >
+        Mental Health Resources At Your Fingertips!
+      </h1>
+      <p class="text-black text-base text-balance sm:text-lg mt-4">
+        Do you or someone you care about struggle with thoughts of suicide or
+        other mental health issues? We’re here to help. The guides, tools and
+        resources throughout this site represent a compilation of resources from
+        various sources across the Globe as noted.
+      </p>
+      <div class="flex items-center gap-6 mt-6">
+        <a href="" class="block">Get Help Now</a>
+        <a href="" class="block">Break Patterns</a>
+      </div>
+    </div>
+    <div class="col-span-2 lg:col-span-1">
+      <img
+        src="/media/mother-and-daughter-talking-seriously.jpg"
+        alt=""
+        class="w-full aspect-video object-center object-cover rounded-xl"
+      />
+    </div>
+    <div class="col-span-2 bg-violet-300 p-6 rounded-xl">
+      <p class="text-base leading-7">
+        When clicking 3rd party links, you will be redirected to websites not
+        affiliated to, but with the underlying support of The LifeLine Canada
+        Foundation.
+      </p>
+    </div>
+  </section>
 </Layout>
