@@ -2,6 +2,7 @@
 import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
+const { title, summary, image_path, image_description } = Astro.props;
 ---
 
 <!doctype html>
@@ -21,19 +22,21 @@ import "../styles/global.css";
           <h1
             class="text-black leading-loose text-4xl font-semibold tracking-tight text-balance lg:leading-[1.1] lg:font-semibold xl:text-5xl xl:tracking-tight"
           >
-            Mental Health Resources At Your Fingertips!
+            {title}
           </h1>
-          <p class="text-black text-base text-balance sm:text-lg mt-4">
-            Do you or someone you care about struggle with thoughts of suicide
-            or other mental health issues? We’re here to help. The guides, tools
-            and resources throughout this site represent a compilation of
-            resources from various sources across the Globe as noted.
-          </p>
+
+          {
+            summary.map((paragraph: string) => (
+              <p class="text-black text-base text-balance sm:text-lg mt-4">
+                {paragraph}
+              </p>
+            ))
+          }
         </div>
         <div class="col-span-2 lg:col-span-1">
           <img
-            src="/media/mother-and-daughter-talking-seriously.jpg"
-            alt=""
+            src={image_path}
+            alt={image_description}
             class="w-full aspect-video object-center object-cover rounded-xl"
           />
         </div>

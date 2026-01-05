@@ -1,7 +1,23 @@
 ---
 import Layout from "../layouts/BaseLayout.astro";
+const page_info = {
+  heading: "Welcome, About Us!",
+  overview: [
+    "The LifeLine Canada Foundation (or TLC) is a registered non-profit, committed to positive mental health and suicide prevention & awareness and is constantly developing new initiatives in support of these goals.",
+    "The LifeLine Canada Foundation is not a crisis hotline. If in Crisis, call or text 988 for Canada’s new suicide prevention hotline. If you or someone you know is in danger of hurting themselves or others, call 911 immediately. See our directory of mental health crisis support in your area.",
+  ],
+  media: {
+    path: "/media/company-banner.jpg",
+    description: "/media/company-banner.jpg",
+  },
+};
 ---
 
-<Layout>
-  <h1 class="">Welcome, About Us!</h1>
+<Layout
+  title={page_info.heading}
+  summary={page_info.overview}
+  image_path={page_info.media.path}
+  image_description={page_info.media.description}
+>
+  <p>This is some additional content for the page!</p>
 </Layout>
