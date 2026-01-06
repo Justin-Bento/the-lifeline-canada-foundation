@@ -1,7 +1,10 @@
 ---
 import Card from "../components/Card.astro";
 import Layout from "../layouts/BaseLayout.astro";
-import { resources, resources_page_info } from "../lib/data";
+import { resources_page_info } from "../lib/data";
+
+import { getCollection } from "astro:content";
+const allResources = await getCollection("resources");
 ---
 
 <Layout
@@ -12,12 +15,11 @@ import { resources, resources_page_info } from "../lib/data";
 >
   <section class="grid grid-cols-3 gap-16">
     {
-      resources.map((resource) => (
+      allResources.map((resource) => (
         <Card
-          key={resource.id}
           url_path="resources"
-          title={resource.title}
-          overview={resource.overview}
+          title={resource.data.title}
+          overview={resource.data.description}
         />
       ))
     }

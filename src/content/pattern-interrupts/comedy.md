@@ -1,10 +1,11 @@
 ---
 title: "Comedy"
-description: "This is the first post of my new Astro blog."
+description: "Astro makes building fast, modern websites simple and enjoyable for developers worldwide."
 language: "en"
+image:
+  path: "/media/astro-logo.webp"
+  alt: "The Astro logo"
 ---
-
-# My First Blog Post
 
 Published on: 2022-07-01
 
