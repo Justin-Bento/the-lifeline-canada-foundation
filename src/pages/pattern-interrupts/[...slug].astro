@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getEntryBySlug } from "astro:content";
+import ContentLayout from "../../layouts/ContentLayout.astro";
+
+const { slug } = Astro.params;
+
+// slug is an array for [...slug]
+const entry = await getEntryBySlug("resources", slug?.join("/") ?? "");
+
+if (!entry) {
+  throw new Error("Resource not found");
+}
+
+const { Content } = await entry.render();
+const { title, summary, image } = entry.data;
+---
+
+<ContentLayout>
+  <Content />
+</ContentLayout>
