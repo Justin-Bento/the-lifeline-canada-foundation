@@ -15,6 +15,7 @@ import { resources, resources_page_info } from "../lib/data";
       resources.map((resource) => (
         <Card
           key={resource.id}
+          url_path="resources"
           title={resource.title}
           overview={resource.overview}
         />

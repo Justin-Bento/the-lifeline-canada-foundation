@@ -1,5 +1,5 @@
 ---
-const { title, overview } = Astro.props;
+const { title, overview, url_path } = Astro.props;
 import { slugify } from "../lib/slugify";
 ---
 
@@ -13,7 +13,7 @@ import { slugify } from "../lib/slugify";
       class="object-fill object-center w-full mb-6 rounded aspect-video bg-violet-200"
     />
     <a
-      href={`/resources/${slugify(title)}`}
+      href={`/${url_path}/${slugify(title)}`}
       class="block text-sm leading-6 group-hover:underline"
     >
       <h2 class="mb-3 text-xl font-semibold leading-none capitalize">
