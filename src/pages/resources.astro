@@ -1,6 +1,7 @@
 ---
+import Card from "../components/Card.astro";
 import Layout from "../layouts/BaseLayout.astro";
-import { resources_page_info } from "../lib/data";
+import { resources, resources_page_info } from "../lib/data";
 ---
 
 <Layout
@@ -9,5 +10,15 @@ import { resources_page_info } from "../lib/data";
   image_path={resources_page_info.media.path}
   image_description={resources_page_info.media.description}
 >
-  <p>This is some additional content for the page!</p>
+  <section class="grid grid-cols-3 gap-16">
+    {
+      resources.map((resource) => (
+        <Card
+          key={resource.id}
+          title={resource.title}
+          overview={resource.overview}
+        />
+      ))
+    }
+  </section>
 </Layout>

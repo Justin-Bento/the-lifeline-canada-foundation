@@ -1,0 +1,25 @@
+---
+const { title, overview } = Astro.props;
+import { slugify } from "../lib/slugify";
+---
+
+<div
+  class="flex flex-col col-span-3 gap-6 py-6 text-black border shadow-sm group border-violet-300 md:col-span-2 lg:col-span-1 bg-violet-50 rounded-xl hover:border-violet-500 hover:cursor-pointer"
+>
+  <div class="px-6">
+    <img
+      src="/media/company-banner.jpg"
+      alt=""
+      class="object-fill object-center w-full mb-6 rounded aspect-video bg-violet-200"
+    />
+    <a
+      href={`/resources/${slugify(title)}`}
+      class="block text-sm leading-6 group-hover:underline"
+    >
+      <h2 class="mb-3 text-xl font-semibold leading-none capitalize">
+        {title}
+      </h2>
+    </a>
+    <p class="mt-2 text-sm leading-6 line-clamp-3">{overview}</p>
+  </div>
+</div>
