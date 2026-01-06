@@ -7,6 +7,10 @@ const resources = defineCollection({
     title: z.string(),
     description: z.string(),
     language: z.enum(["en", "ef"]),
+    image: z.object({
+      src: z.string(),
+      alt: z.string(),
+    }),
   }),
 });
 const pattern_interrupts = defineCollection({
@@ -15,6 +19,10 @@ const pattern_interrupts = defineCollection({
     title: z.string(),
     description: z.string(),
     language: z.enum(["en", "ef"]),
+    image: z.object({
+      src: z.string(),
+      alt: z.string(),
+    }),
   }),
 });
 
