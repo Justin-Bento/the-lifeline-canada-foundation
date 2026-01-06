@@ -1,19 +1,14 @@
 ---
 import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
+import BaseHead from "../components/BaseHead.astro";
 import "../styles/global.css";
 const { title, summary, image_path, image_description } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>The LifeLine Canada Foundation</title>
-  </head>
+  <BaseHead />
   <body>
     <Navigation />
     <main class="py-6 space-y-16 wrapper min-h-dvh">
