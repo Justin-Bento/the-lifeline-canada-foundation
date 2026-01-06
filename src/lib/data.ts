@@ -31,6 +31,26 @@ export const in_crisis_page_info = {
     description: "/media/company-banner.jpg",
   },
 };
+export const in_crisis = {
+  canada: {
+    id: 1,
+    title: "Canada",
+    overview:
+      "Canada is a country in North America. Its ten provinces and three territories.",
+  },
+  united_states: {
+    id: 1,
+    title: "United States of America (USA)",
+    overview:
+      "Canada is a country in North America. Its ten provinces and three territories.",
+  },
+  international: {
+    id: 1,
+    title: "International",
+    overview:
+      "Canada is a country in North America. Its ten provinces and three territories.",
+  },
+};
 export const pattern_interrupts_page_info = {
   heading: "Pattern Interruptions",
   overview: [

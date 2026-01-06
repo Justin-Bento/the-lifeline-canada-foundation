@@ -1,6 +1,7 @@
 ---
+import Card from "../components/Card.astro";
 import Layout from "../layouts/BaseLayout.astro";
-import { in_crisis_page_info } from "../lib/data";
+import { in_crisis, in_crisis_page_info } from "../lib/data";
 ---
 
 <Layout
@@ -9,5 +10,21 @@ import { in_crisis_page_info } from "../lib/data";
   image_path={in_crisis_page_info.media.path}
   image_description={in_crisis_page_info.media.description}
 >
-  <p>This is some additional content for the page!</p>
+  <section class="grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
+    <Card
+      title={in_crisis.canada.title}
+      overview={in_crisis.canada.overview}
+      url_path="in-crisis-need-help"
+    />
+    <Card
+      title={in_crisis.united_states.title}
+      overview={in_crisis.united_states.overview}
+      url_path="in-crisis-need-help"
+    />
+    <Card
+      title={in_crisis.international.title}
+      overview={in_crisis.international.overview}
+      url_path="in-crisis-need-help"
+    />
+  </section>
 </Layout>
