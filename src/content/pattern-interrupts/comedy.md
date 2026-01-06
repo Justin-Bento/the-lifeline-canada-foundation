@@ -1,9 +1,7 @@
 ---
 title: "Comedy"
-summary: "This is the first post of my new Astro blog."
-image:
-  url: "https://docs.astro.build/assets/rose.webp"
-  alt: "The Astro logo on a dark background with a pink glow."
+description: "This is the first post of my new Astro blog."
+language: "en"
 ---
 
 # My First Blog Post

@@ -1,12 +1,8 @@
 ---
-title: "Improve Yor Mood"
-summary: "This is the first post of my new Astro blog."
-image:
-  url: "https://docs.astro.build/assets/rose.webp"
-  alt: "The Astro logo on a dark background with a pink glow."
+title: "Improve Your Mood"
+description: "This is the first post of my new Astro blog."
+language: "en"
 ---
-
-# My First Blog Post
 
 Published on: 2022-07-01
 

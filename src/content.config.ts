@@ -1,13 +1,21 @@
-import { defineCollection } from "astro:content";
 import { glob, file } from "astro/loaders";
-import { z } from "astro/zod";
+import { z, defineCollection } from "astro:content";
 
-// 4. Define your collection(s)
 const resources = defineCollection({
   /* ... */
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    language: z.enum(["en", "ef"]),
+  }),
 });
-const patternInterrupts = defineCollection({
+const pattern_interrupts = defineCollection({
   /* ... */
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    language: z.enum(["en", "ef"]),
+  }),
 });
 
-export const collections = { resources, patternInterrupts };
+export const collections = { resources, pattern_interrupts };
