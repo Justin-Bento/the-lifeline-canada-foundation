@@ -16,9 +16,9 @@ const { title, summary, image_path, image_description } = Astro.props;
   </head>
   <body>
     <Navigation />
-    <main class="wrapper min-h-dvh py-6 space-y-16">
-      <section class="grid grid-cols-2 items-center gap-16 mt-16">
-        <div class="col-span-2 lg:col-span-1 max-w-4xl text-balance">
+    <main class="py-6 space-y-16 wrapper min-h-dvh">
+      <section class="grid items-center grid-cols-2 gap-16 mt-16">
+        <div class="max-w-4xl col-span-2 lg:col-span-1 text-balance">
           <h1
             class="text-black leading-loose text-4xl font-semibold tracking-tight text-balance lg:leading-[1.1] lg:font-semibold xl:text-5xl xl:tracking-tight"
           >
@@ -27,7 +27,7 @@ const { title, summary, image_path, image_description } = Astro.props;
 
           {
             summary.map((paragraph: string) => (
-              <p class="text-black text-base text-balance sm:text-lg mt-4">
+              <p class="mt-4 text-base text-black text-balance sm:text-lg">
                 {paragraph}
               </p>
             ))
@@ -37,10 +37,10 @@ const { title, summary, image_path, image_description } = Astro.props;
           <img
             src={image_path}
             alt={image_description}
-            class="w-full aspect-video object-center object-cover rounded-xl"
+            class="object-cover object-center w-full aspect-video rounded-xl"
           />
         </div>
-        <div class="col-span-2 bg-violet-300 p-6 rounded-xl">
+        <div class="col-span-2 p-6 bg-violet-300 rounded-xl">
           <p class="text-base leading-7">
             When clicking 3rd party links, you will be redirected to websites
             not affiliated to, but with the underlying support of The LifeLine
