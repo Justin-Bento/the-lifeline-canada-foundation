@@ -1,9 +1,7 @@
 ---
-title: Anxiety Support
-summary:
-  - Anxiety can feel overwhelming and isolating.
-  - Support and understanding can make a difference.
-image: /media/anxiety.jpg
+title: ""
+description: ""
+language: "en"
 ---
 
 ## What is anxiety?
