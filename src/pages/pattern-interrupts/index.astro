@@ -1,10 +1,11 @@
 ---
 import Card from "../../components/Card.astro";
 import Layout from "../../layouts/BaseLayout.astro";
-import {
-  pattern_interrupts_page_info,
-  pattern_interruptions,
-} from "../../lib/data";
+import { pattern_interrupts_page_info } from "../../lib/data";
+
+import { getCollection } from "astro:content";
+const allPatternInterrupts = await getCollection("pattern_interrupts");
+import "../../styles/global.css";
 ---
 
 <Layout
@@ -15,12 +16,12 @@ import {
 >
   <section class="grid grid-cols-3 gap-16">
     {
-      pattern_interruptions.map((patterns) => (
+      allPatternInterrupts.map((patterns) => (
         <Card
           key={patterns.id}
           url_path="pattern-interrupts"
-          title={patterns.title}
-          overview={patterns.overview}
+          title={patterns.data.title}
+          overview={patterns.data.description}
         />
       ))
     }
