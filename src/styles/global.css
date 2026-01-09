@@ -32,6 +32,9 @@ footer {
   margin: 0rem auto;
   max-width: var(--container-7xl);
 }
+.landing-headline {
+  @apply scroll-m-20 text-4xl font-bold text-balance;
+}
 .landing-media {
   @apply w-full aspect-video object-center object-cover rounded-xl;
 }
