@@ -32,3 +32,6 @@ footer {
   margin: 0rem auto;
   max-width: var(--container-7xl);
 }
+.landing-media {
+  @apply w-full aspect-video object-center object-cover rounded-xl;
+}
