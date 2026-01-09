@@ -1,13 +1,39 @@
 ---
-import Layout from "../layouts/BaseLayout.astro";
+import Layout from "../layouts/Layout.astro";
 import { contact_page_info } from "../lib/data";
 ---
 
-<Layout
-  title={contact_page_info.heading}
-  summary={contact_page_info.overview}
-  image_path={contact_page_info.media.path}
-  image_description={contact_page_info.media.description}
->
+<Layout>
+  <section class="grid items-center grid-cols-2 gap-16 mt-16">
+    <div class="max-w-4xl col-span-2 lg:col-span-1 text-balance">
+      <h1
+        class="text-black leading-loose text-4xl font-semibold tracking-tight text-balance lg:leading-[1.1] lg:font-semibold xl:text-5xl xl:tracking-tight"
+      >
+        {contact_page_info.heading}
+      </h1>
+
+      {
+        contact_page_info.overview.map((paragraph: string) => (
+          <p class="mt-4 text-base leading-7 text-black text-balance">
+            {paragraph}
+          </p>
+        ))
+      }
+    </div>
+    <div class="col-span-2 lg:col-span-1">
+      <img
+        src={contact_page_info.media.path}
+        alt={contact_page_info.media.description}
+        class="object-cover object-center w-full aspect-video rounded-xl"
+      />
+    </div>
+    <div class="col-span-2 p-6 bg-violet-300 rounded-xl">
+      <p class="text-base leading-7">
+        When clicking 3rd party links, you will be redirected to websites not
+        affiliated to, but with the underlying support of The LifeLine Canada
+        Foundation.
+      </p>
+    </div>
+  </section>
   <p>This is some additional content for the page!</p>
 </Layout>
