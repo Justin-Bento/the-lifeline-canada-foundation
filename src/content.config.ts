@@ -33,7 +33,7 @@ const pattern_interrupts = defineCollection({
 const in_crisis_need_help = defineCollection({
   loader: glob({
     pattern: "**/*.md",
-    base: "./src/content/pattern-interrupts",
+    base: "./src/content/in-crisis-need-help",
   }),
   schema: z.object({
     title: z.string(),
