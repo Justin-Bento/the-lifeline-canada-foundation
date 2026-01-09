@@ -30,5 +30,24 @@ const pattern_interrupts = defineCollection({
     }),
   }),
 });
+const in_crisis_need_help = defineCollection({
+  loader: glob({
+    pattern: "**/*.md",
+    base: "./src/content/pattern-interrupts",
+  }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    isFeatured: z.boolean(),
+    image: z.object({
+      path: z.string(),
+      alt: z.string(),
+    }),
+  }),
+});
 
-export const collections = { resources, pattern_interrupts };
+export const collections = {
+  resources,
+  pattern_interrupts,
+  in_crisis_need_help,
+};
