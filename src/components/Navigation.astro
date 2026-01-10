@@ -1,35 +1,27 @@
-<header class="sticky top-0 z-90 shadow">
-  <div class="wrapper py-6 grid grid-cols-2 items-center gap-6">
-    <div class="col-span-2 lg:col-span-1 flex items-center justify-between">
+---
+import { top_navigation } from "../lib/data";
+---
+
+<header class="sticky top-0 shadow z-90">
+  <div class="grid items-center grid-cols-2 gap-6 py-6 wrapper">
+    <div class="flex items-center justify-between col-span-2 lg:col-span-1">
       <p>The LifeLine Canada Foundation</p>
       <button class="text-2xl leading-1 lg:hidden">&#8801;</button>
-      <button class="text-2xl leading-1 hidden">×</button>
+      <button class="hidden text-2xl leading-1">×</button>
     </div>
-    <nav class="hidden lg:block col-span-2 lg:col-span-1">
+    <nav class="hidden col-span-2 lg:block lg:col-span-1">
       <ul
         class="flex flex-col items-start lg:flex-row lg:items-center lg:justify-end lg:gap-3 [&>li]:capitalize [&>li]:text-base [&>li]:leading-7 [&>li]:hover:underline"
       >
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/about-us">About</a>
-        </li>
-        <li>
-          <a href="/resources">Resources</a>
-        </li>
-        <li>
-          <a href="/pattern-interrupts">Pattern Interrupts</a>
-        </li>
-        <li>
-          <a href="/in-crisis-need-help">crisis centers</a>
-        </li>
-        <li>
-          <a href="/projects">Projects</a>
-        </li>
-        <li>
-          <a href="/contact-us">Contact</a>
-        </li>
+        {
+          top_navigation.map((paths) => {
+            return (
+              <li key={paths.id}>
+                <a href={paths.url}>{paths.title}</a>
+              </li>
+            );
+          })
+        }
       </ul>
     </nav>
   </div>

@@ -21,7 +21,7 @@ export const top_navigation = [
   },
   {
     id: 4,
-    title: "Pattern Interruptions",
+    title: "Patterns",
     url: "/pattern-interrupts",
   },
   {
