@@ -1,29 +1,27 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { about_page_page_info } from "../lib/data";
 ---
 
 <Layout>
   <section class="grid items-center grid-cols-2 gap-16">
     <div class="max-w-4xl col-span-2 lg:col-span-1 text-balance">
-      <h1 class="landing-headline">
-        {about_page_page_info.heading}
-      </h1>
-
-      {
-        about_page_page_info.overview.map((paragraph: string) => (
-          <p class="mt-4 text-base leading-7 text-black text-balance">
-            {paragraph}
-          </p>
-        ))
-      }
+      <h1 class="landing-headline">About Us!</h1>
+      <p class="mt-4 text-base leading-7 text-black text-balance">
+        "The LifeLine Canada Foundation (or TLC) is a registered non-profit,
+        committed to positive mental health and suicide prevention & awareness
+        and is constantly developing new initiatives in support of these
+        goals.",
+      </p>
+      <p class="mt-4 text-base leading-7 text-black text-balance">
+        The LifeLine Canada Foundation is not a crisis hotline. If in Crisis,
+        call or text 988 for Canada’s new suicide prevention hotline. If you or
+        someone you know is in danger of hurting themselves or others, call 911
+        immediately. See our directory of mental health crisis support in your
+        area.
+      </p>
     </div>
     <div class="col-span-2 lg:col-span-1">
-      <img
-        src={about_page_page_info.media.path}
-        alt={about_page_page_info.media.description}
-        class="landing-media"
-      />
+      <img src="/media/company-banner.jpg" alt="" class="landing-media" />
     </div>
     <div class="col-span-2 p-6 bg-violet-300 rounded-xl">
       <p class="text-base leading-7">

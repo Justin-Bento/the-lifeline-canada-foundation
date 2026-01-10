@@ -1,28 +1,31 @@
 ---
 import Card from "../../components/Card.astro";
 import Layout from "../../layouts/Layout.astro";
-import { in_crisis, in_crisis_page_info } from "../../lib/data";
+import { in_crisis } from "../../lib/data";
 ---
 
 <Layout>
   <section class="grid items-center grid-cols-2 gap-16">
     <div class="max-w-4xl col-span-2 lg:col-span-1 text-balance">
-      <h1 class="landing-headline">
-        {in_crisis_page_info.heading}
-      </h1>
-
-      {
-        in_crisis_page_info.overview.map((paragraph: string) => (
-          <p class="mt-4 text-base leading-7 text-black text-balance">
-            {paragraph}
-          </p>
-        ))
-      }
+      <h1 class="landing-headline">In Crisis? Need Help?</h1>
+      <p class="mt-4 text-base leading-7 text-black text-balance">
+        For non crisis questions and comments or to contact The LifeLine Canada
+        Foundation about collaborating please use the contact form below.
+      </p>
+      <p class="mt-4 text-base leading-7 text-black text-balance">
+        The LifeLine Canada Foundation (TLC) is a registered non-profit
+        committed to the prevention of suicide and positive mental health in
+        Canada and Worldwide and has made work in this area a top priority. We
+        envision a country where suicide is a rare event, where people are
+        nurtured and supported, where individuals and families are aware of the
+        risk factors for suicide and actively seek help from accessible,
+        effective community resources.
+      </p>
     </div>
     <div class="col-span-2 lg:col-span-1">
       <img
-        src={in_crisis_page_info.media.path}
-        alt={in_crisis_page_info.media.description}
+        src="/media/company-banner.jpg"
+        alt="temporary image until main image arrives."
         class="landing-media"
       />
     </div>
@@ -36,18 +39,18 @@ import { in_crisis, in_crisis_page_info } from "../../lib/data";
   </section>
   <section class="grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
     <Card
-      title={in_crisis.canada.title}
-      overview={in_crisis.canada.overview}
+      title="Canada"
+      overview="People in every province and territory who are experiencing a mental health crisis and need immediate, real-time support can use the three-digit number"
       url_path="in-crisis-need-help"
     />
     <Card
-      title={in_crisis.united_states.title}
-      overview={in_crisis.united_states.overview}
+      title="United States America"
+      overview="United States Suicide Prevention Lifelines are available 24/7   988 Suicide and Crisis Lifeline (Formerly National Suicide Prevention Hotline) Call or Text 988 from anywhere in the USA or call National Hope Helpline at 1-800-SUICIDE (1-800-784-2433)"
       url_path="in-crisis-need-help"
     />
     <Card
-      title={in_crisis.international.title}
-      overview={in_crisis.international.overview}
+      title="International"
+      overview="If in crisis, call 911 or the Mental Health Crisis Lines provided below. The LifeLine Canada Foundation is not a crisis hotline. Following are some international crisis helpline or hotline information."
       url_path="in-crisis-need-help"
     />
   </section>
