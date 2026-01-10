@@ -1,4 +1,10 @@
-export const top_navigation = [
+export type TopNavigationItem = {
+  id: number;
+  title: string;
+  url: string;
+};
+
+export const top_navigation: TopNavigationItem[] = [
   { id: 1, title: "Home", url: "/" },
   { id: 2, title: "About", url: "/about-us" },
   { id: 3, title: "Resources", url: "/resources" },
