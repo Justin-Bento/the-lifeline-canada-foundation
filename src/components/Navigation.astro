@@ -14,13 +14,11 @@ import { top_navigation } from "../lib/data";
         class="flex flex-col items-start lg:flex-row lg:items-center lg:justify-end lg:gap-3 [&>li]:capitalize [&>li]:text-base [&>li]:leading-7 [&>li]:hover:underline"
       >
         {
-          top_navigation.map((paths) => {
-            return (
-              <li key={paths.id}>
-                <a href={paths.url}>{paths.title}</a>
-              </li>
-            );
-          })
+          top_navigation.map((path) => (
+            <li>
+              <a href={path.url}>{path.title}</a>
+            </li>
+          ))
         }
       </ul>
     </nav>
