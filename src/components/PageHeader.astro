@@ -1,15 +1,39 @@
 ---
 const { Title, Description, MediaPath, MediaSummary } = Astro.props;
+// Description can be an array of strings
 ---
 
 <section class="grid items-center grid-cols-2 gap-16">
-  <div class="max-w-4xl col-span-2 lg:col-span-1 text-balance">
-    <h1 class="landing-headline">{Title}</h1>
-    <p class="mt-4 text-base leading-7 text-black text-balance">
-      {Description}
-    </p>
+  <div class="col-span-2 lg:col-span-1 max-w-4xl text-balance">
+    {Title && <h1 class="landing-headline">{Title}</h1>}
+
+    {
+      Description && Array.isArray(Description)
+        ? Description.map((section, index) => (
+            <p
+              key={index}
+              class="mt-4 text-base leading-7 text-black text-balance"
+            >
+              {section}
+            </p>
+          ))
+        : Description && (
+            <p class="mt-4 text-base leading-7 text-black text-balance">
+              {Description}
+            </p>
+          )
+    }
   </div>
-  <div class="col-span-2 lg:col-span-1">
-    <img src={MediaPath} alt={MediaSummary} class="landing-media" />
-  </div>
+
+  {
+    MediaPath && (
+      <div class="col-span-2 lg:col-span-1">
+        <img
+          src={MediaPath}
+          alt={MediaSummary ?? Title}
+          class="landing-media"
+        />
+      </div>
+    )
+  }
 </section>
