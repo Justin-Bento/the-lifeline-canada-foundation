@@ -1,29 +1,18 @@
 ---
+import PageHeader from "../components/PageHeader.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <section class="grid items-center grid-cols-2 gap-16">
-    <div class="max-w-4xl col-span-2 lg:col-span-1 text-balance">
-      <h1 class="landing-headline">About Us!</h1>
-      <p class="mt-4 text-base leading-7 text-black text-balance">
-        "The LifeLine Canada Foundation (or TLC) is a registered non-profit,
-        committed to positive mental health and suicide prevention & awareness
-        and is constantly developing new initiatives in support of these
-        goals.",
-      </p>
-      <p class="mt-4 text-base leading-7 text-black text-balance">
-        The LifeLine Canada Foundation is not a crisis hotline. If in Crisis,
-        call or text 988 for Canada’s new suicide prevention hotline. If you or
-        someone you know is in danger of hurting themselves or others, call 911
-        immediately. See our directory of mental health crisis support in your
-        area.
-      </p>
-    </div>
-    <div class="col-span-2 lg:col-span-1">
-      <img src="/media/company-banner.jpg" alt="" class="landing-media" />
-    </div>
-  </section>
+  <PageHeader
+    Title="About Us!"
+    Description={[
+      "The LifeLine Canada Foundation (or TLC) is a registered non-profit, committed to positive mental health and suicide prevention & awareness and is constantly developing new initiatives in support of these goals.",
+      "The LifeLine Canada Foundation is not a crisis hotline. If in Crisis, call or text 988 for Canada’s new suicide prevention hotline. If you or someone you know is in danger of hurting themselves or others, call 911 immediately. See our directory of mental health crisis support in your area.",
+    ]}
+    MediaPath="/media/company-banner.jpg"
+    MediaSummary="A descriptive alt text"
+  />
   <section class="max-w-3xl text-base leading-7 text-pretty">
     <h2
       class="pb-2 text-3xl font-semibold tracking-tight transition-colors scroll-m-20 first:mt-0"

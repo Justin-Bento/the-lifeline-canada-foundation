@@ -1,5 +1,6 @@
 ---
 import Card from "../../components/Card.astro";
+import PageHeader from "../../components/PageHeader.astro";
 import Layout from "../../layouts/Layout.astro";
 
 import { getCollection } from "astro:content";
@@ -7,38 +8,16 @@ const allResources = await getCollection("resources");
 ---
 
 <Layout>
-  <section class="grid items-center grid-cols-2 gap-16">
-    <div class="max-w-4xl col-span-2 lg:col-span-1 text-balance">
-      <h1 class="landing-headline">Resources</h1>
-      <p class="leading-7 [&:not(:first-child)]:mt-6">
-        In Crisis? Call or Text 988 Canada&rsquo;s new suicide prevention
-        hotline. If you or someone you know is in danger of hurting themselves
-        or others, call 911 immediately. See our directory of mental health
-        crisis support in your area.
-      </p>
-      <p class="leading-7 [&:not(:first-child)]:mt-6">
-        This site provides information about anxiety, depression and suicide.
-        Online resources alone are not a substitute for professional medical
-        advice, diagnosis or treatment. Seek the advice of an appropriately
-        qualified healthcare professional before making decisions about your
-        circumstances.
-      </p>
-      <p class="leading-7 [&:not(:first-child)]:mt-6">
-        The guides, tool kits and resources throughout this site represent a
-        compilation of curated suicide prevention resources from various sources
-        around the world. When clicking 3rd party links, you will be redirected
-        to websites not affiliated with, but supported by The LifeLine Canada
-        Foundation.
-      </p>
-    </div>
-    <div class="col-span-2 lg:col-span-1">
-      <img
-        src="/media/resources-banner.webp"
-        alt="An image of a sign post pointing in imaginary directions to online resources."
-        class="landing-media"
-      />
-    </div>
-  </section>
+  <PageHeader
+    Title="Resources"
+    Description={[
+      "In Crisis? Call or Text 988 Canada&rsquo;s new suicide prevention hotline. If you or someone you know is in danger of hurting themselves or others, call 911 immediately. See our directory of mental health crisis support in your area.",
+      "This site provides information about anxiety, depression and suicide. Online resources alone are not a substitute for professional medical advice, diagnosis or treatment. Seek the advice of an appropriately qualified healthcare professional before making decisions about your circumstances.",
+      "The guides, tool kits and resources throughout this site represent a compilation of curated suicide prevention resources from various sources around the world. When clicking 3rd party links, you will be redirected to websites not affiliated with, but supported by The LifeLine Canada Foundation.",
+    ]}
+    MediaPath="/media/resources-banner.webp"
+    MediaSummary="A descriptive alt text"
+  />
   <section class="grid grid-cols-3 gap-16">
     {
       allResources.map((resource) => (

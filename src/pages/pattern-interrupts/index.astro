@@ -5,28 +5,19 @@ import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 const allPatternInterrupts = await getCollection("pattern_interrupts");
 import "../../styles/global.css";
+import PageHeader from "../../components/PageHeader.astro";
 ---
 
 <Layout>
-  <section class="grid items-center grid-cols-2 gap-16">
-    <div class="max-w-4xl col-span-2 lg:col-span-1 text-balance">
-      <h1 class="landing-headline">Pattern Interruptions</h1>
-      <p class="mt-4 text-base leading-7 text-black text-balance">
-        A Pattern Interrupt is a way to alter our mental, emotional, or
-        behavioral state in order to break negative habits. Pattern interrupts
-        offer an effective way to break negative cycles and regain control over
-        our actions, thoughts, and emotions.
-      </p>
-      <p class="">
-        By recognizing our patterns, we can intervene and create new pathways
-        for more productive thoughts, behaviors, and emotions and make lasting
-        changes in our lives.
-      </p>
-    </div>
-    <div class="col-span-2 lg:col-span-1">
-      <img src="/media/pattern-interrupts.webp" alt="" class="landing-media" />
-    </div>
-  </section>
+  <PageHeader
+    Title="Pattern Interruptions"
+    Description={[
+      "A Pattern Interrupt is a way to alter our mental, emotional, or behavioral state in order to break negative habits. Pattern interrupts offer an effective way to break negative cycles and regain control over our actions, thoughts, and emotions.",
+      "By recognizing our patterns, we can intervene and create new pathways for more productive thoughts, behaviors, and emotions and make lasting changes in our lives.",
+    ]}
+    MediaPath="/media/pattern-interrupts.webp"
+    MediaSummary="A descriptive alt text"
+  />
   <section class="grid grid-cols-3 gap-16">
     {
       allPatternInterrupts.map((resource) => (
