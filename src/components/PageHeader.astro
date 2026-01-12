@@ -1,0 +1,15 @@
+---
+const { Title, Description, MediaPath, MediaSummary } = Astro.props;
+---
+
+<section class="grid items-center grid-cols-2 gap-16">
+  <div class="max-w-4xl col-span-2 lg:col-span-1 text-balance">
+    <h1 class="landing-headline">{Title}</h1>
+    <p class="mt-4 text-base leading-7 text-black text-balance">
+      {Description}
+    </p>
+  </div>
+  <div class="col-span-2 lg:col-span-1">
+    <img src={MediaPath} alt={MediaSummary} class="landing-media" />
+  </div>
+</section>
