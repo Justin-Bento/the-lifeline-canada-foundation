@@ -1,5 +1,5 @@
 ---
-const { title, overview, url_path } = Astro.props;
+const { title, overview, url_path, media_path } = Astro.props;
 import { slugify } from "../lib/slugify";
 ---
 
@@ -8,7 +8,7 @@ import { slugify } from "../lib/slugify";
 >
   <div class="px-6">
     <img
-      src="/media/company-banner.jpg"
+      src={media_path || "media/company-banner.jpg"}
       alt=""
       class="object-fill object-center w-full mb-6 rounded aspect-video bg-violet-200"
     />
