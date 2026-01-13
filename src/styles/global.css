@@ -37,5 +37,5 @@ footer {
   @apply scroll-m-20 leading-[1.25] text-4xl lg:text-5xl font-bold text-balance;
 }
 .landing-media {
-  @apply w-full aspect-video lg:aspect-square object-center object-cover rounded-xl;
+  @apply w-full aspect-video lg:aspect-[16/11] object-center object-cover rounded-xl;
 }
