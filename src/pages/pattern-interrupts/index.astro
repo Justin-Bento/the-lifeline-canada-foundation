@@ -10,13 +10,15 @@ import PageHeader from "../../components/PageHeader.astro";
 
 <Layout>
   <PageHeader
-    Title="Pattern Interruptions"
-    Description={[
+    title="Pattern Interruptions"
+    overview={[
       "A Pattern Interrupt is a way to alter our mental, emotional, or behavioral state in order to break negative habits. Pattern interrupts offer an effective way to break negative cycles and regain control over our actions, thoughts, and emotions.",
       "By recognizing our patterns, we can intervene and create new pathways for more productive thoughts, behaviors, and emotions and make lasting changes in our lives.",
     ]}
-    MediaPath="/media/pattern-interrupts.webp"
-    MediaSummary="A descriptive alt text"
+    media={{
+      path: "/media/pattern-interrupts.webp",
+      summary: "A descriptive alt text"
+    }}
   />
   <section class="grid grid-cols-3 gap-16">
     {

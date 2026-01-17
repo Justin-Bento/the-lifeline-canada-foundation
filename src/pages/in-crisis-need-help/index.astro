@@ -6,13 +6,15 @@ import Layout from "../../layouts/Layout.astro";
 
 <Layout>
   <PageHeader
-    Title="In Crisis? Need Help?"
-    Description={[
+    title="In Crisis? Need Help?"
+    overview={[
       "In Crisis? Call or Text 988 Canada’s new suicide prevention hotline. If you or someone you know is in danger of hurting themselves or others, call 911 immediately. See our directory of  mental health crisis support in your area below.",
       "Seek the advice of an appropriately qualified healthcare professional before making decisions about your circumstances.",
     ]}
-    MediaPath="/media/in-crisis-j-dean-GiIf78pOQ0Q-unsplash.jpg.webp"
-    MediaSummary="A descriptive alt text"
+    media={{
+      path: "/media/in-crisis-j-dean-GiIf78pOQ0Q-unsplash.jpg.webp",
+      summary: "A descriptive alt text"
+    }}
   />
 
   <section class="grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
