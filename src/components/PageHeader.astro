@@ -4,8 +4,8 @@ const { title, overview, media } = Astro.props;
 ---
 
 <section class="grid items-center grid-cols-2 gap-16">
-  <div class="col-span-2 lg:col-span-1 max-w-4xl text-balance">
-    {title && <h1 class="landing-headline">{title}</h1>}
+  {title && <h1 class="landing-headline col-span-2">{title}</h1>}
+  <div class="col-span-2 lg:col-span-1">
 
     {
       overview && Array.isArray(overview)
