@@ -1,29 +1,17 @@
 ---
+import PageHeader from "../../../components/PageHeader.astro";
 import Layout from "../../../layouts/Layout.astro";
 ---
 
 <Layout>
-  <section class="grid grid-cols-1 lg:grid-cols-2 lg:items-center">
-    <div
-      class="[&>p]:text-base [&>p]:text-pretty [&>p]:leading-8 [&>p:not(:first-child)]:mt-3"
-    >
-      <h1
-        class="scroll-m-20 text-4xl font-extrabold tracking-tight text-balance"
-      >
-        United States of America Crisis Centres
-      </h1>
-      <p>
-        United States Suicide Prevention Lifelines are available 24/7 988
-        Suicide and Crisis Lifeline (Formerly National Suicide Prevention
-        Hotline) Call or Text 988 from anywhere in the USA or call National Hope
-        Helpline at 1-800-SUICIDE (1-800-784-2433)
-      </p>
-    </div>
-    <img
-      src="/media/usa-crisis-center-banner.webp"
-      alt=""
-      class="aspect-video"
-    />
-  </section>
+  <PageHeader
+    title="United States of America Crisis Centres"
+    overview={[
+      "United States Suicide Prevention Lifelines are available 24/7 988 Suicide and Crisis Lifeline (Formerly National Suicide Prevention Hotline) Call or Text 988 from anywhere in the USA or call National Hope Helpline at 1-800-SUICIDE (1-800-784-2433)",
+    ]}
+    media={{
+      path: "/media/usa-crisis-center-banner.webp",
+    }}
+  />
   <section class=""></section>
 </Layout>
