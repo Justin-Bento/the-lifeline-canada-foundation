@@ -7,6 +7,7 @@ const resources = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
+    basePath: z.string(),
     language: z.enum(["en", "ef"]),
     image: z.object({
       path: z.string(),
@@ -23,6 +24,7 @@ const pattern_interrupts = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
+    basePath: z.string(),
     language: z.enum(["en", "ef"]),
     image: z.object({
       path: z.string(),
