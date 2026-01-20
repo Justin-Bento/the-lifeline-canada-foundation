@@ -11,8 +11,8 @@ const slug = slugify(title);
 >
   <div class="absolute inset-0 z-30 aspect-video bg-violet-700/35"></div>
   <img
-    alt="Event cover"
-    src="https://avatar.vercel.sh/shadcn1"
+    src={media?.src}
+    alt={media?.alt ?? ""}
     class="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
   /><div
     data-slot="card-header"
