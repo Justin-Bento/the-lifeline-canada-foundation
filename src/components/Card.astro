@@ -9,10 +9,11 @@ const slug = slugify(title);
   data-size="default"
   class="ring-foreground/10 bg-card text-card-foreground group/card flex flex-col gap-4 overflow-hidden rounded-xl py-4 text-sm ring-1 has-data-[slot=card-footer]:pb-0 has-[>img:first-child]:pt-0 data-[size=sm]:gap-3 data-[size=sm]:py-3 data-[size=sm]:has-data-[slot=card-footer]:pb-0 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl relative mx-auto w-full max-w-sm pt-0"
 >
-  <div class="absolute inset-0 z-30 aspect-video bg-black/35"></div><img
+  <div class="absolute inset-0 z-30 aspect-video bg-black/35"></div>
+  <img
     alt="Event cover"
-    class="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
     src="https://avatar.vercel.sh/shadcn1"
+    class="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
   /><div
     data-slot="card-header"
     class="group/card-header @container/card-header grid auto-rows-min items-start gap-1 rounded-t-xl px-4 group-data-[size=sm]/card:px-3 has-data-[slot=card-action]:grid-cols-[1fr_auto] has-data-[slot=card-description]:grid-rows-[auto_auto] [.border-b]:pb-4 group-data-[size=sm]/card:[.border-b]:pb-3"
