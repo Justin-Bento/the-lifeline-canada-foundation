@@ -1,6 +1,6 @@
 ---
 import { slugify } from "../lib/slugify";
-const { title, overview, url, media } = Astro.props;
+const { title, overview, basePath, media } = Astro.props;
 const slug = slugify(title);
 ---
 
@@ -37,11 +37,11 @@ const slug = slugify(title);
     class="bg-muted/50 flex items-center rounded-b-xl border-t p-4 group-data-[size=sm]/card:p-3"
   >
     <a
-      href={`pattern-interrupts/${slugify(title)}`}
+      href={`${basePath}/${slugify(title)}`}
       tabindex="0"
       data-slot="button"
       class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:aria-invalid:border-destructive/50 rounded-lg border border-transparent bg-clip-padding text-sm font-medium focus-visible:ring-[3px] aria-invalid:ring-[3px] [&_svg:not([class*='size-'])]:size-4 inline-flex items-center justify-center whitespace-nowrap transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none shrink-0 [&_svg]:shrink-0 outline-none group/button select-none bg-violet-800/80 text-white [a]:hover:bg-violet-800 h-8 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 w-full"
-      >View Event</a
+      >View {`${basePath}`}</a
     >
   </div>
 </div>

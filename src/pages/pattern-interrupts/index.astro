@@ -17,14 +17,14 @@ import PageHeader from "../../components/PageHeader.astro";
     ]}
     media={{
       path: "/media/pattern-interrupts.webp",
-      summary: "A descriptive alt text"
+      summary: "A descriptive alt text",
     }}
   />
   <section class="grid grid-cols-3 gap-16">
     {
       allPatternInterrupts.map((resource) => (
         <Card
-          url="resources"
+          basePath={resource.data.basePath}
           title={resource.data.title}
           overview={resource.data.description}
         />

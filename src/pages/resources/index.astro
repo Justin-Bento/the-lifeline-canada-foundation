@@ -17,14 +17,14 @@ const allResources = await getCollection("resources");
     ]}
     media={{
       path: "/media/resources-banner.webp",
-      summary: "A descriptive alt text"
+      summary: "A descriptive alt text",
     }}
   />
   <section class="grid grid-cols-3 gap-16">
     {
       allResources.map((resource) => (
         <Card
-          url_path="resources"
+          basePath={resource.data.basePath}
           title={resource.data.title}
           overview={resource.data.description}
         />
