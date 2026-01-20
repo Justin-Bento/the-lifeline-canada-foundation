@@ -1,26 +1,46 @@
 ---
 import { slugify } from "../lib/slugify";
 const { title, overview, url, media } = Astro.props;
-const slug = slugify(title)
+const slug = slugify(title);
 ---
 
 <div
-  class="flex flex-col col-span-3 gap-6 py-6 text-black border shadow-sm group border-violet-300 md:col-span-2 lg:col-span-1 bg-violet-50 rounded-xl hover:border-violet-500 hover:cursor-pointer"
+  data-slot="card"
+  data-size="default"
+  class="ring-foreground/10 bg-card text-card-foreground group/card flex flex-col gap-4 overflow-hidden rounded-xl py-4 text-sm ring-1 has-data-[slot=card-footer]:pb-0 has-[>img:first-child]:pt-0 data-[size=sm]:gap-3 data-[size=sm]:py-3 data-[size=sm]:has-data-[slot=card-footer]:pb-0 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl relative mx-auto w-full max-w-sm pt-0"
 >
-  <div class="px-6">
-    <img
-      src={media?.path ?? "/media/company-banner.jpg"}
-      alt={media?.description ?? "Company banner"}
-      class="object-fill object-center w-full mb-6 rounded aspect-video bg-violet-200"
-    />
-    <a
-      href={`/${url}/${slug}`}
-      class="block text-sm leading-6 group-hover:underline"
+  <div class="absolute inset-0 z-30 aspect-video bg-black/35"></div><img
+    alt="Event cover"
+    class="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
+    src="https://avatar.vercel.sh/shadcn1"
+  /><div
+    data-slot="card-header"
+    class="group/card-header @container/card-header grid auto-rows-min items-start gap-1 rounded-t-xl px-4 group-data-[size=sm]/card:px-3 has-data-[slot=card-action]:grid-cols-[1fr_auto] has-data-[slot=card-description]:grid-rows-[auto_auto] [.border-b]:pb-4 group-data-[size=sm]/card:[.border-b]:pb-3"
+  >
+    <div
+      data-slot="card-title"
+      class="text-base leading-snug font-semibold group-data-[size=sm]/card:text-sm capitalize"
     >
-      <h2 class="mb-3 text-xl font-semibold leading-none capitalize">
-        {title}
-      </h2>
-    </a>
-    <p class="mt-2 text-sm leading-6 line-clamp-3">{overview}</p>
+      {title || "Design systems meetup"}
+    </div><div
+      data-slot="card-description"
+      class="text-gray-800 text-sm line-clamp-2"
+    >
+      {
+        overview ||
+          "A practical talk on component APIs, accessibility, and shipping faster."
+      }
+    </div>
+  </div><div
+    data-slot="card-footer"
+    class="bg-muted/50 flex items-center rounded-b-xl border-t p-4 group-data-[size=sm]/card:p-3"
+  >
+    <a
+      href={`pattern-interrupts/${slugify(title)}`}
+      tabindex="0"
+      data-slot="button"
+      class="focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:aria-invalid:border-destructive/50 rounded-lg border border-transparent bg-clip-padding text-sm font-medium focus-visible:ring-[3px] aria-invalid:ring-[3px] [&_svg:not([class*='size-'])]:size-4 inline-flex items-center justify-center whitespace-nowrap transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none shrink-0 [&_svg]:shrink-0 outline-none group/button select-none bg-black text-white [a]:hover:bg-black/80 h-8 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 w-full"
+      >View Event</a
+    >
   </div>
 </div>
