@@ -1,6 +1,6 @@
 ---
 title: "Transforming Negative Thoughts"
-description: "This is the first post of my new Astro blog."
+description: "Astro makes building fast, modern websites simple and enjoyable for developers."
 language: "en"
 image:
   path: "/media/astro-logo.webp"
