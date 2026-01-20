@@ -1,6 +1,7 @@
 ---
 title: "Comedy"
 description: "Astro makes building fast, modern websites simple and enjoyable for developers."
+basePath: "resources"
 language: "en"
 image:
   path: "/media/astro-logo.webp"
