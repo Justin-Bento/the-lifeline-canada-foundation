@@ -22,11 +22,11 @@ import PageHeader from "../../components/PageHeader.astro";
   />
   <section class="grid grid-cols-3 gap-16">
     {
-      allPatternInterrupts.map((resource) => (
+      allPatternInterrupts.map((patternInterrupts) => (
         <Card
-          basePath={resource.data.basePath}
-          title={resource.data.title}
-          overview={resource.data.description}
+          basePath={patternInterrupts.data.basePath}
+          title={patternInterrupts.data.title}
+          overview={patternInterrupts.data.description}
         />
       ))
     }
