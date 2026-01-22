@@ -4,13 +4,13 @@ import { render } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("pattern_interrupts");
+  const posts = await getCollection("patternInterrupts");
   return posts.map((post) => ({
     params: { slug: post.id },
     props: post,
   }));
 }
-type Props = CollectionEntry<"pattern_interrupts">;
+type Props = CollectionEntry<"patternInterrupts">;
 
 const post = Astro.props;
 const { Content } = await render(post);

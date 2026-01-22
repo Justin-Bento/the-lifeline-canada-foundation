@@ -15,7 +15,7 @@ const resources = defineCollection({
     }),
   }),
 });
-const pattern_interrupts = defineCollection({
+const patternInterrupts = defineCollection({
   /* ... */
   loader: glob({
     pattern: "**/*.md",
@@ -32,7 +32,7 @@ const pattern_interrupts = defineCollection({
     }),
   }),
 });
-const in_crisis_need_help = defineCollection({
+const inCrisisNeedHelp = defineCollection({
   loader: glob({
     pattern: "**/*.md",
     base: "./src/content/in-crisis-need-help",
@@ -50,6 +50,6 @@ const in_crisis_need_help = defineCollection({
 
 export const collections = {
   resources,
-  pattern_interrupts,
-  in_crisis_need_help,
+  patternInterrupts,
+  inCrisisNeedHelp,
 };
