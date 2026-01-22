@@ -9,8 +9,8 @@ const resources = defineCollection({
     description: z.string(),
     basePath: z.string(),
     language: z.enum(["en", "ef"]),
-    image: z.object({
-      path: z.string(),
+    media: z.object({
+      src: z.string(),
       alt: z.string(),
     }),
   }),
@@ -26,8 +26,8 @@ const pattern_interrupts = defineCollection({
     description: z.string(),
     basePath: z.string(),
     language: z.enum(["en", "ef"]),
-    image: z.object({
-      path: z.string(),
+    media: z.object({
+      src: z.string(),
       alt: z.string(),
     }),
   }),
@@ -41,8 +41,8 @@ const in_crisis_need_help = defineCollection({
     title: z.string(),
     description: z.string(),
     isFeatured: z.boolean(),
-    image: z.object({
-      path: z.string(),
+    media: z.object({
+      src: z.string(),
       alt: z.string(),
     }),
   }),
