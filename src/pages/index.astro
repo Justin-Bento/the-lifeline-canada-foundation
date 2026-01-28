@@ -1,6 +1,7 @@
 ---
+import ContentCard from "../components/ContentCard.astro";
 import Layout from "../layouts/Layout.astro";
-
+const resources = [];
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -30,8 +31,8 @@ import Layout from "../layouts/Layout.astro";
       />
     </div>
   </section>
-  <section class="">
-    <div class="space-y-3">
+  <section class="grid grid-cols-3 gap-10">
+    <div class="col-span-3">
       <h2
         class="scroll-m-20 text-3xl font-semibold tracking-tight transition-colors first:mt-0"
       >
@@ -44,6 +45,25 @@ import Layout from "../layouts/Layout.astro";
         sources across the Globe as noted.
       </p>
     </div>
+    {
+      Array.from({ length: 6 }).map((_, index) => {
+        return (
+          <ContentCard
+            key={index}
+            title="The Enchiridion"
+            description={` "The Enchiridion" by Epictetus is a manual of Stoic ethical advice compiled in the early 2nd century by Arrian, a disciple of the Greek philosopher. This concise handbook distills practical precepts for achieving mental freedom and happiness in all circumstances. It teaches readers to distinguish between what lies within their control and what does not, emphasizing that judgments, not external events, disturb people.`}
+            type="Book"
+            thumbnail={{
+              src: "https://www.gutenberg.org/cache/epub/45109/pg45109.cover.medium.jpg",
+              alt: "Book cover of the ",
+            }}
+          />
+        );
+      })
+    }
+    <span class="col-span-3">
+      <a href="/resources" class="">View All Resources</a>
+    </span>
   </section>
   <section class="grid grid-cols-2 items-center gap-y-8">
     <div class="col-span-2 max-w-[90ch] space-y-3">
