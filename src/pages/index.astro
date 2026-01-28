@@ -1,4 +1,5 @@
 ---
+import ContentCard from "../components/ContentCard.astro";
 import Layout from "../layouts/Layout.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -13,9 +14,9 @@ import Layout from "../layouts/Layout.astro";
       </h1>
       <p class="text-black text-base text-balance sm:text-lg mt-4">
         Do you or someone you care about struggle with thoughts of suicide or
-        other mental health issues? We&rsquo;re here to help. The guides, tools and
-        resources throughout this site represent a compilation of resources from
-        various sources across the Globe as noted.
+        other mental health issues? We&rsquo;re here to help. The guides, tools
+        and resources throughout this site represent a compilation of resources
+        from various sources across the Globe as noted.
       </p>
       <div class="flex items-center gap-6 mt-6">
         <a href="" class="block btn btn-black">Get Help Now</a>
@@ -26,8 +27,8 @@ import Layout from "../layouts/Layout.astro";
       <img src="/media/hero-banner-image.webp" alt="" class="landing-media" />
     </div>
   </section>
-  <section class="">
-    <div class="space-y-3">
+  <section class="grid grid-cols-3 gap-x-8 gap-y-8">
+    <div class="space-y-3 col-span-3">
       <h2
         class="scroll-m-20 text-3xl font-semibold tracking-tight transition-colors first:mt-0"
       >
@@ -37,6 +38,65 @@ import Layout from "../layouts/Layout.astro";
         We are not a crisis hotline but we believe you deserve support &mdash;
         and it&rsquo;s okay to ask for it.
       </p>
+    </div>
+    <ContentCard
+      title="Depression"
+      description="Sadness is a natural part of being human, find ways to cope"
+      sample="Resource"
+      media={{
+        src: "",
+        alt: "",
+      }}
+    />
+    <ContentCard
+      title="Anxiety"
+      description="Sadness is a natural part of being human, find ways to cope"
+      sample="Resource"
+      media={{
+        src: "",
+        alt: "",
+      }}
+    />
+    <ContentCard
+      title="Grief Support"
+      description="Sadness is a natural part of being human, find ways to cope"
+      sample="Resource"
+      media={{
+        src: "",
+        alt: "",
+      }}
+    />
+    <ContentCard
+      title="Crisis Centers"
+      description="Sadness is a natural part of being human, find ways to cope"
+      sample="Resource"
+      media={{
+        src: "",
+        alt: "",
+      }}
+    />
+    <ContentCard
+      title="E-Counselling"
+      description="Sadness is a natural part of being human, find ways to cope"
+      sample="Resource"
+      media={{
+        src: "",
+        alt: "",
+      }}
+    />
+    <ContentCard
+      title="Resources for Parents"
+      description="Sadness is a natural part of being human, find ways to cope"
+      sample="Resource"
+      media={{
+        src: "",
+        alt: "",
+      }}
+    />
+    <div class="col-span-3 inline-flex items-center justify-center">
+      <a href="" class="text-center border px-6 py-2 rounded-lg"
+        >View All Resources</a
+      >
     </div>
   </section>
   <section class="grid grid-cols-2 items-center gap-y-8">
@@ -78,8 +138,6 @@ import Layout from "../layouts/Layout.astro";
         <li>International Crisis Lines</li>
       </ul>
     </figure>
-    <div class="col-span-2 lg:col-span-1 w-full aspect-square bg-gray-300">
-    </div>
   </section>
   <section class="">
     <div class="max-w-[90ch] space-y-3">
