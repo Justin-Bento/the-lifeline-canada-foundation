@@ -2,7 +2,7 @@
 import { top_navigation } from "../lib/data";
 ---
 
-<header class="sticky top-0 shadow z-90">
+<header class="sticky top-0 shadow z-50">
   <div class="bg-violet-300" id="myDiv">
     <p class="text-xs leading-9 wrapper text-center">
       When clicking 3rd party links, you will be redirected to websites not
@@ -14,13 +14,14 @@ import { top_navigation } from "../lib/data";
     <div class="flex items-center justify-between col-span-2 lg:col-span-1">
       <img
         src="/brand/lifeline-logo-retina.png"
-        alt=""
+        alt="LifeLine Canada Foundation"
         class="w-64 h-auto object-contain"
       />
-      <button class="text-2xl leading-1 lg:hidden">&#8801;</button>
-      <button class="hidden text-2xl leading-1">×</button>
+      <button id="menuOpen" class="text-2xl leading-1 lg:hidden">&#8801;</button
+      >
+      <button id="menuClose" class="hidden text-2xl leading-1">×</button>
     </div>
-    <nav class="hidden col-span-2 lg:block lg:col-span-1">
+    <nav id="nav" class="hidden col-span-2 lg:block lg:col-span-1">
       <ul
         class="flex flex-col items-start lg:flex-row lg:items-center lg:justify-end lg:gap-3 [&>li]:capitalize [&>li]:text-base [&>li]:leading-7 [&>li]:hover:underline"
       >
@@ -38,10 +39,25 @@ import { top_navigation } from "../lib/data";
 
 <script>
   const hidePanel = document.querySelector("#myDiv");
+  const menuOpen = document.querySelector("#menuOpen");
+  const menuClose = document.querySelector("#menuClose");
+  const nav = document.querySelector("#nav");
 
   setTimeout(() => {
     if (hidePanel) {
       hidePanel.style.display = "none";
     }
-  }, 3000);
+  }, 500);
+
+  menuOpen?.addEventListener("click", () => {
+    nav?.classList.remove("hidden");
+    menuOpen.classList.add("hidden");
+    menuClose?.classList.remove("hidden");
+  });
+
+  menuClose?.addEventListener("click", () => {
+    nav?.classList.add("hidden");
+    menuClose.classList.add("hidden");
+    menuOpen?.classList.remove("hidden");
+  });
 </script>
