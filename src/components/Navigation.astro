@@ -3,7 +3,7 @@ import { top_navigation } from "../lib/data";
 ---
 
 <header class="sticky top-0 shadow z-90">
-  <div class="bg-violet-300">
+  <div class="bg-violet-300" id="myDiv">
     <p class="text-xs leading-9 wrapper text-center">
       When clicking 3rd party links, you will be redirected to websites not
       affiliated to, but with the underlying support of The LifeLine Canada
@@ -35,3 +35,13 @@ import { top_navigation } from "../lib/data";
     </nav>
   </div>
 </header>
+
+<script>
+  const hidePanel = document.querySelector("#myDiv");
+
+  setTimeout(() => {
+    if (hidePanel) {
+      hidePanel.style.display = "none";
+    }
+  }, 3000);
+</script>
