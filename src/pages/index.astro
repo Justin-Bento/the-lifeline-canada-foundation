@@ -1,7 +1,7 @@
 ---
 import ContentCard from "../components/ContentCard.astro";
 import Layout from "../layouts/Layout.astro";
-const resources = [];
+import { resources } from "../lib/data";
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -46,16 +46,16 @@ const resources = [];
       </p>
     </div>
     {
-      Array.from({ length: 6 }).map((_, index) => {
+      resources.map((resource) => {
         return (
           <ContentCard
-            key={index}
-            title="The Enchiridion"
-            description={` "The Enchiridion" by Epictetus is a manual of Stoic ethical advice compiled in the early 2nd century by Arrian, a disciple of the Greek philosopher. This concise handbook distills practical precepts for achieving mental freedom and happiness in all circumstances. It teaches readers to distinguish between what lies within their control and what does not, emphasizing that judgments, not external events, disturb people.`}
-            type="Book"
+            key={resource.id}
+            title={resource.title}
+            description={resource.description}
+            type="Resources"
             thumbnail={{
-              src: "https://www.gutenberg.org/cache/epub/45109/pg45109.cover.medium.jpg",
-              alt: "Book cover of the ",
+              src: resource.thumbnail.src,
+              alt: resource.thumbnail.alt,
             }}
           />
         );
