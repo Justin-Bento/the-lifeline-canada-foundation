@@ -60,7 +60,7 @@ export const resources = [
     title: "E-Counselling",
     description:
       "Connect with caring people for online therapy and counselling.",
-    url: "/resource/e-counselling",
+    url: "/resources/e-counselling",
     thumbnail: {
       src: "/media/images/resources/christina-wocintechchat-com-UTw3j_aoIKM-unsplash-1-400x253.png",
       alt: "",
